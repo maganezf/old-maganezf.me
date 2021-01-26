@@ -25,9 +25,16 @@ export const Container = styled.div`
 
     background: var(--background-color-dark-theme);
 
+    background-size: cover;
+    background-position: center;
+
     position: absolute;
     top: 60px;
     left: 0px;
+
+    @media (max-width: 320px) {
+      height: 740px;
+    }
   }
 `;
 
@@ -38,7 +45,15 @@ export const ProfileContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+
+    @media (max-width: 360px) {
+      margin: 0px;
+    }
+
+    @media (max-width: 320px) {
+      margin-bottom: 40px;
+    }
   }
 `;
 
@@ -49,7 +64,7 @@ export const TextContainer = styled.div`
     > span {
       display: flex;
 
-      padding-bottom: 20px;
+      padding-bottom: 15px;
       flex-shrink: 0;
 
       color: var(--icons-and-text-color-dark-theme);
@@ -68,6 +83,15 @@ export const WaveBackground = styled(WaveBackgroundImgMobile)`
     position: absolute;
     top: 0px;
     left: 0px;
+    bottom: 0px;
+
+    @media (max-width: 320px) {
+      top: 250px;
+    }
+
+    @media (height: 568px) {
+      top: 172px;
+    }
   }
 `;
 

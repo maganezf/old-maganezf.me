@@ -21,7 +21,10 @@ export default createGlobalStyle`
 
   :root {
     --primary-color: #101D42;
+    --secondary-color:#E1E6E9;
     --tertiary-color: #6189FF;
+
+    --border-profile-color: rgba(97, 137, 255, 0.35);
 
     --background-color-dark-theme: #454655;
     --background-color-light-theme: #E1E6E9;

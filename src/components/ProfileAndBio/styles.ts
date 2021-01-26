@@ -11,11 +11,9 @@ export const Container = styled.div`
 
     padding: 0 15px;
 
-    z-index: 2;
+    margin-bottom: 60px;
 
-    @media (max-width: 325px) {
-      margin-top: 150px;
-    }
+    z-index: 2;
   }
 `;
 
@@ -25,7 +23,7 @@ export const ImageProfile = styled.div`
     height: 150px;
 
     border-radius: 50%;
-    border: 0.05px solid var(--primary-color);
+    border: 2.5px solid var(--border-profile-color);
 
     margin-right: 30px;
   }

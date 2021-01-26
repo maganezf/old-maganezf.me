@@ -1,7 +1,7 @@
-import HeaderBar from '../components/HeaderBar';
-import FooterBar from '../components/FooterBar';
-import BodyMain from '../components/BodyMain';
-import GlobalStyles from '../styles/GlobalStyles';
+import HeaderBar from '../src/components/HeaderBar';
+import FooterBar from '../src/components/FooterBar';
+import BodyMain from '../src/components/BodyMain';
+import GlobalStyles from '../src/styles/GlobalStyles';
 
 const IndexPage = () => (
   <>

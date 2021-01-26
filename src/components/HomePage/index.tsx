@@ -8,7 +8,7 @@ interface Props {
   title?: string;
 }
 
-const Layout: React.FC<Props> = ({ children, title }) => {
+const HomePage: React.FC<Props> = ({ children, title }) => {
   return (
     <>
       <Head>
@@ -33,4 +33,4 @@ const Layout: React.FC<Props> = ({ children, title }) => {
   );
 };
 
-export default Layout;
+export default HomePage;

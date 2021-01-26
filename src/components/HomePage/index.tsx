@@ -5,14 +5,13 @@ import GlobalStyles from '../../styles/GlobalStyles';
 
 interface Props {
   children?: ReactNode;
-  title?: string;
 }
 
-const HomePage: React.FC<Props> = ({ children, title }) => {
+const HomePage: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>Home Page | @maganezf</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="theme-color" content="#101D42" />
@@ -20,7 +19,6 @@ const HomePage: React.FC<Props> = ({ children, title }) => {
           rel="shortcut icon"
           href="https://www.flaticon.com/svg/vstatic/svg/1005/1005141.svg?token=exp=1611322239~hmac=aa3efe179e70aebd6516934cf0628479"
         />
-
         <style>
           @import
           url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');

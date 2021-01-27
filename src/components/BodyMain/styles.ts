@@ -38,10 +38,16 @@ export const Container = styled.div`
   @media (max-width: 280px) {
     height: 740px;
   }
+
+  // desktop layout
+  @media (min-with: 100px) {
+  }
 `;
 
 export const ProfileContainer = styled.div`
   display: flex;
+
+  flex-shrink: 0;
 
   align-items: center;
   justify-content: center;
@@ -54,6 +60,10 @@ export const ProfileContainer = styled.div`
 
   @media (max-width: 320px) {
     margin-bottom: 40px;
+  }
+
+  // desktop layout
+  @media (min-with: 100px) {
   }
 `;
 
@@ -68,6 +78,10 @@ export const TextContainer = styled.div`
 
     color: var(--icons-and-text-color-dark-theme);
     font-size: 21px;
+  }
+
+  // desktop layout
+  @media (min-with: 100px) {
   }
 `;
 
@@ -93,11 +107,19 @@ export const WaveBackground = styled(WaveBackgroundImgMobile)`
   @media (max-width: 319px) {
     height: 380px;
   }
+
+  // desktop layout
+  @media (min-with: 100px) {
+  }
 `;
 
 const iconCSS = css`
   width: 30px;
   height: 30px;
+
+  // desktop layout
+  @media (min-with: 100px) {
+  }
 `;
 
 export const HappyIcon = styled(HappyIconDarkTheme)`

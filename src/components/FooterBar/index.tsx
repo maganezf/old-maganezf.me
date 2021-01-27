@@ -7,13 +7,13 @@ const FooterBar: React.FC = () => {
   return (
     <Container>
       <Link href="/projects">
-        <h2>Projects</h2>
+        <button>Projects</button>
       </Link>
 
       <LineSeparator />
 
       <Link href="/contact">
-        <h2>Contact me</h2>
+        <button>Contact me</button>
       </Link>
     </Container>
   );

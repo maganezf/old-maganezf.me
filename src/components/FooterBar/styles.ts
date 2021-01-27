@@ -26,8 +26,14 @@ export const Container = styled.header`
 
   z-index: 2;
 
-  > h2 {
+  > button {
     font-size: 22px;
+    background: none;
+    color: var(--header-and-footer-text-color);
+
+    // desktop layout
+    @media (min-with: 100px) {
+    }
   }
 
   @media (width: 411px) {
@@ -49,8 +55,16 @@ export const Container = styled.header`
   @media (max-width: 319px) {
     top: 100vh;
   }
+
+  // desktop layout
+  @media (min-with: 100px) {
+  }
 `;
 
 export const LineSeparator = styled(LineSeparatorIcon)`
   height: 7vh;
+
+  // desktop layout
+  @media (min-with: 100px) {
+  }
 `;

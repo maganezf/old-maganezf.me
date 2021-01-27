@@ -19,9 +19,21 @@ export const Container = styled.header`
   > svg {
     width: 40px;
     height: 30px;
+
+    // desktop layout
+    @media (min-with: 100px) {
+    }
   }
 
   > h2 {
     font-size: 25px;
+
+    // desktop layout
+    @media (min-with: 100px) {
+    }
+  }
+
+  // desktop layout
+  @media (min-with: 100px) {
   }
 `;

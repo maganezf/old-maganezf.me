@@ -12,45 +12,38 @@ export const Container = styled.header`
 
   background: var(--primary-color);
 
-  @media (max-width: 500px) {
-    display: flex;
+  width: 100vw;
+  height: 10vh;
 
-    width: 100vw;
-    height: 10vh;
+  border-radius: 1.5px 1.5px 0 0;
 
-    align-items: center;
-    justify-content: space-around;
+  flex-shrink: 0;
 
-    border-radius: 1.5px 1.5px 0 0;
+  position: relative;
+  top: 86.1vh;
+  left: 0;
+  right: 0;
 
-    flex-shrink: 0;
+  z-index: 2;
 
-    position: relative;
-    top: 86.1vh;
-    left: 0;
-    right: 0;
+  > h2 {
+    font-size: 22px;
+  }
 
-    z-index: 2;
+  @media (width: 411px) {
+    height: 11.5vh;
+  }
 
-    > h2 {
-      font-size: 22px;
-    }
+  @media (width: 360px) {
+    top: 550px;
+  }
 
-    @media (width: 411px) {
-      height: 11.5vh;
-    }
+  @media (width: 320px) {
+    top: 653px;
+  }
 
-    @media (width: 360px) {
-      top: 550px;
-    }
-
-    @media (width: 320px) {
-      top: 653px;
-    }
-
-    @media (height: 568px) {
-      top: 650px;
-    }
+  @media (height: 568px) {
+    top: 650px;
   }
 `;
 

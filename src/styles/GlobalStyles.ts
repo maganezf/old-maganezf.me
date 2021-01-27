@@ -19,6 +19,10 @@ export default createGlobalStyle`
     font-family: 'Poppins', sans-serif, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   :root {
     --primary-color: #101D42;
     --secondary-color:#E1E6E9;

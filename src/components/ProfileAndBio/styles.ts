@@ -1,20 +1,18 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  @media (max-width: 500px) {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    width: 100vw;
+  width: 100vw;
 
-    padding: 0 15px;
+  padding: 0 15px;
 
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 
-    z-index: 2;
-  }
+  z-index: 2;
 `;
 
 export const ImageProfile = styled.div`

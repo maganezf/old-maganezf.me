@@ -11,19 +11,17 @@ export const Container = styled.header`
   background: var(--primary-color);
   color: var(--icons-and-text-color-dark-theme);
 
-  @media (max-width: 500px) {
-    width: 100vw;
-    height: 100px;
+  width: 100vw;
+  height: 100px;
 
-    padding: 10px 10px 50px 10px;
+  padding: 10px 10px 50px 10px;
 
-    > svg {
-      width: 40px;
-      height: 30px;
-    }
+  > svg {
+    width: 40px;
+    height: 30px;
+  }
 
-    > h2 {
-      font-size: 25px;
-    }
+  > h2 {
+    font-size: 25px;
   }
 `;

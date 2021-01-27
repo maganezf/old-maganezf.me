@@ -34,6 +34,10 @@ export const Container = styled.div`
   @media (max-width: 320px) {
     height: 740px;
   }
+
+  @media (max-width: 280px) {
+    height: 740px;
+  }
 `;
 
 export const ProfileContainer = styled.div`
@@ -78,12 +82,16 @@ export const WaveBackground = styled(WaveBackgroundImgMobile)`
   left: 0px;
   bottom: 0px;
 
-  @media (max-width: 320px) {
-    top: 250px;
-  }
-
   @media (height: 568px) {
     top: 172px;
+  }
+
+  @media (max-width: 320px) {
+    top: 54vh;
+  }
+
+  @media (max-width: 319px) {
+    height: 380px;
   }
 `;
 

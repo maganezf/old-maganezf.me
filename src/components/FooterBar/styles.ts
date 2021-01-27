@@ -20,7 +20,7 @@ export const Container = styled.header`
   flex-shrink: 0;
 
   position: relative;
-  top: 86.1vh;
+  top: 87.5vh;
   left: 0;
   right: 0;
 
@@ -39,11 +39,15 @@ export const Container = styled.header`
   }
 
   @media (width: 320px) {
-    top: 653px;
+    top: 654px;
   }
 
-  @media (height: 568px) {
-    top: 650px;
+  @media (width: 375px) {
+    top: 85.8vh;
+  }
+
+  @media (max-width: 319px) {
+    top: 100vh;
   }
 `;
 

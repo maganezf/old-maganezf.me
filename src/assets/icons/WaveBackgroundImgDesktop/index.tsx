@@ -7,7 +7,6 @@ export const WaveBackgroundImgDesktop: React.FC = (props) => {
       height="730"
       viewBox="0 0 1440 730"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <path

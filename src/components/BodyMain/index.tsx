@@ -22,25 +22,17 @@ const BodyMain: React.FC = () => {
         </ProfileContainer>
 
         <TextContainer>
-          <span>
-            <HappyIcon />
-            <p>Hello! I’m Maganez, and I have love for Develop Systems</p>
-          </span>
+          <HappyIcon />
+          <p>Hello! I’m Maganez, and I have love for Develop Systems</p>
 
-          <span>
-            <LocationIcon />
-            <p>Bananeiras, Brazil</p>
-          </span>
+          <LocationIcon />
+          <p>Bananeiras, Brazil</p>
 
-          <span>
-            <GitHubIcon />
-            <p>github.com/maganezf</p>
-          </span>
+          <GitHubIcon />
+          <p>@maganezf</p>
 
-          <span>
-            <MessageIcon />
-            <p>For more information about me, navigate to the contact page</p>
-          </span>
+          <MessageIcon />
+          <p>Navigate to the contact page for more information</p>
         </TextContainer>
         <WaveBackground />
       </Container>

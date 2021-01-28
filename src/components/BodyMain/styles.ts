@@ -52,7 +52,7 @@ export const ProfileContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
   @media (max-width: 360px) {
     margin: 0px;
@@ -68,16 +68,25 @@ export const ProfileContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
+  display: grid;
+
+  grid-template-columns: 0.1fr 3fr;
+
+  grid-template-areas: 'IconGrid' 'IconTextGrid';
+
   z-index: 2;
 
-  > span {
-    display: flex;
+  color: var(--icons-and-text-color-dark-theme);
 
-    padding-bottom: 15px;
-    flex-shrink: 0;
+  > p {
+    text-align: right;
 
-    color: var(--icons-and-text-color-dark-theme);
+    margin-bottom: 35px;
+
     font-size: 21px;
+
+    /* font-family: Ubuntu;
+    font-weight: 400; */
   }
 
   // desktop layout

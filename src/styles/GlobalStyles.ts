@@ -16,7 +16,7 @@ export default createGlobalStyle`
     border: 0;
     outline: 0;
 
-    font-family: 'Poppins', sans-serif, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
+    font-family: 'Poppins', 'Ubuntu', sans-serif, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
   }
 
   button {

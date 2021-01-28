@@ -2,14 +2,7 @@ import React from 'react';
 
 export const LinkedInIconLightTheme: React.FC = (props) => {
   return (
-    <svg
-      width="40"
-      height="40"
-      viewBox="0 0 40 40"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" {...props}>
       <path
         d="M5.63717 2.03117C2.95446 2.03117 1.20044 3.83682 1.20044 6.2101C1.20044 8.53096 2.9022 10.3881 5.53423 10.3881H5.58514C8.32034 10.3881 10.0225 8.53096 10.0225 6.2101C9.97141 3.83682 8.32034 2.03117 5.63717 2.03117V2.03117Z"
         fill="#252933"

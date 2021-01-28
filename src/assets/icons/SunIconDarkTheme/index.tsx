@@ -2,14 +2,7 @@ import React from 'react';
 
 export const SunIconDarkTheme: React.FC = (props) => {
   return (
-    <svg
-      width="40"
-      height="40"
-      viewBox="0 0 40 40"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" {...props}>
       <path
         d="M20.3378 32.4341C27.2142 32.4341 32.7887 26.8597 32.7887 19.9833C32.7887 13.1069 27.2142 7.53247 20.3378 7.53247C13.4614 7.53247 7.88702 13.1069 7.88702 19.9833C7.88702 26.8597 13.4614 32.4341 20.3378 32.4341Z"
         fill="#FCD462"

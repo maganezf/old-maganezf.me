@@ -20,8 +20,12 @@ const HomePage: React.FC<Props> = ({ children }) => {
           href="https://www.flaticon.com/svg/vstatic/svg/1005/1005141.svg?token=exp=1611322239~hmac=aa3efe179e70aebd6516934cf0628479"
         />
         <style>
+          {/* Poppins */}
           @import
           url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+          {/* Ubuntu */}
+          @import
+          url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
         </style>
       </Head>
 

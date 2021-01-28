@@ -45,6 +45,9 @@ export const DescriptionProfile = styled.div`
   > p {
     display: flex;
 
+    /* font-family: Ubuntu;
+    font-weight: 400; */
+
     justify-content: center;
     align-items: center;
 

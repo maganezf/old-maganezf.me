@@ -1,12 +1,11 @@
 import HeaderBar from '../src/components/HeaderBar';
 import FooterBar from '../src/components/FooterBar';
-import BodyMain from '../src/components/BodyMain';
 import GlobalStyles from '../src/styles/GlobalStyles';
-
-import ProfileAndBio from '../src/components/ProfileAndBio';
 
 import {
   ProfileContainer,
+  ImageProfile,
+  DescriptionProfile,
   Container,
   TextContainer,
   WaveBackground,
@@ -19,11 +18,16 @@ import {
 const IndexPage = () => (
   <>
     <HeaderBar />
-    <BodyMain />
 
     <Container>
       <ProfileContainer>
-        <ProfileAndBio />
+        <ImageProfile>
+          <img src="/static/profile_image.png" alt="Profile Image" />
+        </ImageProfile>
+
+        <DescriptionProfile>
+          <p>System Developer, with focus on FrontEnd</p>
+        </DescriptionProfile>
       </ProfileContainer>
 
       <TextContainer>

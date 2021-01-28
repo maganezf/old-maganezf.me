@@ -96,8 +96,12 @@ export const WaveBackground = styled(WaveBackgroundImgMobile)`
   left: 0px;
   bottom: 0px;
 
-  @media (height: 568px) {
+  @media (height: 567px) {
     top: 172px;
+  }
+
+  @media (max-height: 568px) and (min-height: 500px) {
+    height: 75vh;
   }
 
   @media (max-width: 320px) {

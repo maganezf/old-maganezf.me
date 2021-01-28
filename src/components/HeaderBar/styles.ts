@@ -28,6 +28,8 @@ export const Container = styled.header`
   > h2 {
     font-size: 25px;
 
+    cursor: pointer;
+
     // desktop layout
     @media (min-with: 100px) {
     }

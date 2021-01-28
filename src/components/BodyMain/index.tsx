@@ -11,7 +11,7 @@ import {
   LocationIcon,
   GitHubIcon,
   MessageIcon,
-} from './styles';
+} from '../../../pages/styles';
 
 const BodyMain: React.FC = () => {
   return (

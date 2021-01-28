@@ -6,7 +6,7 @@ import {
   LocationIconDarkTheme,
   GitHubIconDarkTheme,
   MessageIconDarkTheme,
-} from '../../styles/Icons';
+} from '../src/styles/Icons';
 
 export const Container = styled.div`
   display: flex;

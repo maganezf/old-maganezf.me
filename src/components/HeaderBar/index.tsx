@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import { Container } from './styles';
 import { CodeIcon, SunIconDarkTheme } from '../../styles/Icons';
@@ -9,7 +10,10 @@ const HeaderBar: React.FC = () => {
       <Container>
         <CodeIcon />
         <SunIconDarkTheme />
-        <h2>maganezf</h2>
+
+        <Link href="/">
+          <h2>maganezf</h2>
+        </Link>
       </Container>
     </>
   );

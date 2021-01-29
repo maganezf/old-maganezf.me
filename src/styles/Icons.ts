@@ -16,8 +16,8 @@ export { LinkedInIconLightTheme } from '../assets/icons/LinkedInIconLightTheme';
 export { LocationIconDarkTheme } from '../assets/icons/LocationIconDarkTheme';
 export { LocationIconLightTheme } from '../assets/icons/LocationIconLightTheme';
 
-export { MessageIconDarkTheme } from '../assets/icons/MessageIconDarkTheme';
-export { MessageIconLightTheme } from '../assets/icons/MessageIconLightTheme';
+export { InfoIconDarkTheme } from '../assets/icons/InfoIconDarkTheme';
+export { InfoIconLightTheme } from '../assets/icons/InfoIconLightTheme';
 
 export { TwitterIconDarkTheme } from '../assets/icons/TwitterIconDarkTheme';
 export { TwitterIconLightTheme } from '../assets/icons/TwitterIconLightTheme';

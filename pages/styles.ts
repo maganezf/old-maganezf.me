@@ -5,7 +5,7 @@ import {
   HappyIconDarkTheme,
   LocationIconDarkTheme,
   GitHubIconDarkTheme,
-  MessageIconDarkTheme,
+  InfoIconDarkTheme,
 } from '../src/styles/Icons';
 
 export const Container = styled.div`
@@ -119,6 +119,10 @@ export const TextContainer = styled.div`
 
   grid-template-areas: 'IconGrid' 'IconTextGrid';
 
+  grid-area: IconGrid;
+
+  margin-right: 10px;
+
   z-index: 2;
 
   color: var(--icons-and-text-color-dark-theme);
@@ -192,6 +196,6 @@ export const GitHubIcon = styled(GitHubIconDarkTheme)`
   ${iconCSS};
 `;
 
-export const MessageIcon = styled(MessageIconDarkTheme)`
+export const InfoIcon = styled(InfoIconDarkTheme)`
   ${iconCSS};
 `;

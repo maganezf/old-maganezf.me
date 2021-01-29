@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const CodeIcon: React.FC = (props) => {
+export const CodeIcon: React.FC = () => {
   return (
-    <svg width="54" height="44" viewBox="0 0 54 44" fill="none" {...props}>
+    <svg width="54" height="44" viewBox="0 0 54 44" fill="none">
       <path
         d="M13.4853 34.2376L2 22"
         stroke="#F8F8FF"

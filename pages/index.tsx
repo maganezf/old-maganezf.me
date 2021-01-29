@@ -3,16 +3,16 @@ import FooterBar from '../src/components/FooterBar';
 import GlobalStyles from '../src/styles/GlobalStyles';
 
 import {
+  Container,
   ProfileContainer,
   ImageProfile,
   DescriptionProfile,
-  Container,
   TextContainer,
   WaveBackground,
   HappyIcon,
   LocationIcon,
   GitHubIcon,
-  MessageIcon,
+  InfoIcon,
 } from './styles';
 
 const IndexPage = () => (
@@ -40,7 +40,7 @@ const IndexPage = () => (
         <GitHubIcon />
         <p>@maganezf</p>
 
-        <MessageIcon />
+        <InfoIcon />
         <p>Navigate to the contact page for more information</p>
       </TextContainer>
       <WaveBackground />

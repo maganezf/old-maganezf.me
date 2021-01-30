@@ -34,7 +34,7 @@ export const Container = styled.div`
   }
 
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
   }
 `;
 
@@ -54,15 +54,15 @@ export const TextContainer = styled.div`
     font-weight: 400; */
 
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
   }
 `;
 
 export const WaveBackground = styled(WaveBackgroundImgMobile)`
   border-radius: 0px 0px 0px 50px;
 
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
 
   position: absolute;
   top: 0px;

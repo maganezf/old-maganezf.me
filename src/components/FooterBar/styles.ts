@@ -25,7 +25,7 @@ export const Container = styled.header`
   left: 0;
   right: 0;
 
-  z-index: 2;
+  z-index: 10;
 
   > button {
     font-size: 22px;

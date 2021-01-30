@@ -16,11 +16,11 @@ const ContactPage: React.FC = () => {
       <HeaderBar />
 
       <Container>
-        {/* <TextContainer>
+        <TextContainer>
           <p>Contact Page - 1</p>
 
           <p>Contact Page - 2</p>
-        </TextContainer> */}
+        </TextContainer>
         <WaveBackground />
       </Container>
 

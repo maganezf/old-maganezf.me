@@ -22,7 +22,7 @@ const IndexPage: React.FC = () => (
     <HeaderBar />
 
     <Container>
-      {/* <ProfileContainer>
+      <ProfileContainer>
         <ImageProfile>
           <img src="/static/profile_image.png" alt="Profile Image" />
         </ImageProfile>
@@ -46,7 +46,7 @@ const IndexPage: React.FC = () => (
 
         <InfoIcon />
         <p>Navigate to the contact page for more information</p>
-      </TextContainer> */}
+      </TextContainer>
 
       <WaveBackground />
     </Container>

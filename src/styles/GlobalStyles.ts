@@ -10,6 +10,13 @@ export default createGlobalStyle`
   html, body, #root {
     width: 100vw;
     height: 100vh;
+
+    // desktop layout
+    @media (min-width: 1000px) {
+      width: 100px;
+      height: 100px;
+
+    }
   }
 
   *, button, input {

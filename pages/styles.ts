@@ -40,7 +40,7 @@ export const Container = styled.div`
   }
 
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
   }
 `;
 
@@ -67,7 +67,7 @@ export const ProfileContainer = styled.div`
   }
 
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
   }
 `;
 
@@ -86,7 +86,7 @@ export const ImageProfile = styled.div`
     }
 
     // desktop layout
-    @media (min-with: 100px) {
+    @media (min-width: 1000px) {
     }
   }
 `;
@@ -107,7 +107,7 @@ export const DescriptionProfile = styled.div`
     flex-shrink: 0;
 
     // desktop layout
-    @media (min-with: 100px) {
+    @media (min-width: 1000px) {
     }
   }
 `;
@@ -139,7 +139,7 @@ export const TextContainer = styled.div`
   }
 
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
   }
 `;
 
@@ -171,7 +171,7 @@ export const WaveBackground = styled(WaveBackgroundImgMobile)`
   }
 
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
   }
 `;
 
@@ -180,7 +180,7 @@ const iconCSS = css`
   height: 30px;
 
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
   }
 `;
 

@@ -21,7 +21,9 @@ export const Container = styled.header`
     height: 30px;
 
     // desktop layout
-    @media (min-with: 100px) {
+    @media (min-width: 100px) {
+      width: 50px;
+      height: 40px;
     }
   }
 
@@ -36,6 +38,10 @@ export const Container = styled.header`
   }
 
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
+    overflow: hidden;
+
+    /* width: 1351px; */
+    width: 98.9vw;
   }
 `;

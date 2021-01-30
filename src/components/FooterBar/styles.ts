@@ -3,17 +3,18 @@ import { LineSeparatorIcon } from '../../styles/Icons';
 
 export const Container = styled.header`
   display: flex;
+
   align-items: center;
   justify-content: space-evenly;
 
   padding: 15px;
 
+  width: 100vw;
+  height: 10vh;
+
   color: var(--icons-and-text-color-dark-theme);
 
   background: var(--primary-color);
-
-  width: 100vw;
-  height: 10vh;
 
   border-radius: 1.5px 1.5px 0 0;
 
@@ -32,32 +33,37 @@ export const Container = styled.header`
     color: var(--header-and-footer-text-color);
 
     // desktop layout
-    @media (min-with: 100px) {
+    @media (min-width: 1000px) {
     }
   }
 
   @media (width: 411px) {
-    height: 11.5vh;
+    top: 85.5vh;
+  }
+
+  @media (width: 375px) {
+    top: 85.7vh;
   }
 
   @media (width: 360px) {
-    top: 550px;
+    top: 86.5vh;
   }
 
   @media (width: 320px) {
     top: 654px;
   }
 
-  @media (width: 375px) {
-    top: 85.8vh;
-  }
-
   @media (max-width: 319px) {
     top: 100vh;
   }
 
+  @media (max-width: 280px) {
+    top: 98.5vh;
+  }
+
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
+    top: 88vh;
   }
 `;
 
@@ -65,6 +71,6 @@ export const LineSeparator = styled(LineSeparatorIcon)`
   height: 7vh;
 
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
   }
 `;

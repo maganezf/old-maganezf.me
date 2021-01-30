@@ -15,7 +15,7 @@ import {
   InfoIcon,
 } from './styles';
 
-const IndexPage = () => (
+const IndexPage: React.FC = () => (
   <>
     <HeaderBar />
 
@@ -43,6 +43,7 @@ const IndexPage = () => (
         <InfoIcon />
         <p>Navigate to the contact page for more information</p>
       </TextContainer>
+
       <WaveBackground />
     </Container>
 

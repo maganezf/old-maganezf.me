@@ -48,29 +48,24 @@ export const Container = styled.div`
 `;
 
 export const ProfileContainer = styled.div`
-  width: 100vw;
-
   display: flex;
 
   flex-shrink: 0;
 
-  align-items: center;
   justify-content: center;
 
-  padding: 0 15px 12.5vh 15px;
+  margin: 0 15px 10vh 15px;
 
   z-index: 2;
 
-  @media (max-width: 360px) {
-    margin: 0px;
-  }
-
-  @media (max-width: 320px) {
-    margin-bottom: 40px;
+  @media (min-width: 320px) and (max-width: 360px) {
+    margin-bottom: 20px;
   }
 
   // desktop layout
-  @media (min-width: 1000px) {
+  @media (min-width: 750px) {
+    align-items: center;
+    margin-bottom: 20vh;
   }
 `;
 
@@ -80,9 +75,14 @@ export const ImageProfile = styled.div`
     height: 150px;
 
     border-radius: 50%;
-    border: 2.5px solid var(--border-profile-color);
+    border: 2.5px solid var(--tertiary-color);
 
-    margin-right: 30px;
+    margin: 0 10px;
+
+    &:hover {
+      opacity: 0.96;
+      transition: 0.2s;
+    }
 
     @media (max-width: 280px) {
       margin-right: 15px;
@@ -95,22 +95,29 @@ export const ImageProfile = styled.div`
 `;
 
 export const DescriptionProfile = styled.div`
-  > p {
-    display: flex;
+  > h2 {
+    text-align: left;
 
-    /* font-family: Ubuntu;
-    font-weight: 400; */
-
-    justify-content: center;
-    align-items: center;
+    padding: 0 5px;
 
     color: var(--icons-and-text-color-dark-theme);
+    background-color: var(--border-profile-color);
+
     font-size: 22px;
+    font-weight: 700;
+
+    border-radius: 6px;
+    margin: 0 15px 50px 0;
+
+    /* font-family: Ubuntu; */
 
     flex-shrink: 0;
 
     // desktop layout
     @media (min-width: 1000px) {
+      text-align: center;
+      position: relative;
+      top: 25px;
     }
   }
 `;
@@ -125,6 +132,17 @@ export const TextContainer = styled.div`
   z-index: 2;
 
   color: var(--icons-and-text-color-dark-theme);
+
+  > svg {
+    &:hover {
+      opacity: 0.7;
+      transition: 0.2s;
+    }
+
+    &:nth-child(5) {
+      cursor: pointer;
+    }
+  }
 
   > p {
     text-align: end;
@@ -145,8 +163,8 @@ export const TextContainer = styled.div`
 export const WaveBackground = styled(WaveBackgroundImgMobile)`
   border-radius: 0px 0px 0px 50px;
 
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
 
   position: absolute;
   top: 0px;
@@ -178,7 +196,7 @@ export const WaveBackground = styled(WaveBackgroundImgMobile)`
   }
 `;
 
-const iconCSS = css`
+const iconSize = css`
   width: 30px;
   height: 30px;
 
@@ -190,17 +208,17 @@ const iconCSS = css`
 `;
 
 export const HappyIcon = styled(HappyIconDarkTheme)`
-  ${iconCSS};
+  ${iconSize};
 `;
 
 export const LocationIcon = styled(LocationIconDarkTheme)`
-  ${iconCSS};
+  ${iconSize};
 `;
 
 export const GitHubIcon = styled(GitHubIconDarkTheme)`
-  ${iconCSS};
+  ${iconSize};
 `;
 
 export const InfoIcon = styled(InfoIconDarkTheme)`
-  ${iconCSS};
+  ${iconSize};
 `;

@@ -10,7 +10,7 @@ const ProjectsPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Projects Page | @maganezf</title>
+        <title>Projects | Maganez</title>
       </Head>
 
       <HeaderBar />

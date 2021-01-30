@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import HeaderBar from '../src/components/HeaderBar';
 import FooterBar from '../src/components/FooterBar';
 import GlobalStyles from '../src/styles/GlobalStyles';
@@ -26,7 +28,7 @@ const IndexPage: React.FC = () => (
         </ImageProfile>
 
         <DescriptionProfile>
-          <p>System Developer, with focus on FrontEnd</p>
+          <h2>System Developer, with focus on FrontEnd</h2>
         </DescriptionProfile>
       </ProfileContainer>
 
@@ -35,10 +37,12 @@ const IndexPage: React.FC = () => (
         <p>Hello! I’m Maganez, and I have love for Develop Systems</p>
 
         <LocationIcon />
-        <p>Bananeiras, Brazil</p>
+        <p>Bananeiras, Paraíba, Brazil</p>
 
-        <GitHubIcon />
-        <p>@maganezf</p>
+        <Link href="https://github.com/maganezf">
+          <GitHubIcon />
+        </Link>
+        <p>maganezf</p>
 
         <InfoIcon />
         <p>Navigate to the contact page for more information</p>

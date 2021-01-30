@@ -22,6 +22,11 @@ export const Container = styled.header`
     width: 40px;
     height: 30px;
 
+    &:hover {
+      opacity: 0.7;
+      transition: 0.2s;
+    }
+
     // desktop layout
     @media (min-width: 100px) {
       width: 50px;
@@ -33,6 +38,11 @@ export const Container = styled.header`
     font-size: 25px;
 
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+      transition: 0.2s;
+    }
 
     // desktop layout
     @media (min-width: 1000px) {

@@ -32,6 +32,11 @@ export const Container = styled.header`
     background: none;
     color: var(--header-and-footer-text-color);
 
+    &:hover {
+      opacity: 0.7;
+      transition: 0.2s;
+    }
+
     // desktop layout
     @media (min-width: 1000px) {
     }
@@ -81,6 +86,11 @@ export const Container = styled.header`
 
 export const LineSeparator = styled(LineSeparatorIcon)`
   height: 7vh;
+
+  &:hover {
+    opacity: 0.7;
+    transition: 0.2s;
+  }
 
   // desktop layout
   @media (min-width: 1000px) {

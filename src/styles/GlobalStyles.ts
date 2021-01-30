@@ -22,7 +22,6 @@ export default createGlobalStyle`
     @media (min-width: 1000px) {
       width: 100px;
       height: 100px;
-
     }
   }
 

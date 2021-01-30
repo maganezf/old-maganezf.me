@@ -34,7 +34,7 @@ export const Container = styled.div`
   }
 
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
   }
 `;
 
@@ -86,6 +86,6 @@ export const WaveBackground = styled(WaveBackgroundImgMobile)`
   }
 
   // desktop layout
-  @media (min-with: 100px) {
+  @media (min-width: 1000px) {
   }
 `;

@@ -44,12 +44,17 @@ export const Container = styled.header`
     }
   }
 
-  @media (width: 411px) {
+  @media (min-width: 760px) and (max-width: 1024px) {
+    height: 11vh;
+  }
+
+  @media (min-width: 411px) {
     top: 85.5vh;
+    height: 11.88vh;
   }
 
   @media (width: 375px) {
-    top: 85.7vh;
+    top: 85.9vh;
   }
 
   @media (width: 360px) {

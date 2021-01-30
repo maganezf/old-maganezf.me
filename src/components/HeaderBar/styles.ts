@@ -42,6 +42,7 @@ export const Container = styled.header`
     &:hover {
       opacity: 0.7;
       transition: 0.2s;
+      color: var(--tertiary-color);
     }
 
     // desktop layout

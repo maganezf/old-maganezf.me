@@ -63,9 +63,14 @@ export const ProfileContainer = styled.div`
   }
 
   // desktop layout
-  @media (min-width: 750px) {
+  @media (min-width: 750px) and (max-width: 1000px) {
     align-items: center;
     margin-bottom: 20vh;
+  }
+
+  @media (min-width: 1000px) {
+    align-items: center;
+    margin-bottom: 75px;
   }
 `;
 
@@ -80,7 +85,7 @@ export const ImageProfile = styled.div`
     margin: 0 10px;
 
     &:hover {
-      opacity: 0.96;
+      opacity: 0.9;
       transition: 0.2s;
     }
 
@@ -115,7 +120,6 @@ export const DescriptionProfile = styled.div`
 
     // desktop layout
     @media (min-width: 1000px) {
-      text-align: center;
       position: relative;
       top: 25px;
     }
@@ -157,6 +161,10 @@ export const TextContainer = styled.div`
 
   // desktop layout
   @media (min-width: 1000px) {
+    > p {
+      margin-bottom: 50px;
+      text-align: center;
+    }
   }
 `;
 

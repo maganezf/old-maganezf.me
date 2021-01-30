@@ -39,6 +39,7 @@ export const Container = styled.header`
 
     // desktop layout
     @media (min-width: 1000px) {
+      font-size: 23px;
     }
   }
 

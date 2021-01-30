@@ -63,6 +63,8 @@ export const Container = styled.header`
 
   // desktop layout
   @media (min-width: 1000px) {
+    top: 88vh;
+
     overflow: hidden;
 
     max-width: 100vw;
@@ -70,6 +72,10 @@ export const Container = styled.header`
     position: relative;
     left: 0;
     right: 0;
+  }
+
+  @media (min-width: 1100px) {
+    top: 86vh;
   }
 `;
 

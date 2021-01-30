@@ -57,7 +57,7 @@ export const ProfileContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  padding: 0 15px 100px 15px;
+  padding: 0 15px 12.5vh 15px;
 
   z-index: 2;
 
@@ -122,18 +122,14 @@ export const TextContainer = styled.div`
 
   grid-template-areas: 'IconGrid' 'IconTextGrid';
 
-  grid-area: IconGrid;
-
-  margin-right: 10px;
-
   z-index: 2;
 
   color: var(--icons-and-text-color-dark-theme);
 
   > p {
-    text-align: right;
+    text-align: end;
 
-    margin-bottom: 35px;
+    margin: 0 0 25px 25px;
 
     font-size: 21px;
 
@@ -166,7 +162,7 @@ export const WaveBackground = styled(WaveBackgroundImgMobile)`
   }
 
   @media (max-width: 320px) {
-    top: 54vh;
+    top: 55vh;
   }
 
   @media (max-width: 319px) {
@@ -188,6 +184,8 @@ const iconCSS = css`
 
   // desktop layout
   @media (min-width: 1000px) {
+    width: 40px;
+    height: 40px;
   }
 `;
 

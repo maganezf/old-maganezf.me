@@ -16,6 +16,8 @@ export const Container = styled.header`
 
   padding: 10px 10px 50px 10px;
 
+  z-index: 2;
+
   > svg {
     width: 40px;
     height: 30px;

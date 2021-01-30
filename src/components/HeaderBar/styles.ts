@@ -33,7 +33,7 @@ export const Container = styled.header`
     cursor: pointer;
 
     // desktop layout
-    @media (min-with: 100px) {
+    @media (min-width: 1000px) {
     }
   }
 
@@ -41,7 +41,6 @@ export const Container = styled.header`
   @media (min-width: 1000px) {
     overflow: hidden;
 
-    /* width: 1351px; */
-    width: 98.9vw;
+    max-width: 100vw;
   }
 `;

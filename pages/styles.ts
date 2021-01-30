@@ -41,6 +41,9 @@ export const Container = styled.div`
 
   // desktop layout
   @media (min-width: 1000px) {
+    overflow: hidden;
+
+    max-width: 100vw;
   }
 `;
 
@@ -172,6 +175,10 @@ export const WaveBackground = styled(WaveBackgroundImgMobile)`
 
   // desktop layout
   @media (min-width: 1000px) {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    bottom: 0px;
   }
 `;
 

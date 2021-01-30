@@ -5,11 +5,18 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /* Firefox */
+    scrollbar-width: none;
+    /* Chrome */
+    ::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   html, body, #root {
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
 
     // desktop layout
     @media (min-width: 1000px) {
@@ -18,6 +25,7 @@ export default createGlobalStyle`
 
     }
   }
+
 
   *, button, input {
     border: 0;

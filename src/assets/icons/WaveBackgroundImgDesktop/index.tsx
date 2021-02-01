@@ -3,9 +3,9 @@ import React from 'react';
 export const WaveBackgroundImgDesktop: React.FC = (props) => {
   return (
     <svg
-      width="1440"
+      width="auto"
       height="730"
-      viewBox="0 0 1440 730"
+      viewBox="0 0 auto 730"
       fill="none"
       {...props}
     >

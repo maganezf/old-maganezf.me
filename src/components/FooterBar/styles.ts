@@ -25,16 +25,18 @@ export const Container = styled.header`
   left: 0;
   right: 0;
 
-  z-index: 10;
+  z-index: 2;
 
   > button {
-    font-size: 22px;
+    font-size: 24px;
     background: none;
     color: var(--header-and-footer-text-color);
 
-    &:hover {
-      opacity: 0.7;
-      transition: 0.2s;
+    transition: 0.3s;
+
+    &:hover,
+    &:active {
+      opacity: 0.5;
       color: var(--tertiary-color);
     }
 
@@ -44,33 +46,16 @@ export const Container = styled.header`
     }
   }
 
-  @media (min-width: 760px) and (max-width: 1024px) {
+  @media (max-width: 415px) {
+    top: 88.9vh;
+  }
+
+  @media (min-width: 380px) and (max-width: 412px) {
     height: 11vh;
   }
 
-  @media (min-width: 411px) {
-    top: 85.5vh;
-    height: 11.88vh;
-  }
-
-  @media (width: 375px) {
-    top: 85.9vh;
-  }
-
-  @media (width: 360px) {
-    top: 86.5vh;
-  }
-
-  @media (width: 320px) {
-    top: 654px;
-  }
-
-  @media (max-width: 319px) {
-    top: 100vh;
-  }
-
-  @media (max-width: 280px) {
-    top: 98.5vh;
+  @media (max-width: 320px) {
+    top: 41.37rem;
   }
 
   // desktop layout
@@ -94,9 +79,11 @@ export const Container = styled.header`
 export const LineSeparator = styled(LineSeparatorIcon)`
   height: 7vh;
 
-  &:hover {
-    opacity: 0.7;
-    transition: 0.2s;
+  transition: 0.3s;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
   }
 
   // desktop layout

@@ -22,9 +22,11 @@ export const Container = styled.header`
     width: 40px;
     height: 30px;
 
-    &:hover {
-      opacity: 0.7;
-      transition: 0.2s;
+    transition: 0.3s;
+
+    &:hover,
+    &:active {
+      opacity: 0.5;
     }
 
     // desktop layout
@@ -39,9 +41,11 @@ export const Container = styled.header`
 
     cursor: pointer;
 
-    &:hover {
-      opacity: 0.7;
-      transition: 0.2s;
+    transition: 0.3s;
+
+    &:hover,
+    &:active {
+      opacity: 0.5;
       color: var(--tertiary-color);
     }
 

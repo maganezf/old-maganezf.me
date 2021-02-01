@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import {
-  WaveBackgroundImgMobile,
+  WaveBackgroundImgDesktop,
   HappyIconDarkTheme,
   LocationIconDarkTheme,
   GitHubIconDarkTheme,
@@ -14,6 +14,8 @@ export const Container = styled.div`
 
   width: 100vw;
   height: 100vh;
+
+  overflow: hidden;
 
   padding: 0 15px;
 
@@ -31,12 +33,16 @@ export const Container = styled.div`
   top: 60px;
   left: 0px;
 
+  @media (max-width: 420px) {
+    height: 103vh;
+  }
+
   @media (max-width: 320px) {
-    height: 740px;
+    height: 750px;
   }
 
   @media (max-width: 280px) {
-    height: 740px;
+    height: 750px;
   }
 
   // desktop layout
@@ -68,6 +74,8 @@ export const ProfileContainer = styled.div`
     margin-bottom: 20vh;
   }
 
+  // desktop layout
+
   @media (min-width: 1000px) {
     align-items: center;
     margin-bottom: 75px;
@@ -84,13 +92,17 @@ export const ImageProfile = styled.div`
 
     margin: 0 10px;
 
-    &:hover {
-      opacity: 0.9;
-      transition: 0.2s;
+    transition: 0.3s;
+
+    &:active {
+      opacity: 0.5;
     }
 
     @media (max-width: 280px) {
-      margin-right: 15px;
+      width: 125px;
+      height: 125px;
+
+      margin: 0;
     }
 
     // desktop layout
@@ -112,11 +124,20 @@ export const DescriptionProfile = styled.div`
     font-weight: 700;
 
     border-radius: 6px;
-    margin: 0 15px 50px 0;
+    margin: 0 10px 50px 0;
 
     /* font-family: Ubuntu; */
 
     flex-shrink: 0;
+
+    transition: 0.3s;
+    &:active {
+      opacity: 0.5;
+    }
+
+    @media (max-width: 280px) {
+      margin: 0 0 0px 5px;
+    }
 
     // desktop layout
     @media (min-width: 1000px) {
@@ -138,7 +159,8 @@ export const TextContainer = styled.div`
   color: var(--icons-and-text-color-dark-theme);
 
   > svg {
-    &:hover {
+    &:hover,
+    &:active {
       opacity: 0.7;
       transition: 0.2s;
     }
@@ -155,6 +177,11 @@ export const TextContainer = styled.div`
 
     font-size: 21px;
 
+    transition: 0.3s;
+    &:active {
+      opacity: 0.5;
+    }
+
     /* font-family: Ubuntu;
     font-weight: 400; */
   }
@@ -168,19 +195,24 @@ export const TextContainer = styled.div`
   }
 `;
 
-export const WaveBackground = styled(WaveBackgroundImgMobile)`
+export const WaveBackgroundDesktop = styled(WaveBackgroundImgDesktop)`
   border-radius: 0px 0px 0px 50px;
 
-  max-width: 100vw;
-  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
   position: absolute;
 
   top: 0px;
-  left: 0px;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
-  @media (min-width: 750px) and (max-width: 1024px) {
+  @media (max-width: 320px) {
+    top: 54.5vh;
+  }
+
+  /* @media (min-width: 750px) and (max-width: 1024px) {
     height: 100vh;
   }
 
@@ -190,6 +222,10 @@ export const WaveBackground = styled(WaveBackgroundImgMobile)`
 
   @media (max-height: 568px) and (min-height: 500px) {
     height: 75vh;
+  }
+
+  @media (max-width: 41px) and (min-width: 800px) {
+    top: 40px;
   }
 
   @media (min-width: 411px) {
@@ -206,15 +242,7 @@ export const WaveBackground = styled(WaveBackgroundImgMobile)`
 
   @media (max-width: 319px) {
     height: 380px;
-  }
-
-  // desktop layout
-  @media (min-width: 1000px) {
-    position: absolute;
-    top: -30px;
-    left: 0px;
-    bottom: 0px;
-  }
+  } */
 `;
 
 const iconSize = css`

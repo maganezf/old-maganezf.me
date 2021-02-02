@@ -9,6 +9,8 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
 
+  overflow: hidden;
+
   padding: 0 15px;
 
   align-items: center;
@@ -25,16 +27,16 @@ export const Container = styled.div`
   top: 60px;
   left: 0px;
 
+  @media (max-width: 420px) {
+    height: 103vh;
+  }
+
   @media (max-width: 320px) {
-    height: 740px;
+    height: 750px;
   }
 
   @media (max-width: 280px) {
-    height: 740px;
-  }
-
-  // desktop layout
-  @media (min-width: 1000px) {
+    height: 750px;
   }
 `;
 

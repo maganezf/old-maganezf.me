@@ -4,7 +4,12 @@ import HeaderBar from '../../src/components/HeaderBar';
 import FooterBar from '../../src/components/FooterBar';
 import GlobalStyles from '../../src/styles/GlobalStyles';
 
-import { Container, TextContainer, WaveBackground } from './styles';
+import {
+  Container,
+  ExperienceContainer,
+  ProjectsContainer,
+  WaveBackground,
+} from './styles';
 
 const ProjectsPage: React.FC = () => {
   return (
@@ -16,11 +21,21 @@ const ProjectsPage: React.FC = () => {
       <HeaderBar />
 
       <Container>
-        <TextContainer>
-          <p>Project Page - 1</p>
+        <ExperienceContainer>
+          <h3>Experiência:</h3>
 
-          <p>Project Page - 2</p>
-        </TextContainer>
+          <li>Graduação: Graduando em Sistemas de Informação, UFPB</li>
+          <li>Estudando atualmente em: React, NextJS, Typescript, HTML, CSS</li>
+        </ExperienceContainer>
+
+        <ProjectsContainer>
+          <h3>Projetos:</h3>
+
+          <li>
+            Para mais projetos fora este meu site atual hospedado atualmente,
+            visite meu github para mais projetos realizados em estudos
+          </li>
+        </ProjectsContainer>
 
         <WaveBackground />
       </Container>

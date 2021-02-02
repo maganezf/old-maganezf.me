@@ -45,12 +45,12 @@ export const Container = styled.div`
     height: 750px;
   }
 
-  // desktop layout
+  /* // desktop layout
   @media (min-width: 1000px) {
     overflow: hidden;
 
     max-width: 100vw;
-  }
+  } */
 `;
 
 export const ProfileContainer = styled.div`

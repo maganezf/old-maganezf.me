@@ -56,19 +56,37 @@ export const ExperienceContainer = styled.div`
     text-align: start;
   }
 
-  margin-bottom: 10rem;
+  margin-bottom: 0.5rem;
 
   z-index: 2;
 
   color: var(--icons-and-text-color-dark-theme);
 
-  font-size: 21px;
+  font-size: 18.5px;
 
-  /* font-family: Ubuntu;
-    font-weight: 400; */
+  /* font-family: Ubuntu; */
+  /* font-weight: 400; */
 
   // desktop layout
+
   @media (min-width: 1000px) {
+    font-size: 21px;
+
+    margin-bottom: 12.5rem;
+  }
+
+  @media (min-width: 760px) and (max-width: 999px) {
+    font-size: 29.5px;
+
+    margin-bottom: 12.5rem;
+  }
+
+  @media (min-width: 400px) and (max-width: 759px) {
+    margin-bottom: 5rem;
+  }
+
+  @media (max-width: 280px) {
+    font-size: 17.5px;
   }
 `;
 
@@ -93,15 +111,23 @@ export const ProjectsContainer = styled.div`
 
   color: var(--icons-and-text-color-dark-theme);
 
-  /* margin-bottom: 50px; */
+  font-size: 18.5px;
 
-  font-size: 21px;
-
-  /* font-family: Ubuntu;
-    font-weight: 400; */
+  /* font-family: Ubuntu; */
+  /* font-weight: 400; */
 
   // desktop layout
+
   @media (min-width: 1000px) {
+    font-size: 21px;
+  }
+
+  @media (min-width: 760px) and (max-width: 999px) {
+    font-size: 29.5px;
+  }
+
+  @media (max-width: 280px) {
+    font-size: 17.5px;
   }
 `;
 

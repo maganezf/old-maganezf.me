@@ -4,15 +4,13 @@ import HeaderBar from '../src/components/HeaderBar';
 import FooterBar from '../src/components/FooterBar';
 import GlobalStyles from '../src/styles/GlobalStyles';
 
-// import WaveBackgroundImage from '../src/components/WaveBackgroundImage';
-
 import {
   Container,
   ProfileContainer,
   ImageProfile,
   DescriptionProfile,
   TextContainer,
-  WaveBackgroundDesktop,
+  WaveBackground,
   HappyIcon,
   LocationIcon,
   GitHubIcon,
@@ -49,7 +47,7 @@ const IndexPage: React.FC = () => (
         <p>Navigate to the contact page for more information</p>
       </TextContainer>
 
-      <WaveBackgroundDesktop />
+      <WaveBackground />
     </Container>
 
     <FooterBar />

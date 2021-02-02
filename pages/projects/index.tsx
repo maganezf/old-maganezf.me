@@ -21,6 +21,7 @@ const ProjectsPage: React.FC = () => {
 
           <p>Project Page - 2</p>
         </TextContainer>
+
         <WaveBackground />
       </Container>
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { WaveBackgroundImgDesktop } from '../../src/assets/icons/WaveBackgroundImgDesktop';
+import { WaveBackgroundImgDesktop } from '../../src/styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -61,43 +61,42 @@ export const TextContainer = styled.div`
 export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   border-radius: 0px 0px 0px 50px;
 
-  max-width: 100vw;
-  max-height: 100vh;
+  height: 100vh;
 
   position: absolute;
 
   top: 0;
-  left: 0;
+  left: 0px;
   bottom: 0;
   right: 0;
 
-  @media (min-width: 760px) and (max-width: 1024px) {
-    /* top: 550px; */
+  @media (min-width: 1000px) {
+    width: 100vw;
   }
 
-  @media (height: 567px) {
-    top: 172px;
+  @media (min-width: 1024px) and (max-width: 1100px) {
+    top: 20vh;
   }
 
-  @media (max-height: 568px) and (min-height: 500px) {
-    height: 75vh;
+  @media (min-width: 750px) and (max-width: 1000px) {
+    top: 9vh;
   }
 
-  @media (min-width: 411px) {
-    height: 98vh;
+  @media (max-width: 411px) {
+    top: 5.5vh;
   }
 
-  @media (width: 375px) {
-    height: 100vh;
-
-    top: 0.9vh;
+  @media (max-width: 375px) {
+    top: 5vh;
+    left: -3vw;
   }
 
   @media (max-width: 320px) {
-    top: 53vh;
+    top: 46.5vh;
+    left: -59vw;
   }
 
-  @media (max-width: 319px) {
-    height: 380px;
+  @media (max-width: 280px) {
+    top: 8vh;
   }
 `;

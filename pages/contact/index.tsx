@@ -21,6 +21,7 @@ const ContactPage: React.FC = () => {
 
           <p>Contact Page - 2</p>
         </TextContainer>
+
         <WaveBackground />
       </Container>
 

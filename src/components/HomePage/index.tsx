@@ -26,8 +26,8 @@ const HomePage: React.FC<Props> = ({ children }) => {
           @import
           url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
           {/* Font Ubuntu 300, 400, 700*/}
-          @import
-          url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+          {/* @import
+          url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap'); */}
         </style>
       </Head>
 

@@ -1,13 +1,13 @@
 import type { AppProps } from 'next/app';
 
-import HomePage from '../src/components/HomePage';
+import IndexPage from '../src/components/IndexPage';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Component {...pageProps} />
 
-      <HomePage />
+      <IndexPage />
     </>
   );
 }

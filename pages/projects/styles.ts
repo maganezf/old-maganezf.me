@@ -50,10 +50,20 @@ export const ExperienceContainer = styled.div`
 
   > h3 {
     align-items: flex-start;
+
+    transition: 0.3s;
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   > li {
     text-align: start;
+
+    transition: 0.3s;
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   margin-bottom: 0.5rem;
@@ -68,9 +78,8 @@ export const ExperienceContainer = styled.div`
   /* font-weight: 400; */
 
   // desktop layout
-
   @media (min-width: 1000px) {
-    font-size: 21px;
+    font-size: 22px;
 
     margin-bottom: 12.5rem;
   }
@@ -101,10 +110,20 @@ export const ProjectsContainer = styled.div`
 
   > h3 {
     align-items: flex-start;
+
+    transition: 0.3s;
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   > li {
     text-align: start;
+
+    transition: 0.3s;
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   z-index: 2;
@@ -117,9 +136,8 @@ export const ProjectsContainer = styled.div`
   /* font-weight: 400; */
 
   // desktop layout
-
   @media (min-width: 1000px) {
-    font-size: 21px;
+    font-size: 22px;
   }
 
   @media (min-width: 760px) and (max-width: 999px) {
@@ -134,14 +152,20 @@ export const ProjectsContainer = styled.div`
 export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   border-radius: 0px 0px 0px 50px;
 
+  width: auto;
   height: 100vh;
 
   position: absolute;
 
-  top: 0;
+  top: 65px;
   left: 0px;
   bottom: 0;
   right: 0;
+
+  transition: 0.3s;
+  &:active {
+    opacity: 0.8;
+  }
 
   @media (min-width: 1000px) {
     width: 100vw;

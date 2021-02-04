@@ -30,7 +30,6 @@ const ProjectsPage: React.FC = () => {
 
         <ProjectsContainer>
           <h3>Projetos:</h3>
-
           <li>
             Para mais projetos fora este meu site atual hospedado atualmente,
             visite meu github para mais projetos realizados em estudos

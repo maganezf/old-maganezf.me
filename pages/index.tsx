@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 import HeaderBar from '../src/components/HeaderBar';
 import FooterBar from '../src/components/FooterBar';
@@ -14,17 +15,25 @@ import {
   HappyIcon,
   LocationIcon,
   GitHubIcon,
-  InfoIcon,
+  AboutMeIcon,
 } from './styles';
 
 const IndexPage: React.FC = () => (
   <>
     <HeaderBar />
 
+    <Head>
+      <title>Home | maganezf</title>
+    </Head>
+
     <Container>
       <ProfileContainer>
         <ImageProfile>
-          <img src="/static/profile_image.png" alt="Profile Image" />
+          <img
+            src="/static/profile_image.png"
+            loading="lazy"
+            alt="Profile Image"
+          />
         </ImageProfile>
 
         <DescriptionProfile>
@@ -43,8 +52,13 @@ const IndexPage: React.FC = () => (
         </Link>
         <p>maganezf</p>
 
-        <InfoIcon />
-        <p>Navigate to the contact page for more information</p>
+        <Link href="/about">
+          <AboutMeIcon />
+        </Link>
+        <p>
+          Click on the icon for more information about me, or navigate to the
+          about page
+        </p>
       </TextContainer>
 
       <WaveBackground />

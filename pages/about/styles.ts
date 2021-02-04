@@ -1,12 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-import {
-  WaveBackgroundImgDesktop,
-  HappyIconDarkTheme,
-  LocationIconDarkTheme,
-  GitHubIconDarkTheme,
-  AboutMeIconDarkTheme,
-} from '../src/styles/Icons';
+import { WaveBackgroundImgDesktop } from '../../src/styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -113,7 +107,6 @@ export const ImageProfile = styled.div`
 export const DescriptionProfile = styled.div`
   > h2 {
     text-align: left;
-
     padding: 0 5px;
 
     color: var(--icons-and-text-color-dark-theme);
@@ -147,33 +140,25 @@ export const DescriptionProfile = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  display: grid;
-
-  grid-template-columns: 0.1fr 3fr;
-
-  grid-template-areas: 'IconGrid' 'IconTextGrid';
+  display: flex;
+  flex-direction: column;
 
   z-index: 2;
 
   color: var(--icons-and-text-color-dark-theme);
 
-  > svg {
-    &:hover,
-    &:active {
-      opacity: 0.7;
-      transition: 0.2s;
-    }
+  margin-bottom: 50px;
 
-    &:nth-child(5),
-    &:nth-child(7) {
-      cursor: pointer;
-    }
-  }
+  font-size: 21px;
 
-  > p {
-    text-align: end;
+  /* font-family: Ubuntu; */
+  /* font-weight: 400; */
 
-    margin: 0 0 25px 25px;
+  > section {
+    color: var(--icons-and-text-color-dark-theme);
+    background-color: var(--border-profile-color);
+
+    border-radius: 5px;
 
     font-size: 22px;
 
@@ -182,16 +167,13 @@ export const TextContainer = styled.div`
       opacity: 0.5;
     }
 
-    /* font-family: Ubuntu; */
-    /* font-weight: 400; */
+    > a {
+      color: var(--primary-color);
+    }
   }
 
   // desktop layout
   @media (min-width: 1000px) {
-    > p {
-      margin-bottom: 50px;
-      text-align: center;
-    }
   }
 `;
 
@@ -242,31 +224,4 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   @media (max-width: 280px) {
     top: 8vh;
   }
-`;
-
-const iconSize = css`
-  width: 30px;
-  height: 30px;
-
-  // desktop layout
-  @media (min-width: 1000px) {
-    width: 40px;
-    height: 40px;
-  }
-`;
-
-export const HappyIcon = styled(HappyIconDarkTheme)`
-  ${iconSize};
-`;
-
-export const LocationIcon = styled(LocationIconDarkTheme)`
-  ${iconSize};
-`;
-
-export const GitHubIcon = styled(GitHubIconDarkTheme)`
-  ${iconSize};
-`;
-
-export const AboutMeIcon = styled(AboutMeIconDarkTheme)`
-  ${iconSize};
 `;

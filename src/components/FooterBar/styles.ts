@@ -7,7 +7,7 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-evenly;
 
-  padding: 15px;
+  padding: 15px 0px 15px 0px;
 
   width: 100vw;
   height: 10vh;
@@ -16,7 +16,7 @@ export const Container = styled.header`
 
   background: var(--primary-color);
 
-  border-radius: 1.5px 1.5px 0 0;
+  border-radius: 2px 2px 0 0;
 
   flex-shrink: 0;
 
@@ -28,7 +28,7 @@ export const Container = styled.header`
   z-index: 2;
 
   > button {
-    font-size: 24px;
+    font-size: 23px;
     background: none;
     color: var(--header-and-footer-text-color);
 
@@ -41,8 +41,15 @@ export const Container = styled.header`
     }
 
     // desktop layout
-    @media (min-width: 1000px) {
-      font-size: 23px;
+    @media (min-width: 1025px) {
+      font-size: 25px;
+
+      padding: 15px 50px 15px 50px;
+    }
+
+    @media (min-width: 760px) and (max-width: 1024px) {
+      font-size: 35px;
+      padding: 15px 50px 15px 50px;
     }
   }
 

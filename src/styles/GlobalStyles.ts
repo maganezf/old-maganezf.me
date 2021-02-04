@@ -6,14 +6,10 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 
-    /* Firefox */
-    scrollbar-width: none;
-    /* Chrome */
-    ::-webkit-scrollbar {
-      display: none;
+    ::selection {
+      background-color: var(--primary-color);
+      color: var(--icons-and-text-color-dark-theme);
     }
-
-
   }
 
   html, body, #root {
@@ -24,6 +20,13 @@ export default createGlobalStyle`
     @media (min-width: 1000px) {
       width: 100px;
       height: 100px;
+    }
+
+    /* Firefox */
+    scrollbar-width: none;
+    /* Chrome */
+    ::-webkit-scrollbar {
+      display: none;
     }
   }
 
@@ -39,6 +42,8 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
+  /* color dark: #262626 */
+
   :root {
     --primary-color: #101D42;
     --secondary-color:#E1E6E9;
@@ -53,6 +58,5 @@ export default createGlobalStyle`
     --icons-and-text-color-light-theme: rgba(37, 41, 51, 0.9);
 
     --header-and-footer-text-color: #F8F8FF;
-
   }
 `;

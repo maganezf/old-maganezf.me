@@ -4,14 +4,15 @@ import Head from 'next/head';
 import GlobalStyles from '../../styles/GlobalStyles';
 
 interface Props {
+  title?: string;
   children?: ReactNode;
 }
 
-const HomePage: React.FC<Props> = ({ children }) => {
+const IndexPage: React.FC<Props> = ({ title, children }) => {
   return (
     <>
       <Head>
-        <title>Home | Maganez</title>
+        <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="theme-color" content="#101D42" />
@@ -37,4 +38,4 @@ const HomePage: React.FC<Props> = ({ children }) => {
   );
 };
 
-export default HomePage;
+export default IndexPage;

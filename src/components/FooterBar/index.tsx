@@ -13,7 +13,7 @@ const FooterBar: React.FC = () => {
       <LineSeparator />
 
       <Link href="/contact">
-        <button>Contact me</button>
+        <button>Contact</button>
       </Link>
     </Container>
   );

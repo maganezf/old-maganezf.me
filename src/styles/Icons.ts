@@ -16,7 +16,7 @@ export { LinkedInIconLightTheme } from '../assets/icons/LinkedInIconLightTheme';
 export { LocationIconDarkTheme } from '../assets/icons/LocationIconDarkTheme';
 export { LocationIconLightTheme } from '../assets/icons/LocationIconLightTheme';
 
-export { InfoIconDarkTheme } from '../assets/icons/InfoIconDarkTheme';
+export { AboutMeIconDarkTheme } from '../assets/icons/AboutMeIconDarkTheme';
 export { InfoIconLightTheme } from '../assets/icons/InfoIconLightTheme';
 
 export { TwitterIconDarkTheme } from '../assets/icons/TwitterIconDarkTheme';

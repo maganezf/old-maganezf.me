@@ -18,8 +18,8 @@ export default createGlobalStyle`
 
     // desktop layout
     @media (min-width: 1000px) {
-      width: 100px;
-      height: 100px;
+      width: 100%;
+      height: 100%;
     }
 
     /* Firefox */
@@ -35,7 +35,7 @@ export default createGlobalStyle`
     border: 0;
     outline: 0;
 
-    font-family: 'Poppins', 'Ubuntu', sans-serif, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
   }
 
   button {

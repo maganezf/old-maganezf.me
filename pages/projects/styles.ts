@@ -1,4 +1,21 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+import { BsFillBootstrapFill } from 'react-icons/bs';
+import { DiSqllite } from 'react-icons/di';
+import {
+  SiHtml5,
+  SiCss3,
+  SiGit,
+  SiGithub,
+  SiJavascript,
+  SiTypescript,
+  SiMongodb,
+  SiNextDotJs,
+  SiNodeDotJs,
+  SiReact,
+  SiSass,
+  SiTailwindcss,
+} from 'react-icons/si';
 
 import { WaveBackgroundImgDesktop } from '../../src/styles/Icons';
 
@@ -8,10 +25,13 @@ export const Container = styled.div`
 
   overflow: hidden;
 
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
 
-  justify-content: center;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-areas: 'ExperienceContainer' 'TechsIcons';
 
   padding: 0 15px;
 
@@ -42,11 +62,13 @@ export const Container = styled.div`
 export const ExperienceContainer = styled.div`
   width: 50vw;
 
+  grid-area: 'ExperienceContainer';
+
   display: flex;
   flex-direction: column;
 
   align-items: flex-start;
-  align-self: flex-start;
+  align-self: center;
 
   > h3 {
     align-items: flex-start;
@@ -66,8 +88,6 @@ export const ExperienceContainer = styled.div`
     }
   }
 
-  margin-bottom: 0.5rem;
-
   z-index: 2;
 
   color: var(--icons-and-text-color-dark-theme);
@@ -81,17 +101,17 @@ export const ExperienceContainer = styled.div`
   @media (min-width: 1000px) {
     font-size: 22px;
 
-    margin-bottom: 12.5rem;
+    /* margin-bottom: 12.5rem; */
   }
 
   @media (min-width: 760px) and (max-width: 999px) {
     font-size: 29.5px;
 
-    margin-bottom: 12.5rem;
+    /* margin-bottom: 12.5rem; */
   }
 
   @media (min-width: 400px) and (max-width: 759px) {
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
   }
 
   @media (max-width: 280px) {
@@ -99,17 +119,94 @@ export const ExperienceContainer = styled.div`
   }
 `;
 
-export const ProjectsContainer = styled.div`
-  width: 50vw;
+export const TitleTechsIcons = styled.div`
+  grid-area: 'TechsIcons';
 
   display: flex;
   flex-direction: column;
 
+  width: auto;
+  height: 10vh;
+
   align-items: flex-start;
-  align-self: flex-end;
+  align-self: center;
+
+  justify-self: flex-end;
+
+  z-index: 2;
 
   > h3 {
+    color: var(--icons-and-text-color-dark-theme);
+
+    font-size: 18.5px;
+
     align-items: flex-start;
+
+    transition: 0.3s;
+    &:active {
+      opacity: 0.5;
+    }
+
+    // desktop layout
+    @media (min-width: 1000px) {
+      font-size: 22px;
+    }
+
+    @media (min-width: 760px) and (max-width: 999px) {
+      font-size: 29.5px;
+
+      /* margin-bottom: 12.5rem; */
+    }
+
+    @media (min-width: 400px) and (max-width: 759px) {
+      /* margin-bottom: 5rem; */
+    }
+
+    @media (max-width: 280px) {
+      font-size: 17.5px;
+    }
+  }
+`;
+
+export const TechsIcons = styled.div`
+  width: auto;
+
+  display: flex;
+
+  align-items: center;
+  align-self: center;
+
+  justify-self: center;
+
+  > a {
+    margin-right: 0.8rem;
+
+    z-index: 2;
+
+    cursor: default;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    transition: 0.3s;
+    &:active,
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+`;
+
+export const ProjectsContainer = styled.div`
+  width: 48vw;
+
+  display: flex;
+  flex-direction: column;
+
+  align-self: center;
+
+  > h3 {
+    align-items: flex-end;
 
     transition: 0.3s;
     &:active {
@@ -123,6 +220,12 @@ export const ProjectsContainer = styled.div`
     transition: 0.3s;
     &:active {
       opacity: 0.5;
+    }
+
+    > a {
+      text-decoration: none;
+      font-weight: bold;
+      color: var(--icons-and-text-color-dark-theme);
     }
   }
 
@@ -146,6 +249,53 @@ export const ProjectsContainer = styled.div`
 
   @media (max-width: 280px) {
     font-size: 17.5px;
+  }
+`;
+
+export const IconsProjects = styled.div`
+  width: auto;
+  height: 10vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  align-self: center;
+
+  justify-self: center;
+
+  z-index: 2;
+
+  > h3 {
+    align-items: flex-start;
+
+    color: var(--icons-and-text-color-dark-theme);
+
+    font-size: 18.5px;
+
+    transition: 0.3s;
+    &:active {
+      opacity: 0.5;
+    }
+
+    // desktop layout
+    @media (min-width: 1000px) {
+      font-size: 22px;
+    }
+
+    @media (min-width: 760px) and (max-width: 999px) {
+      font-size: 29.5px;
+
+      /* margin-bottom: 12.5rem; */
+    }
+
+    @media (min-width: 400px) and (max-width: 759px) {
+      /* margin-bottom: 5rem; */
+    }
+
+    @media (max-width: 280px) {
+      font-size: 17.5px;
+    }
   }
 `;
 
@@ -196,4 +346,80 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   @media (max-width: 280px) {
     top: 8vh;
   }
+`;
+
+const iconsCSS = css`
+  fill: var(--icons-and-text-color-dark-theme);
+
+  transition: 0.3s;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+
+  width: 30px;
+  height: 30px;
+
+  // desktop layout
+  @media (min-width: 1000px) {
+    width: 25px;
+    height: 25px;
+  }
+`;
+
+export const ReactJsIcon = styled(SiReact)`
+  ${iconsCSS};
+`;
+
+export const NextJsIcon = styled(SiNextDotJs)`
+  ${iconsCSS};
+`;
+
+export const HtmlIcon = styled(SiHtml5)`
+  ${iconsCSS};
+`;
+
+export const CssIcon = styled(SiCss3)`
+  ${iconsCSS};
+`;
+
+export const SassIcon = styled(SiSass)`
+  ${iconsCSS};
+`;
+
+export const TailwindCssIcon = styled(SiTailwindcss)`
+  ${iconsCSS};
+`;
+
+export const BootstrapIcon = styled(BsFillBootstrapFill)`
+  ${iconsCSS};
+`;
+
+export const JsIcon = styled(SiJavascript)`
+  ${iconsCSS};
+`;
+
+export const TsIcon = styled(SiTypescript)`
+  ${iconsCSS};
+`;
+
+export const GitIcon = styled(SiGit)`
+  ${iconsCSS};
+`;
+
+export const GitHubIcon = styled(SiGithub)`
+  ${iconsCSS};
+`;
+
+export const MongoDBIcon = styled(SiMongodb)`
+  ${iconsCSS};
+`;
+
+export const SqliteIcon = styled(DiSqllite)`
+  ${iconsCSS};
+`;
+
+export const NodeJsIcon = styled(SiNodeDotJs)`
+  ${iconsCSS};
 `;

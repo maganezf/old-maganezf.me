@@ -1,12 +1,11 @@
 import styled, { css } from 'styled-components';
 
-import {
-  WaveBackgroundImgDesktop,
-  HappyIconDarkTheme,
-  LocationIconDarkTheme,
-  GitHubIconDarkTheme,
-  AboutMeIconDarkTheme,
-} from '../src/styles/Icons';
+import { RiChatSmile2Fill } from 'react-icons/ri';
+import { MdLocationOn } from 'react-icons/md';
+import { SiGithub } from 'react-icons/si';
+import { BsPersonFill } from 'react-icons/bs';
+
+import { WaveBackgroundImgDesktop } from '../src/styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -157,16 +156,13 @@ export const TextContainer = styled.div`
 
   color: var(--icons-and-text-color-dark-theme);
 
-  > svg {
+  > a {
+    height: 0;
+    transition: 0.3s;
+
     &:hover,
     &:active {
-      opacity: 0.7;
-      transition: 0.2s;
-    }
-
-    &:nth-child(5),
-    &:nth-child(7) {
-      cursor: pointer;
+      opacity: 0.5;
     }
   }
 
@@ -244,7 +240,16 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   }
 `;
 
-const iconSize = css`
+const iconsCSS = css`
+  fill: var(--icons-and-text-color-dark-theme);
+
+  transition: 0.3s;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+
   width: 30px;
   height: 30px;
 
@@ -255,18 +260,18 @@ const iconSize = css`
   }
 `;
 
-export const HappyIcon = styled(HappyIconDarkTheme)`
-  ${iconSize};
+export const HappyIcon = styled(RiChatSmile2Fill)`
+  ${iconsCSS};
 `;
 
-export const LocationIcon = styled(LocationIconDarkTheme)`
-  ${iconSize};
+export const LocationIcon = styled(MdLocationOn)`
+  ${iconsCSS};
 `;
 
-export const GitHubIcon = styled(GitHubIconDarkTheme)`
-  ${iconSize};
+export const GitHubIcon = styled(SiGithub)`
+  ${iconsCSS};
 `;
 
-export const AboutMeIcon = styled(AboutMeIconDarkTheme)`
-  ${iconSize};
+export const AboutMeIcon = styled(BsPersonFill)`
+  ${iconsCSS};
 `;

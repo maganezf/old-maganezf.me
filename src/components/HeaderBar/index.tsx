@@ -9,6 +9,7 @@ const HeaderBar: React.FC = () => {
     <>
       <Container>
         <CodeIcon />
+
         <SunIconDarkTheme />
 
         <div className="a">

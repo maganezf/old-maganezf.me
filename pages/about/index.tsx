@@ -44,11 +44,15 @@ const AboutPage: React.FC = () => {
           <section>
             I was born in{' '}
             <Link href="https://www.google.com/maps/place/Guarabira,+State+of+Para%C3%ADba/@-6.8640922,-35.5155381">
-              <a>Guarabira</a>
+              <a target="_blank" rel="noopener noreferrer">
+                Guarabira
+              </a>
             </Link>{' '}
             - PB, Brazil, and have been living in{' '}
             <Link href="https://www.google.com/maps/place/Bananeiras+-+State+of+Para%C3%ADba/@-6.6960919,-35.6751471">
-              <a>Bananeiras</a>
+              <a target="_blank" rel="noopener noreferrer">
+                Bananeiras
+              </a>
             </Link>{' '}
             - PB, Brazil, to this day.
           </section>

@@ -1,12 +1,10 @@
 import styled, { css } from 'styled-components';
 
-import {
-  WaveBackgroundImgDesktop,
-  EmailIconDarkTheme,
-  LinkedInIconDarkTheme,
-  TwitterIconDarkTheme,
-  InstagramIconDarkTheme,
-} from '../../src/styles/Icons';
+import { IoIosMail } from 'react-icons/io';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { SiTwitter, SiInstagram } from 'react-icons/si';
+
+import { WaveBackgroundImgDesktop } from '../../src/styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -15,6 +13,7 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
 
+  /* overflow-x: hidden; */
   overflow: hidden;
 
   padding: 0 15px;
@@ -38,7 +37,7 @@ export const Container = styled.div`
     color: var(--icons-and-text-color-dark-theme);
     font-size: 21px;
 
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 2.5rem 0;
 
     transition: 0.3s;
     &:active {
@@ -46,6 +45,10 @@ export const Container = styled.div`
     }
 
     z-index: 2;
+  }
+
+  @media (min-width: 750px) and (max-width: 1100px) {
+    overflow: hidden;
   }
 
   @media (max-width: 420px) {
@@ -68,24 +71,42 @@ export const ProfileContainer = styled.div`
 
   justify-content: center;
 
-  margin: 0 15px 10vh 15px;
+  margin: 15rem 15px 0 15px;
 
   z-index: 2;
 
-  @media (min-width: 320px) and (max-width: 360px) {
-    margin-bottom: 0;
+  @media (min-width: 530px) and (max-width: 700px) {
+    margin-top: 10rem;
+  }
+
+  @media (min-width: 400px) and (max-width: 500px) {
+    margin-top: 6rem;
+  }
+
+  @media (max-width: 375px) {
+    margin-top: 10rem;
+  }
+
+  @media (max-width: 320px) {
+    margin-top: 10rem;
+  }
+
+  @media (max-width: 280px) {
+    margin-top: 8rem;
   }
 
   // tablet layout
-  @media (min-width: 750px) and (max-width: 999px) {
+  @media (min-width: 750px) and (max-width: 1024px) {
     align-items: center;
-    margin-bottom: 20vh;
+    margin-top: 0rem;
   }
 
   // desktop layout
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     align-items: center;
-    margin-bottom: 1rem;
+
+    margin: 1rem 15px 1rem 15px;
+    /* margin: 10rem 15px 1rem 15px; */
   }
 `;
 
@@ -164,7 +185,7 @@ export const IconsContainer = styled.div`
 
   margin-bottom: 10vh;
 
-  > svg {
+  > a {
     margin-right: 15vw;
 
     transition: 0.3s;
@@ -172,10 +193,10 @@ export const IconsContainer = styled.div`
     &:hover {
       opacity: 0.5;
     }
-  }
 
-  > svg:last-child {
-    margin-right: 0px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   // desktop layout
@@ -191,7 +212,7 @@ export const TextContainer = styled.div`
 
   color: var(--icons-and-text-color-dark-theme);
 
-  margin-bottom: 50px;
+  margin-bottom: 4.5rem;
 
   font-size: 21px;
 
@@ -209,6 +230,11 @@ export const TextContainer = styled.div`
 
   // desktop layout
   @media (min-width: 1000px) {
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1100px) {
+    margin-bottom: 0;
   }
 `;
 
@@ -220,6 +246,7 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
 
   position: absolute;
 
+  /* top: 8.8rem; */
   top: 65px;
   left: 0;
   bottom: 0;
@@ -237,32 +264,41 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   }
 
   @media (min-width: 1024px) and (max-width: 1100px) {
-    top: 20vh;
+    top: 30rem;
   }
 
   @media (min-width: 750px) and (max-width: 1000px) {
-    top: 9vh;
+    /* top: 9vh; */
   }
 
   @media (max-width: 411px) {
-    top: 5.5vh;
+    /* top: 5.5vh; */
   }
 
   @media (max-width: 375px) {
-    top: 5vh;
+    /* top: 5vh; */
   }
 
   @media (max-width: 320px) {
-    top: 46.5vh;
+    /* top: 46.5vh; */
     left: -15vw;
   }
 
   @media (max-width: 280px) {
-    top: 8vh;
+    /* top: 8vh; */
   }
 `;
 
-const iconSize = css`
+const iconsCSS = css`
+  fill: var(--icons-and-text-color-dark-theme);
+
+  transition: 0.3s;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+
   width: 30px;
   height: 30px;
 
@@ -273,18 +309,18 @@ const iconSize = css`
   }
 `;
 
-export const EmailIcon = styled(EmailIconDarkTheme)`
-  ${iconSize}
+export const EmailIcon = styled(IoIosMail)`
+  ${iconsCSS}
 `;
 
-export const LinkedInIcon = styled(LinkedInIconDarkTheme)`
-  ${iconSize}
+export const LinkedInIcon = styled(FaLinkedinIn)`
+  ${iconsCSS}
 `;
 
-export const TwitterIcon = styled(TwitterIconDarkTheme)`
-  ${iconSize}
+export const TwitterIcon = styled(SiTwitter)`
+  ${iconsCSS}
 `;
 
-export const InstagramIcon = styled(InstagramIconDarkTheme)`
-  ${iconSize}
+export const InstagramIcon = styled(SiInstagram)`
+  ${iconsCSS}
 `;

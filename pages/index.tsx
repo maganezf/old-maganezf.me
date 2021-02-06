@@ -48,12 +48,16 @@ const IndexPage: React.FC = () => (
         <p>Bananeiras, Paraíba, Brazil</p>
 
         <Link href="https://github.com/maganezf">
-          <GitHubIcon />
+          <a target="_blank" rel="noopener noreferrer">
+            <GitHubIcon />
+          </a>
         </Link>
         <p>maganezf</p>
 
         <Link href="/about">
-          <AboutMeIcon />
+          <a target="_blank" rel="noopener noreferrer">
+            <AboutMeIcon />
+          </a>
         </Link>
         <p>
           Click on the icon for more information about me, or navigate to the

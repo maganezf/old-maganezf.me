@@ -47,19 +47,27 @@ const ContactPage: React.FC = () => {
 
         <IconsContainer>
           <Link href="mailto:maganezfilho@gmail.com">
-            <EmailIcon />
+            <a target="_blank" rel="noopener noreferrer">
+              <EmailIcon />
+            </a>
           </Link>
 
           <Link href="https://www.linkedin.com/in/maganez-filho-b5813b188/">
-            <LinkedInIcon />
+            <a target="_blank" rel="noopener noreferrer">
+              <LinkedInIcon />
+            </a>
           </Link>
 
           <Link href="https://twitter.com/maganez_">
-            <TwitterIcon />
+            <a target="_blank" rel="noopener noreferrer">
+              <TwitterIcon />
+            </a>
           </Link>
 
           <Link href="https://www.instagram.com/maganezf/">
-            <InstagramIcon />
+            <a target="_blank" rel="noopener noreferrer">
+              <InstagramIcon />
+            </a>
           </Link>
         </IconsContainer>
 

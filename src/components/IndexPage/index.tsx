@@ -4,15 +4,14 @@ import Head from 'next/head';
 import GlobalStyles from '../../styles/GlobalStyles';
 
 interface Props {
-  title?: string;
   children?: ReactNode;
 }
 
-const IndexPage: React.FC<Props> = ({ title, children }) => {
+const IndexPage: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>Home | Maganez</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="theme-color" content="#101D42" />
@@ -26,9 +25,6 @@ const IndexPage: React.FC<Props> = ({ title, children }) => {
           {/* Font Poppins 300, 400, 700 */}
           @import
           url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-          {/* Font Ubuntu 300, 400, 700*/}
-          {/* @import
-          url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap'); */}
         </style>
       </Head>
 

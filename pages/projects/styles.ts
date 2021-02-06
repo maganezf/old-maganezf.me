@@ -23,9 +23,12 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
 
+  z-index: 2;
+
   overflow: hidden;
 
   /* display: flex; */
+  /* flex-direction: column; */
 
   display: grid;
 
@@ -38,9 +41,8 @@ export const Container = styled.div`
   border-radius: 30px 30px 0 50px;
 
   background: var(--background-color-dark-theme);
-
-  /* background-size: cover;
-  background-position: center; */
+  background-size: cover;
+  background-position: center;
 
   position: absolute;
   top: 60px;
@@ -165,6 +167,17 @@ export const TitleTechsIcons = styled.div`
     @media (max-width: 280px) {
       font-size: 17.5px;
     }
+
+    @media (max-width: 1000px) {
+      width: 9rem;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    align-self: center;
+    justify-content: center;
+
+    justify-self: center;
   }
 `;
 
@@ -195,6 +208,26 @@ export const TechsIcons = styled.div`
       opacity: 0.5;
     }
   }
+
+  @media (max-width: 1000px) {
+    width: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    > a {
+      &:last-child {
+        margin-right: 0.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 280px) {
+    width: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 export const ProjectsContainer = styled.div`
@@ -204,6 +237,8 @@ export const ProjectsContainer = styled.div`
   flex-direction: column;
 
   align-self: center;
+
+  margin-bottom: 2rem;
 
   > h3 {
     align-items: flex-end;
@@ -253,15 +288,16 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const IconsProjects = styled.div`
-  width: auto;
+  width: 50vw;
   height: 10vh;
 
   display: flex;
   flex-direction: column;
 
-  align-items: center;
+  align-items: flex-start;
   align-self: center;
 
+  justify-content: center;
   justify-self: center;
 
   z-index: 2;
@@ -297,6 +333,10 @@ export const IconsProjects = styled.div`
       font-size: 17.5px;
     }
   }
+
+  @media (max-width: 1000px) {
+    width: 49.9vw;
+  }
 `;
 
 export const WaveBackground = styled(WaveBackgroundImgDesktop)`
@@ -304,6 +344,8 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
 
   width: auto;
   height: 100vh;
+
+  z-index: 0;
 
   position: absolute;
 
@@ -358,8 +400,8 @@ const iconsCSS = css`
     opacity: 0.5;
   }
 
-  width: 30px;
-  height: 30px;
+  width: 23px;
+  height: 23px;
 
   // desktop layout
   @media (min-width: 1000px) {

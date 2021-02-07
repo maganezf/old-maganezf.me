@@ -246,17 +246,14 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
 
   position: absolute;
 
-  /* top: 8.8rem; */
-  top: 65px;
+  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
 
-  > svg {
-    transition: 0.3s;
-    &:active {
-      opacity: 0.7;
-    }
+  transition: 0.3s;
+  &:active {
+    opacity: 0.85;
   }
 
   @media (min-width: 1000px) {
@@ -268,24 +265,24 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   }
 
   @media (min-width: 750px) and (max-width: 1000px) {
-    /* top: 9vh; */
+    top: 9vh;
   }
 
   @media (max-width: 411px) {
-    /* top: 5.5vh; */
+    top: 5.5vh;
   }
 
   @media (max-width: 375px) {
-    /* top: 5vh; */
+    top: 5vh;
   }
 
   @media (max-width: 320px) {
-    /* top: 46.5vh; */
+    top: 46vh;
     left: -15vw;
   }
 
   @media (max-width: 280px) {
-    /* top: 8vh; */
+    top: 8vh;
   }
 `;
 

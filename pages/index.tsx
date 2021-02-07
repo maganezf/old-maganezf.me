@@ -45,7 +45,7 @@ const IndexPage: React.FC = () => (
         <p>Hello! I’m Maganez, and I have love for Develop Systems</p>
 
         <LocationIcon />
-        <p>Bananeiras, Paraíba, Brazil</p>
+        <p>Bananeiras-PB, Brazil</p>
 
         <Link href="https://github.com/maganezf">
           <a target="_blank" rel="noopener noreferrer">
@@ -60,8 +60,7 @@ const IndexPage: React.FC = () => (
           </a>
         </Link>
         <p>
-          Click on the icon for more information about me, or navigate to the
-          about page
+          For more about me, click on the icon or navigate to the about page
         </p>
       </TextContainer>
 

@@ -63,7 +63,15 @@ export const ProfileContainer = styled.div`
 
   z-index: 2;
 
-  @media (min-width: 320px) and (max-width: 360px) {
+  @media (max-width: 280px) {
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 360px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 320px) {
     margin-bottom: 20px;
   }
 
@@ -156,6 +164,8 @@ export const TextContainer = styled.div`
 
   color: var(--icons-and-text-color-dark-theme);
 
+  overflow: hidden;
+
   > a {
     height: 0;
     transition: 0.3s;
@@ -167,7 +177,10 @@ export const TextContainer = styled.div`
   }
 
   > p {
-    text-align: end;
+    /* font-family: Ubuntu; */
+    /* font-weight: 400; */
+
+    text-align: left;
 
     margin: 0 0 25px 25px;
 
@@ -178,13 +191,12 @@ export const TextContainer = styled.div`
       opacity: 0.5;
     }
 
-    /* font-family: Ubuntu; */
-    /* font-weight: 400; */
-  }
+    @media (min-width: 280px) and (max-width: 320px) {
+      font-size: 21px;
+    }
 
-  // desktop layout
-  @media (min-width: 1000px) {
-    > p {
+    // tablet and desktop layout
+    @media (min-width: 800px) {
       margin-bottom: 50px;
       text-align: center;
     }
@@ -197,16 +209,18 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   width: auto;
   height: 100vh;
 
+  overflow: hidden;
+
   position: absolute;
 
-  top: 65px;
-  left: 0px;
+  top: 0;
+  left: 0;
   bottom: 0;
   right: 0;
 
   transition: 0.3s;
   &:active {
-    opacity: 0.8;
+    opacity: 0.85;
   }
 
   @media (min-width: 1000px) {
@@ -214,7 +228,7 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   }
 
   @media (min-width: 1024px) and (max-width: 1100px) {
-    top: 20vh;
+    top: 30rem;
   }
 
   @media (min-width: 750px) and (max-width: 1000px) {
@@ -227,12 +241,11 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
 
   @media (max-width: 375px) {
     top: 5vh;
-    left: -3vw;
   }
 
   @media (max-width: 320px) {
-    top: 46.5vh;
-    left: -59vw;
+    top: 46vh;
+    left: -15vw;
   }
 
   @media (max-width: 280px) {

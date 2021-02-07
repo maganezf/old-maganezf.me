@@ -169,6 +169,8 @@ export const TextContainer = styled.div`
 
     > a {
       color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
     }
   }
 
@@ -185,14 +187,14 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
 
   position: absolute;
 
-  top: 65px;
-  left: 0px;
+  top: 0;
+  left: 0;
   bottom: 0;
   right: 0;
 
   transition: 0.3s;
   &:active {
-    opacity: 0.8;
+    opacity: 0.85;
   }
 
   @media (min-width: 1000px) {
@@ -200,7 +202,7 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   }
 
   @media (min-width: 1024px) and (max-width: 1100px) {
-    top: 20vh;
+    top: 30rem;
   }
 
   @media (min-width: 750px) and (max-width: 1000px) {
@@ -213,12 +215,11 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
 
   @media (max-width: 375px) {
     top: 5vh;
-    left: -3vw;
   }
 
   @media (max-width: 320px) {
-    top: 46.5vh;
-    left: -59vw;
+    top: 46vh;
+    left: -15vw;
   }
 
   @media (max-width: 280px) {

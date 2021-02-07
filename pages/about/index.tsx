@@ -56,6 +56,18 @@ const AboutPage: React.FC = () => {
             </Link>{' '}
             - PB, Brazil, to this day.
           </section>
+
+          {/* <img
+            src="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/bananeiras-paraiba.jpeg?quality=100&strip=info&w=842"
+            alt="Bananeiras PB"
+            style={{ width: 300, height: 300 }}
+          ></img>
+
+          <img
+            src="https://pbs.twimg.com/media/CxPqyTUUcAA2epV.jpg"
+            alt="Guarabira PB"
+            style={{ width: 300, height: 300 }}
+          ></img> */}
         </TextContainer>
 
         <WaveBackground />

@@ -42,7 +42,9 @@ const IndexPage: React.FC = () => (
       </ProfileContainer>
       <TextContainer>
         <HappyIcon />
-        <p>Hello! I’m Maganez, and I have love for Develop Systems</p>
+        <p className="hello">
+          I’m Maganez, and I have love for Develop Systems
+        </p>
 
         <LocationIcon />
         <p>Bananeiras-PB, Brazil</p>

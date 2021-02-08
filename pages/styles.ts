@@ -176,6 +176,14 @@ export const TextContainer = styled.div`
     }
   }
 
+  .hello::before {
+    content: 'Hello! ';
+
+    @media (max-width: 1000px) {
+      display: block;
+    }
+  }
+
   > p {
     /* font-family: Ubuntu; */
     /* font-weight: 400; */

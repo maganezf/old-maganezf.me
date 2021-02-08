@@ -179,7 +179,7 @@ export const TextContainer = styled.div`
   .hello::before {
     content: 'Hello! ';
 
-    @media (max-width: 1000px) {
+    @media (max-width: 799px) {
       display: block;
     }
   }

@@ -57,7 +57,7 @@ const IndexPage: React.FC = () => (
         <p>maganezf</p>
 
         <Link href="/about">
-          <a target="_blank" rel="noopener noreferrer">
+          <a /* target="_blank" rel="noopener noreferrer" */>
             <AboutMeIcon />
           </a>
         </Link>

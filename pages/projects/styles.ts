@@ -215,7 +215,7 @@ export const TechsIcons = styled.div`
     width: auto;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     > a {
       &:last-child {
@@ -228,7 +228,7 @@ export const TechsIcons = styled.div`
     width: auto;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 
@@ -349,6 +349,9 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
 
   z-index: 0;
 
+  overflow: hidden;
+
+  display: block;
   position: absolute;
 
   top: 0;

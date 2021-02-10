@@ -217,8 +217,11 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   width: auto;
   height: 100vh;
 
+  z-index: 0;
+
   overflow: hidden;
 
+  display: block;
   position: absolute;
 
   top: 0;

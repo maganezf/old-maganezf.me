@@ -11,7 +11,6 @@ const IndexPage: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Home | Maganez</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="theme-color" content="#101D42" />

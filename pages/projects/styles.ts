@@ -404,6 +404,10 @@ const iconsCSS = css`
     opacity: 0.5;
   }
 
+  &:hover {
+    transform: translate3d(0, -2px, 0);
+  }
+
   width: 23px;
   height: 23px;
 

@@ -230,7 +230,59 @@ export const TechsIcons = styled.div`
   }
 `;
 
-export const ProjectsContainer = styled.div`
+export const FirstProjectsContainer = styled.div`
+  width: 50vw;
+  height: 10vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  align-self: center;
+
+  justify-content: center;
+  justify-self: center;
+
+  z-index: 2;
+
+  > h3 {
+    align-items: flex-start;
+
+    color: ${(props) => props.theme.iconsTextColor};
+
+    font-size: 18.5px;
+
+    transition: 0.3s;
+    &:active {
+      opacity: 0.5;
+    }
+
+    // desktop layout
+    @media (min-width: 1000px) {
+      font-size: 22px;
+    }
+
+    @media (min-width: 760px) and (max-width: 999px) {
+      font-size: 29.5px;
+
+      /* margin-bottom: 12.5rem; */
+    }
+
+    @media (min-width: 400px) and (max-width: 759px) {
+      /* margin-bottom: 5rem; */
+    }
+
+    @media (max-width: 280px) {
+      font-size: 17.5px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    width: 49.9vw;
+  }
+`;
+
+export const SecondProjectsContainer = styled.div`
   width: 48vw;
 
   display: flex;
@@ -282,58 +334,6 @@ export const ProjectsContainer = styled.div`
 
   @media (max-width: 280px) {
     font-size: 17.5px;
-  }
-`;
-
-export const IconsProjects = styled.div`
-  width: 50vw;
-  height: 10vh;
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: flex-start;
-  align-self: center;
-
-  justify-content: center;
-  justify-self: center;
-
-  z-index: 2;
-
-  > h3 {
-    align-items: flex-start;
-
-    color: ${(props) => props.theme.iconsTextColor};
-
-    font-size: 18.5px;
-
-    transition: 0.3s;
-    &:active {
-      opacity: 0.5;
-    }
-
-    // desktop layout
-    @media (min-width: 1000px) {
-      font-size: 22px;
-    }
-
-    @media (min-width: 760px) and (max-width: 999px) {
-      font-size: 29.5px;
-
-      /* margin-bottom: 12.5rem; */
-    }
-
-    @media (min-width: 400px) and (max-width: 759px) {
-      /* margin-bottom: 5rem; */
-    }
-
-    @media (max-width: 280px) {
-      font-size: 17.5px;
-    }
-  }
-
-  @media (max-width: 1000px) {
-    width: 49.9vw;
   }
 `;
 

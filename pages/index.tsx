@@ -29,12 +29,13 @@ const IndexPage: React.FC<Props> = ({ toggleTheme }) => {
             <img
               src="/static/profile_image.png"
               loading="lazy"
+              title="Profile Image"
               alt="Profile Image"
             />
           </ImageProfile>
 
           <DescriptionProfile>
-            <h2>System Developer, with focus on FrontEnd</h2>
+            <h1>System Developer, with focus on FrontEnd</h1>
           </DescriptionProfile>
         </ProfileContainer>
         <TextContainer>

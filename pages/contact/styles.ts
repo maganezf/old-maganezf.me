@@ -141,7 +141,7 @@ export const ImageProfile = styled.div`
 `;
 
 export const DescriptionProfile = styled.div`
-  > h2 {
+  > h1 {
     text-align: left;
 
     padding: 0 5px;

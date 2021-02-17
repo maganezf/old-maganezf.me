@@ -6,6 +6,8 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 
+    -webkit-font-smoothing: antialiased;
+
     ::selection {
       background-color: ${(props) => props.theme.primaryColor};
       color: ${(props) => props.theme.selectionTextColor};

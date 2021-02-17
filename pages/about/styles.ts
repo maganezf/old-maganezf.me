@@ -105,7 +105,7 @@ export const ImageProfile = styled.div`
 `;
 
 export const DescriptionProfile = styled.div`
-  > h2 {
+  > h1 {
     text-align: left;
     padding: 0 5px;
 
@@ -150,23 +150,25 @@ export const TextContainer = styled.div`
   font-size: 21px;
 
   > section {
-    color: ${(props) => props.theme.iconsTextColor};
-    background-color: ${(props) => props.theme.borderProfileColor};
+    > p {
+      color: ${(props) => props.theme.iconsTextColor};
+      background-color: ${(props) => props.theme.borderProfileColor};
 
-    border-radius: 5px;
+      border-radius: 5px;
 
-    font-size: 22px;
+      font-size: 22px;
 
-    transition: 0.3s;
-    &:active {
-      opacity: 0.5;
-    }
+      transition: 0.3s;
+      &:active {
+        opacity: 0.5;
+      }
 
-    > a {
-      color: ${(props) => props.theme.primaryColor};
+      > a {
+        color: ${(props) => props.theme.primaryColor};
 
-      text-decoration: none;
-      font-weight: bold;
+        text-decoration: none;
+        font-weight: bold;
+      }
     }
   }
 

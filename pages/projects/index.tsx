@@ -24,8 +24,8 @@ import {
   GitHubIcon,
   MongoDBIcon,
   SqliteIcon,
-  ProjectsContainer,
-  IconsProjects,
+  FirstProjectsContainer,
+  SecondProjectsContainer,
   WaveBackground,
 } from './styles';
 
@@ -42,8 +42,15 @@ const ProjectsPage: React.FC<Props> = ({ toggleTheme }) => {
         <ExperienceContainer>
           <h3>Experiência:</h3>
 
-          <li>Graduação: Graduando em Sistemas de Informação, UFPB</li>
-          <li>Estudando atualmente em: React, NextJS, Typescript, HTML, CSS</li>
+          <li>
+            Formação: Atualmente graduando em bacharelado em Sistemas de
+            Informação, pela UFPB
+          </li>
+          <li>
+            Atualmente com foco em tecnologias Front-end (ReactJS, NextJS,
+            UI/UX, Motion Design, Javascript, Typescript, CSS, Sass, Styled
+            Components, TailwindCSS, JQuery, GSAP Library e Bootstrap).{' '}
+          </li>
         </ExperienceContainer>
 
         <TitleTechsIcons>
@@ -130,14 +137,14 @@ const ProjectsPage: React.FC<Props> = ({ toggleTheme }) => {
           </TechsIcons>
         </TitleTechsIcons>
 
-        <IconsProjects>
+        <FirstProjectsContainer>
           <h3>Some others projects:</h3>
-        </IconsProjects>
+        </FirstProjectsContainer>
 
-        <ProjectsContainer>
+        <SecondProjectsContainer>
           <h3>Projetos:</h3>
           <li>
-            Para mais projetos fora este meu site atual hospedado atualmente,
+            Para mais projetos,
             {''}{' '}
             <a
               href="https://github.com/maganezf"
@@ -148,7 +155,7 @@ const ProjectsPage: React.FC<Props> = ({ toggleTheme }) => {
             </a>{' '}
             para mais projetos realizados em estudos
           </li>
-        </ProjectsContainer>
+        </SecondProjectsContainer>
 
         <WaveBackground />
       </Container>

@@ -35,12 +35,13 @@ const ContactPage: React.FC<Props> = ({ toggleTheme }) => {
             <img
               src="/static/profile_image.png"
               loading="lazy"
+              title="Profile Image"
               alt="Profile Image"
             />
           </ImageProfile>
 
           <DescriptionProfile>
-            <h2>System Developer, with focus on FrontEnd</h2>
+            <h1>System Developer, with focus on FrontEnd</h1>
           </DescriptionProfile>
         </ProfileContainer>
 
@@ -59,7 +60,7 @@ const ContactPage: React.FC<Props> = ({ toggleTheme }) => {
             </a>
           </Link>
 
-          <Link href="https://twitter.com/maganez_">
+          <Link href="https://twitter.com/maganezz">
             <a target="_blank" rel="noopener noreferrer">
               <TwitterIcon />
             </a>

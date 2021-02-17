@@ -4,6 +4,7 @@ import Head from 'next/head';
 import HeaderBar from '../../src/components/HeaderBar';
 import FooterBar from '../../src/components/FooterBar';
 import GlobalStyles from '../../src/styles/GlobalStyles';
+import { Props } from '../../src/components/HeaderBar';
 
 import {
   Container,
@@ -14,14 +15,14 @@ import {
   WaveBackground,
 } from './styles';
 
-const AboutPage: React.FC = () => {
+const AboutPage: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <>
       <Head>
         <title>About | maganezf</title>
       </Head>
 
-      <HeaderBar />
+      <HeaderBar toggleTheme={toggleTheme} />
 
       <Container>
         <ProfileContainer>

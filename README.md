@@ -1,6 +1,6 @@
-# My Website - maganezf.com
+# My Personal Website
 
-'maganezf.com' is website created by myself!
+This is my personal website created by me
 
 ## Used Tools and websites at development
 
@@ -9,22 +9,27 @@ Used Tools and websites at development
 - Figma - Design UI/UX
 - Flaticon
 - Freepik
-- Google fonts
-- Icon finder
+- Google Fonts
+- Icon Finder
 - Icons8
 - Drawkit.io
 
-## How to access this website - Live version
+## Live Version
 
-You can visit the live version of my website on https://maganezf.com
+You can visit a live website with this code [here](https://maganezf.com).
 
 ## Technologies used
 
+- ReactJS
+- NextJS
+- Typescript
+- HTML
+- CSS
+- SASS
+- Styled Components
 - Node
 - Yarn
-- Typescript
-- Next.js
-- Styled Components
-- SWR (Client side caching)
-- NextJS
-- Vercel (hosting)
+- Netlify (hosting)
+
+<!-- - SWR (Client side caching)
+- SSR (Server Side Rendering) -->

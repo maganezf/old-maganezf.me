@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 import { BsFillBootstrapFill } from 'react-icons/bs';
 import { DiSqllite } from 'react-icons/di';
+
 import {
   SiHtml5,
   SiCss3,
@@ -40,7 +41,7 @@ export const Container = styled.div`
 
   border-radius: 30px 30px 0 50px;
 
-  background: var(--background-color-dark-theme);
+  background: ${(props) => props.theme.backgroundColor};
   background-size: cover;
   background-position: center;
 
@@ -92,12 +93,9 @@ export const ExperienceContainer = styled.div`
 
   z-index: 2;
 
-  color: var(--icons-and-text-color-dark-theme);
+  color: ${(props) => props.theme.iconsTextColor};
 
   font-size: 18.5px;
-
-  /* font-family: Ubuntu; */
-  /* font-weight: 400; */
 
   // desktop layout
   @media (min-width: 1000px) {
@@ -138,7 +136,7 @@ export const TitleTechsIcons = styled.div`
   z-index: 2;
 
   > h3 {
-    color: var(--icons-and-text-color-dark-theme);
+    color: ${(props) => props.theme.iconsTextColor};
 
     font-size: 18.5px;
 
@@ -262,18 +260,16 @@ export const ProjectsContainer = styled.div`
     > a {
       text-decoration: none;
       font-weight: bold;
-      color: var(--icons-and-text-color-dark-theme);
+
+      color: ${(props) => props.theme.iconsTextColor};
     }
   }
 
   z-index: 2;
 
-  color: var(--icons-and-text-color-dark-theme);
+  color: ${(props) => props.theme.iconsTextColor};
 
   font-size: 18.5px;
-
-  /* font-family: Ubuntu; */
-  /* font-weight: 400; */
 
   // desktop layout
   @media (min-width: 1000px) {
@@ -307,7 +303,7 @@ export const IconsProjects = styled.div`
   > h3 {
     align-items: flex-start;
 
-    color: var(--icons-and-text-color-dark-theme);
+    color: ${(props) => props.theme.iconsTextColor};
 
     font-size: 18.5px;
 
@@ -365,11 +361,11 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   }
 
   @media (min-width: 1000px) {
-    width: 100vw;
+    width: auto;
   }
 
-  @media (min-width: 1024px) and (max-width: 1100px) {
-    top: 30rem;
+  @media (min-width: 1024px) and (max-height: 1366px) {
+    width: auto;
   }
 
   @media (min-width: 750px) and (max-width: 1000px) {
@@ -395,9 +391,10 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
 `;
 
 const iconsCSS = css`
-  fill: var(--icons-and-text-color-dark-theme);
+  fill: ${(props) => props.theme.iconsTextColor};
 
   transition: 0.3s;
+  cursor: pointer;
 
   &:hover,
   &:active {

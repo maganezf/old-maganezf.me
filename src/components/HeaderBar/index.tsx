@@ -1,18 +1,39 @@
-import React from 'react';
 import Link from 'next/link';
+import { useContext } from 'react';
 
-import { CodeIcon, SunIconDarkTheme } from '../../styles/Icons';
-import { Container, LineSeparator } from './styles';
+import GlobalStyles from '../../styles/GlobalStyles';
+import { ThemeContext } from 'styled-components';
 
-const HeaderBar: React.FC = () => {
+import {
+  CodeIcon,
+  SunIconDarkTheme,
+  MoonIconLightTheme,
+} from '../../styles/Icons';
+
+import {
+  Container,
+  ChangeThemeButton,
+  LineSeparator,
+  TitlePages,
+} from './styles';
+
+export interface Props {
+  toggleTheme(): void;
+}
+
+const HeaderBar: React.FC<Props> = ({ toggleTheme }) => {
+  const { name } = useContext(ThemeContext);
+
   return (
     <>
       <Container>
         <CodeIcon />
 
-        <SunIconDarkTheme />
+        <ChangeThemeButton onClick={toggleTheme}>
+          {name === 'dark' ? <SunIconDarkTheme /> : <MoonIconLightTheme />}
+        </ChangeThemeButton>
 
-        <div className="a">
+        <TitlePages>
           <Link href="/">
             <h2>maganezf</h2>
           </Link>
@@ -22,8 +43,9 @@ const HeaderBar: React.FC = () => {
           <Link href="/about">
             <h2>About</h2>
           </Link>
-        </div>
+        </TitlePages>
       </Container>
+      <GlobalStyles />
     </>
   );
 };

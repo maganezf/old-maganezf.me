@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { LineSeparatorIcon } from '../../styles/Icons';
 
-export const Container = styled.header`
+export const Container = styled.footer`
   display: flex;
 
   align-items: center;
@@ -12,9 +12,8 @@ export const Container = styled.header`
   width: 100vw;
   height: 10vh;
 
-  color: var(--icons-and-text-color-dark-theme);
-
-  background: var(--primary-color);
+  background: ${(props) => props.theme.primaryColor};
+  color: ${(props) => props.theme.iconsTextColor};
 
   border-radius: 2px 2px 0 0;
 
@@ -30,14 +29,14 @@ export const Container = styled.header`
   > button {
     font-size: 23px;
     background: none;
-    color: var(--header-and-footer-text-color);
+    color: ${(props) => props.theme.headerFooterColor};
 
     transition: 0.3s;
 
     &:hover,
     &:active {
       opacity: 0.5;
-      color: var(--tertiary-color);
+      color: ${(props) => props.theme.tertiaryColor};
     }
 
     // desktop layout

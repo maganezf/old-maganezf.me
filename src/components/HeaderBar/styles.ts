@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import { LineSeparatorIcon } from '../../styles/Icons';
 
 export const Container = styled.header`
@@ -10,8 +9,8 @@ export const Container = styled.header`
 
   padding: 10px 20px 50px 20px;
 
-  background: var(--primary-color);
-  color: var(--icons-and-text-color-dark-theme);
+  background: ${(props) => props.theme.primaryColor};
+  color: ${(props) => props.theme.iconsTextColor};
 
   width: 100vw;
   height: 100px;
@@ -36,16 +35,72 @@ export const Container = styled.header`
     }
   }
 
-  .a {
-    display: flex;
+  // desktop layout
+  @media (min-width: 1000px) {
+    overflow: hidden;
 
-    align-items: center;
-    justify-content: center;
+    max-width: 100vw;
 
-    color: var(--header-and-footer-text-color);
+    padding: 10px 30px 50px 30px;
+  }
+`;
 
-    > h2 {
-      font-size: 20px;
+export const ChangeThemeButton = styled.button`
+  display: flex;
+  align-items: center;
+
+  > svg {
+    width: 40px;
+    height: 30px;
+
+    transition: 0.3s;
+
+    &:hover,
+    &:active {
+      opacity: 0.5;
+    }
+
+    // desktop layout
+    @media (min-width: 1000px) {
+      width: 38px;
+      height: 38px;
+    }
+  }
+`;
+
+export const TitlePages = styled.div`
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: ${(props) => props.theme.headerFooterColor};
+
+  > h2 {
+    font-size: 20px;
+
+    &:first-child {
+      margin-right: 1.5rem;
+    }
+
+    &:last-child {
+      margin-left: 1.5rem;
+    }
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.5;
+      color: ${(props) => props.theme.tertiaryColor};
+    }
+
+    // desktop layout
+    @media (min-width: 1000px) {
+      font-size: 25px;
 
       &:first-child {
         margin-right: 1.5rem;
@@ -54,61 +109,19 @@ export const Container = styled.header`
       &:last-child {
         margin-left: 1.5rem;
       }
+    }
 
-      cursor: pointer;
+    @media (max-width: 370px) {
+      font-size: 16px;
 
-      transition: 0.3s;
-
-      &:hover,
-      &:active {
-        opacity: 0.5;
-        color: var(--tertiary-color);
+      &:first-child {
+        margin-right: 1rem;
       }
 
-      // desktop layout
-      @media (min-width: 1000px) {
-        font-size: 25px;
-
-        &:first-child {
-          margin-right: 1.5rem;
-        }
-
-        &:last-child {
-          margin-left: 1.5rem;
-        }
-
-        cursor: pointer;
-
-        transition: 0.3s;
-
-        &:hover,
-        &:active {
-          opacity: 0.5;
-          color: var(--tertiary-color);
-        }
-      }
-
-      @media (max-width: 370px) {
-        font-size: 16px;
-
-        &:first-child {
-          margin-right: 1rem;
-        }
-
-        &:last-child {
-          margin-left: 1rem;
-        }
+      &:last-child {
+        margin-left: 1rem;
       }
     }
-  }
-
-  // desktop layout
-  @media (min-width: 1000px) {
-    overflow: hidden;
-
-    max-width: 100vw;
-
-    padding: 10px 30px 50px 30px;
   }
 `;
 

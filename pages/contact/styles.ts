@@ -23,7 +23,7 @@ export const Container = styled.div`
 
   border-radius: 30px 30px 0 50px;
 
-  background: var(--background-color-dark-theme);
+  background: ${(props) => props.theme.backgroundColor};
 
   background-size: cover;
   background-position: center;
@@ -34,7 +34,8 @@ export const Container = styled.div`
 
   > label {
     flex-wrap: wrap;
-    color: var(--icons-and-text-color-dark-theme);
+    color: ${(props) => props.theme.iconsTextColor};
+
     font-size: 21px;
 
     margin: 1.5rem 0 2.5rem 0;
@@ -116,7 +117,7 @@ export const ImageProfile = styled.div`
     height: 150px;
 
     border-radius: 50%;
-    border: 2.5px solid var(--tertiary-color);
+    border: 2.5px solid ${(props) => props.theme.tertiaryColor};
 
     margin: 0 10px;
 
@@ -145,10 +146,8 @@ export const DescriptionProfile = styled.div`
 
     padding: 0 5px;
 
-    color: var(--icons-and-text-color-dark-theme);
-    background-color: var(--border-profile-color);
-
-    /* font-family: Ubuntu; */
+    color: ${(props) => props.theme.iconsTextColor};
+    background-color: ${(props) => props.theme.borderProfileColor};
 
     font-size: 24px;
     font-weight: 700;
@@ -210,14 +209,11 @@ export const TextContainer = styled.div`
 
   z-index: 2;
 
-  color: var(--icons-and-text-color-dark-theme);
+  color: ${(props) => props.theme.iconsTextColor};
 
   margin-bottom: 4.5rem;
 
   font-size: 21px;
-
-  /* font-family: Ubuntu; */
-  /* font-weight: 400; */
 
   > label {
     font-size: 22px;
@@ -262,11 +258,11 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   }
 
   @media (min-width: 1000px) {
-    width: 100vw;
+    width: auto;
   }
 
-  @media (min-width: 1024px) and (max-width: 1100px) {
-    top: 30rem;
+  @media (min-width: 1024px) and (max-height: 1366px) {
+    width: auto;
   }
 
   @media (min-width: 750px) and (max-width: 1000px) {
@@ -292,7 +288,7 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
 `;
 
 const iconsCSS = css`
-  fill: var(--icons-and-text-color-dark-theme);
+  fill: ${(props) => props.theme.iconsTextColor};
 
   transition: 0.3s;
 

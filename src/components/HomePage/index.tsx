@@ -1,19 +1,19 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
 
-import GlobalStyles from '../../styles/GlobalStyles';
-
 interface Props {
   children?: ReactNode;
 }
 
-const IndexPage: React.FC<Props> = ({ children }) => {
+const HomePage: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="theme-color" content="#101D42" />
+
+        <title>Home | Maganez</title>
 
         <link
           rel="shortcut icon"
@@ -27,10 +27,9 @@ const IndexPage: React.FC<Props> = ({ children }) => {
         </style>
       </Head>
 
-      <GlobalStyles />
       {children}
     </>
   );
 };
 
-export default IndexPage;
+export default HomePage;

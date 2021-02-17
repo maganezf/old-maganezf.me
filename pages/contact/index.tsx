@@ -4,6 +4,7 @@ import Head from 'next/head';
 import HeaderBar from '../../src/components/HeaderBar';
 import FooterBar from '../../src/components/FooterBar';
 import GlobalStyles from '../../src/styles/GlobalStyles';
+import { Props } from '../../src/components/HeaderBar';
 
 import {
   Container,
@@ -19,14 +20,14 @@ import {
   InstagramIcon,
 } from './styles';
 
-const ContactPage: React.FC = () => {
+const ContactPage: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <>
       <Head>
         <title>Contact | Maganez </title>
       </Head>
 
-      <HeaderBar />
+      <HeaderBar toggleTheme={toggleTheme} />
 
       <Container>
         <ProfileContainer>

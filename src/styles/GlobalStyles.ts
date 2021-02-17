@@ -7,8 +7,12 @@ export default createGlobalStyle`
     box-sizing: border-box;
 
     ::selection {
-      background-color: var(--primary-color);
-      color: var(--icons-and-text-color-dark-theme);
+      background-color: ${(props) => props.theme.primaryColor};
+      color: ${(props) => props.theme.selectionTextColor};
+
+      &:focus {
+        outline: 0;
+      }
     }
   }
 
@@ -30,7 +34,6 @@ export default createGlobalStyle`
     }
   }
 
-
   *, button, input {
     border: 0;
     outline: 0;
@@ -40,23 +43,7 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
-  }
 
-  /* color dark: #262626 */
-
-  :root {
-    --primary-color: #101D42;
-    --secondary-color:#E1E6E9;
-    --tertiary-color: #6189FF;
-
-    --border-profile-color: rgba(97, 137, 255, 0.35);
-
-    --background-color-dark-theme: #454655;
-    --background-color-light-theme: #E1E6E9;
-
-    --icons-and-text-color-dark-theme: rgba(248, 248, 255, 0.9);
-    --icons-and-text-color-light-theme: rgba(37, 41, 51, 0.9);
-
-    --header-and-footer-text-color: #F8F8FF;
+    background: none;
   }
 `;

@@ -7,7 +7,7 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: space-evenly;
 
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0;
 
   width: 100vw;
   height: 10vh;
@@ -15,7 +15,7 @@ export const Container = styled.footer`
   background: ${(props) => props.theme.primaryColor};
   color: ${(props) => props.theme.iconsTextColor};
 
-  border-radius: 2px 2px 0 0;
+  border-radius: 2.5px 2.5px 0 0;
 
   flex-shrink: 0;
 

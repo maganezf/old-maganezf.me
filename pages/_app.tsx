@@ -18,14 +18,14 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <GlobalStyles />
-
+        <Component toggleTheme={toggleTheme} {...pageProps} />
         <HeaderBar toggleTheme={toggleTheme} />
 
         <HomePage />
-        <Component {...pageProps} />
+        <GlobalStyles />
       </ThemeProvider>
     </>
   );
 }
+
 export default MyApp;

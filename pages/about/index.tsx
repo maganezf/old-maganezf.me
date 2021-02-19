@@ -36,7 +36,12 @@ const AboutPage: React.FC<Props> = ({ toggleTheme }) => {
 
           <DescriptionProfile>
             <h1>
-              Hello World! <br /> I'm Maganez Filho 🙋‍♂️
+              Hello World!{' '}
+              <img
+                src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
+                width="30px"
+              />{' '}
+              <br /> I'm Maganez 👨‍💻
             </h1>
           </DescriptionProfile>
         </ProfileContainer>
@@ -47,16 +52,16 @@ const AboutPage: React.FC<Props> = ({ toggleTheme }) => {
               I was born in{' '}
               <Link href="https://www.google.com/maps/place/Guarabira,+State+of+Para%C3%ADba/@-6.8640922,-35.5155381">
                 <a target="_blank" rel="noopener noreferrer">
-                  Guarabira
+                  Guarabira-PB, Brazil
                 </a>
-              </Link>{' '}
-              - PB, Brazil, and have been living in{' '}
+              </Link>
+              , and have been living in{' '}
               <Link href="https://www.google.com/maps/place/Bananeiras+-+State+of+Para%C3%ADba/@-6.6960919,-35.6751471">
                 <a target="_blank" rel="noopener noreferrer">
-                  Bananeiras
+                  Bananeiras-PB, Brazil
                 </a>
-              </Link>{' '}
-              - PB, Brazil, to this day.
+              </Link>
+              , to this day.
             </p>
           </section>
 

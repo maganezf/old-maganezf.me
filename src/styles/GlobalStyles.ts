@@ -48,4 +48,17 @@ export default createGlobalStyle`
 
     background: none;
   }
+
+  @keyframes loadAnimation {
+
+    0% {
+      opacity: 0.99;
+      transform: scale(1.5);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 `;

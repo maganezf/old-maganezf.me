@@ -1,7 +1,6 @@
 import type { AppProps } from 'next/app';
 import HomePage from '../src/components/HomePage';
 import usePersistedState from '../src/utils/usePersistedState';
-import HeaderBar from '../src/components/HeaderBar';
 import GlobalStyles from '../src/styles/GlobalStyles';
 import { ThemeProvider } from 'styled-components';
 
@@ -19,7 +18,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <ThemeProvider theme={theme}>
         <Component toggleTheme={toggleTheme} {...pageProps} />
-        <HeaderBar toggleTheme={toggleTheme} />
 
         <HomePage />
         <GlobalStyles />

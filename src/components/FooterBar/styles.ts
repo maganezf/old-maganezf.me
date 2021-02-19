@@ -7,6 +7,10 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: space-evenly;
 
+  animation: loadAnimation;
+  animation-timing-function: ease;
+  animation-duration: 250ms;
+
   padding: 15px 0;
 
   width: 100vw;
@@ -28,7 +32,6 @@ export const Container = styled.footer`
 
   > button {
     font-size: 23px;
-    background: none;
     color: ${(props) => props.theme.headerFooterColor};
 
     transition: 0.3s;

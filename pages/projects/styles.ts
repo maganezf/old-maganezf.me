@@ -20,9 +20,13 @@ import {
 
 import { WaveBackgroundImgDesktop } from '../../src/styles/Icons';
 
-export const Container = styled.div`
+export const Container = styled.main`
   width: 100vw;
   height: 100vh;
+
+  animation: loadAnimation;
+  animation-timing-function: ease;
+  animation-duration: 250ms;
 
   z-index: 2;
 
@@ -245,7 +249,7 @@ export const FirstProjectsContainer = styled.div`
 
   z-index: 2;
 
-  > h3 {
+  > p {
     align-items: flex-start;
 
     color: ${(props) => props.theme.iconsTextColor};
@@ -311,7 +315,7 @@ export const SecondProjectsContainer = styled.div`
 
     > a {
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 700;
 
       color: ${(props) => props.theme.iconsTextColor};
     }

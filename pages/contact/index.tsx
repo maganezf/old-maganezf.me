@@ -8,7 +8,7 @@ import { Props } from '../../src/components/HeaderBar';
 
 import {
   Container,
-  TextContainer,
+  SendEmailContainer,
   ProfileContainer,
   ImageProfile,
   DescriptionProfile,
@@ -35,7 +35,6 @@ const ContactPage: React.FC<Props> = ({ toggleTheme }) => {
             <img
               src="/static/profile_image.png"
               loading="lazy"
-              title="Profile Image"
               alt="Profile Image"
             />
           </ImageProfile>
@@ -45,7 +44,7 @@ const ContactPage: React.FC<Props> = ({ toggleTheme }) => {
           </DescriptionProfile>
         </ProfileContainer>
 
-        <label>{`<Keep connected with my work by following me on />`}</label>
+        <section>{`<Keep connected with my work by following me on />`}</section>
 
         <IconsContainer>
           <Link href="mailto:maganezfilho@gmail.com">
@@ -73,15 +72,12 @@ const ContactPage: React.FC<Props> = ({ toggleTheme }) => {
           </Link>
         </IconsContainer>
 
-        <TextContainer>
-          <label>
-            Contact Page - 1 <br />
-            Contact Page - 2 <br />
-            Contact Page - 3 <br />
-            Contact Page - 4 <br />
-            Contact Page - 5 <br />
-          </label>
-        </TextContainer>
+        <SendEmailContainer>
+          <section>
+            To have a closer contact with me, follow me and/or send me messages
+            via Emails, GitHub, LinkedIn, Twitter and Instagram
+          </section>
+        </SendEmailContainer>
 
         <WaveBackground />
       </Container>

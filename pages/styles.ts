@@ -7,9 +7,13 @@ import { BsPersonFill } from 'react-icons/bs';
 
 import { WaveBackgroundImgDesktop } from '../src/styles/Icons';
 
-export const Container = styled.nav`
+export const Container = styled.main`
   display: flex;
   flex-direction: column;
+
+  animation: loadAnimation;
+  animation-timing-function: ease;
+  animation-duration: 250ms;
 
   width: 100vw;
   height: 100vh;
@@ -121,7 +125,7 @@ export const DescriptionProfile = styled.div`
   > h1 {
     text-align: left;
 
-    padding: 0 5px;
+    padding: 4px;
 
     color: ${(props) => props.theme.iconsTextColor};
     background-color: ${(props) => props.theme.borderProfileColor};

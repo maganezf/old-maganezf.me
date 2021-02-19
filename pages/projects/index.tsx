@@ -40,21 +40,20 @@ const ProjectsPage: React.FC<Props> = ({ toggleTheme }) => {
 
       <Container>
         <ExperienceContainer>
-          <h3>Experiência:</h3>
+          <h3>Career - Experience:</h3>
 
           <li>
-            Formação: Atualmente graduando em bacharelado em Sistemas de
-            Informação, pela UFPB
+            Currently studying undergraduate at UFPB in Information Systems
           </li>
           <li>
-            Atualmente com foco em tecnologias Front-end (ReactJS, NextJS,
-            UI/UX, Motion Design, Javascript, Typescript, CSS, Sass, Styled
+            Currently focusing on Front-end technologies (ReactJS, NextJS,
+            UI/UX, Motion Design, Javascript, Typescript, CSS, SASS, Styled
             Components, TailwindCSS, JQuery, GSAP Library e Bootstrap).{' '}
           </li>
         </ExperienceContainer>
 
         <TitleTechsIcons>
-          <h3>Tenho experiência com tais tecnologias:</h3>
+          <h3>I have experience with such technologies:</h3>
 
           <TechsIcons>
             <Link href="https://reactjs.org/">
@@ -138,22 +137,24 @@ const ProjectsPage: React.FC<Props> = ({ toggleTheme }) => {
         </TitleTechsIcons>
 
         <FirstProjectsContainer>
-          <h3>Some others projects:</h3>
+          <p>
+            Go to bed smarter than when you woke up. <br />— Charlie Munger
+          </p>
         </FirstProjectsContainer>
 
         <SecondProjectsContainer>
-          <h3>Projetos:</h3>
+          <h3>Others Projects:</h3>
           <li>
-            Para mais projetos,
+            For more projects,
             {''}{' '}
             <a
               href="https://github.com/maganezf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              visite meu github
+              visit my github
             </a>{' '}
-            para mais projetos realizados em estudos
+            - projects made in studies
           </li>
         </SecondProjectsContainer>
 

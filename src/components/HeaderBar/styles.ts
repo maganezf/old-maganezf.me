@@ -7,6 +7,10 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
 
+  animation: loadAnimation;
+  animation-timing-function: ease;
+  animation-duration: 250ms;
+
   padding: 10px 20px 50px 20px;
 
   background: ${(props) => props.theme.primaryColor};

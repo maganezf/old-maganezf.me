@@ -6,9 +6,13 @@ import { SiTwitter, SiInstagram } from 'react-icons/si';
 
 import { WaveBackgroundImgDesktop } from '../../src/styles/Icons';
 
-export const Container = styled.div`
+export const Container = styled.main`
   display: flex;
   flex-direction: column;
+
+  animation: loadAnimation;
+  animation-timing-function: ease;
+  animation-duration: 250ms;
 
   width: 100vw;
   height: 100vh;
@@ -32,7 +36,7 @@ export const Container = styled.div`
   top: 60px;
   left: 0px;
 
-  > label {
+  > section {
     flex-wrap: wrap;
     color: ${(props) => props.theme.iconsTextColor};
 
@@ -144,7 +148,7 @@ export const DescriptionProfile = styled.div`
   > h1 {
     text-align: left;
 
-    padding: 0 5px;
+    padding: 4px;
 
     color: ${(props) => props.theme.iconsTextColor};
     background-color: ${(props) => props.theme.borderProfileColor};
@@ -203,7 +207,7 @@ export const IconsContainer = styled.div`
   }
 `;
 
-export const TextContainer = styled.div`
+export const SendEmailContainer = styled.div`
   display: flex;
   flex-direction: column;
 
@@ -215,8 +219,9 @@ export const TextContainer = styled.div`
 
   font-size: 21px;
 
-  > label {
+  > section {
     font-size: 22px;
+    text-align: center;
 
     transition: 0.3s;
     &:active {

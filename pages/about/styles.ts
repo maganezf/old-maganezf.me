@@ -2,9 +2,13 @@ import styled from 'styled-components';
 
 import { WaveBackgroundImgDesktop } from '../../src/styles/Icons';
 
-export const Container = styled.div`
+export const Container = styled.main`
   display: flex;
   flex-direction: column;
+
+  animation: loadAnimation;
+  animation-timing-function: ease;
+  animation-duration: 250ms;
 
   width: 100vw;
   height: 100vh;
@@ -107,7 +111,7 @@ export const ImageProfile = styled.div`
 export const DescriptionProfile = styled.div`
   > h1 {
     text-align: left;
-    padding: 0 5px;
+    padding: 4px;
 
     color: ${(props) => props.theme.iconsTextColor};
     background-color: ${(props) => props.theme.borderProfileColor};
@@ -151,6 +155,8 @@ export const TextContainer = styled.div`
 
   > section {
     > p {
+      padding: 4px;
+
       color: ${(props) => props.theme.iconsTextColor};
       background-color: ${(props) => props.theme.borderProfileColor};
 

@@ -22,7 +22,7 @@ import { WaveBackgroundImgDesktop } from '../../src/styles/Icons';
 
 export const Container = styled.main`
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
 
   animation: loadAnimation;
   animation-timing-function: ease;
@@ -351,7 +351,7 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   width: auto;
   height: 115vh;
 
-  z-index: -1;
+  z-index: 0;
 
   overflow: hidden;
 

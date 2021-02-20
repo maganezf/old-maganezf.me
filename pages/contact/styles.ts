@@ -10,6 +10,9 @@ export const Container = styled.main`
   display: flex;
   flex-direction: column;
 
+  align-items: center;
+  justify-content: center;
+
   animation: loadAnimation;
   animation-timing-function: ease;
   animation-duration: 250ms;
@@ -17,15 +20,11 @@ export const Container = styled.main`
   width: 100vw;
   height: 100vh;
 
-  /* overflow-x: hidden; */
-  overflow: hidden;
+  overflow-x: hidden;
 
-  padding: 0 15px;
+  padding: 20px 15px 0 15px;
 
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 30px 30px 0 50px;
+  border-radius: 30px 30px 0 0;
 
   background: ${(props) => props.theme.backgroundColor};
 
@@ -52,20 +51,31 @@ export const Container = styled.main`
     z-index: 2;
   }
 
-  @media (min-width: 750px) and (max-width: 1100px) {
+  @media (min-width: 400px) {
     overflow: hidden;
   }
 
-  @media (max-width: 420px) {
-    height: 103vh;
+  @media (width: 375px) and (max-height: 815px) {
+    height: 800px;
+    overflow: hidden;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 375px) and (max-height: 670px) {
     height: 750px;
+    overflow: hidden;
   }
 
-  @media (max-width: 280px) {
-    height: 750px;
+  @media (max-width: 360px) {
+    overflow-y: scroll;
+  }
+
+  @media (max-width: 320px) and (max-height: 570px) {
+    height: 760px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 320px) and (max-height: 480px) {
+    height: 740px;
   }
 `;
 
@@ -240,55 +250,36 @@ export const SendEmailContainer = styled.div`
 `;
 
 export const WaveBackground = styled(WaveBackgroundImgDesktop)`
-  border-radius: 0px 0px 0px 50px;
-
   width: auto;
-  height: 100vh;
+  height: 115vh;
 
   z-index: 0;
 
   overflow: hidden;
 
-  display: block;
   position: absolute;
-
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
 
   transition: 0.3s;
   &:active {
     opacity: 0.85;
   }
 
-  @media (min-width: 1000px) {
-    width: auto;
+  @media (max-width: 360px) {
+    top: 10vh;
   }
 
-  @media (min-width: 1024px) and (max-height: 1366px) {
-    width: auto;
+  @media (max-width: 320px) and (max-height: 570px) {
+    top: 30vh;
   }
 
-  @media (min-width: 750px) and (max-width: 1000px) {
-    top: 9vh;
-  }
-
-  @media (max-width: 411px) {
-    top: 5.5vh;
-  }
-
-  @media (max-width: 375px) {
-    top: 5vh;
-  }
-
-  @media (max-width: 320px) {
-    top: 46vh;
-    left: -15vw;
+  @media (max-width: 320px) and (max-height: 480px) {
+    top: 57vh;
   }
 
   @media (max-width: 280px) {
-    top: 8vh;
+    top: 10vh;
   }
 `;
 

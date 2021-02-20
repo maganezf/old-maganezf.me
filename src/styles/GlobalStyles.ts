@@ -30,12 +30,19 @@ export default createGlobalStyle`
       height: 100%;
     }
 
+
+
     /* Firefox */
     scrollbar-width: none;
     /* Chrome */
     ::-webkit-scrollbar {
       display: none;
     }
+
+    /* ::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+      background-color: #FF0074;
+    } */
   }
 
   *, button, input {

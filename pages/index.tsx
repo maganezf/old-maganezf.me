@@ -33,15 +33,6 @@ const IndexPage: React.FC<Props> = ({ toggleTheme }) => {
               title="Profile Image"
               alt="Profile Image"
             />
-
-            {/* <Image
-              src="/static/profile_image.png"
-              loading="lazy"
-              alt="Profile Image"
-              width={150}
-              height={150}
-              quality={100}
-            /> */}
           </ImageProfile>
 
           <DescriptionProfile>

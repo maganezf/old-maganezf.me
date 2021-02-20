@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import { useContext } from 'react';
-
+import { ThemeContext, css } from 'styled-components';
 import GlobalStyles from '../../styles/GlobalStyles';
-import { ThemeContext } from 'styled-components';
 
 import {
   CodeIcon,

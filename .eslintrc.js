@@ -2,7 +2,6 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -30,7 +29,7 @@ module.exports = {
     },
   },
 
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', '@typescript-eslint/parser'],
   rules: {
     'react/jsx-filename-extension': [
       1,

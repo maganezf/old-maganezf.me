@@ -63,8 +63,21 @@ export const Container = styled.footer`
     height: 11vh;
   }
 
-  @media (max-width: 320px) {
-    top: 41.37rem;
+  @media (max-width: 375px) and (max-height: 670px) {
+    top: 690px;
+  }
+
+  @media (max-width: 320px) and (max-height: 570px) {
+    top: 710px;
+  }
+
+  @media (max-width: 320px) and (max-height: 480px) {
+    top: 700px;
+  }
+
+  // desktop layout
+  @media (min-width: 1100px) {
+    top: 86vh;
   }
 
   // desktop layout
@@ -78,10 +91,6 @@ export const Container = styled.footer`
     position: relative;
     left: 0;
     right: 0;
-  }
-
-  @media (min-width: 1100px) {
-    top: 86vh;
   }
 `;
 

@@ -13,7 +13,7 @@ export const Container = styled.main`
   width: 100vw;
   height: 100vh;
 
-  overflow: hidden;
+  overflow-x: hidden;
 
   padding: 0 15px;
 
@@ -130,7 +130,7 @@ export const DescriptionProfile = styled.div`
     }
 
     @media (max-width: 280px) {
-      margin: 0 0 0px 5px;
+      margin-left: 5px;
     }
 
     // desktop layout
@@ -155,7 +155,7 @@ export const TextContainer = styled.div`
 
   > section {
     > p {
-      padding: 4px;
+      padding: 6px;
 
       color: ${(props) => props.theme.iconsTextColor};
       background-color: ${(props) => props.theme.borderProfileColor};

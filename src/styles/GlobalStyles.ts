@@ -9,7 +9,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
 
     ::selection {
-      background-color: ${(props) => props.theme.primaryColor};
+      background: ${(props) => props.theme.primaryColor};
       color: ${(props) => props.theme.selectionTextColor};
 
       &:focus {
@@ -21,6 +21,8 @@ export default createGlobalStyle`
   html, body, #root {
     max-width: 100vw;
     max-height: 100vh;
+
+    background: ${(props) => props.theme.backgroundColor};
 
     // desktop layout
     @media (min-width: 1000px) {

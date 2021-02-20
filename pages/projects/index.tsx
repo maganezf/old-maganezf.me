@@ -40,7 +40,7 @@ const ProjectsPage: React.FC<Props> = ({ toggleTheme }) => {
 
       <Container>
         <ExperienceContainer>
-          <h3>Career - Experience:</h3>
+          <h3>Career/Experience:</h3>
 
           <li>
             Currently studying undergraduate at UFPB in Information Systems

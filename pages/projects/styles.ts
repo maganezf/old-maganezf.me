@@ -15,6 +15,7 @@ import {
   SiNodeDotJs,
   SiReact,
   SiSass,
+  SiJquery,
   SiTailwindcss,
 } from 'react-icons/si';
 
@@ -427,6 +428,10 @@ export const CssIcon = styled(SiCss3)`
 `;
 
 export const SassIcon = styled(SiSass)`
+  ${iconsCSS};
+`;
+
+export const JQueryIcon = styled(SiJquery)`
   ${iconsCSS};
 `;
 

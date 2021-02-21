@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 import HomePage from '../src/components/HomePage';
-import usePersistedState from '../src/utils/usePersistedState';
 import GlobalStyles from '../src/styles/GlobalStyles';
+import usePersistedState from '../src/utils/usePersistedState';
 import { ThemeProvider } from 'styled-components';
 
 import darkTheme from '../src/styles/themes/darkTheme';

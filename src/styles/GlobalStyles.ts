@@ -30,14 +30,6 @@ export default createGlobalStyle`
       height: 100%;
     }
 
-    /* Firefox */
-    scrollbar-width: none;
-
-    /* Chrome */
-    ::-webkit-scrollbar {
-      display: none;
-    }
-
     ::-webkit-scrollbar {
       width: 4px;
       height: 4px;
@@ -69,6 +61,18 @@ export default createGlobalStyle`
     cursor: pointer;
 
     background: none;
+  }
+
+  body {
+    /* Firefox */
+    /* scrollbar-width: none; */
+
+    /* Chrome */
+    /* ::-webkit-scrollbar {
+      display: none;
+    } */
+
+    overflow-x: hidden;
   }
 
   @keyframes loadAnimation {

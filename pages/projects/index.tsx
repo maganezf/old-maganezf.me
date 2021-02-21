@@ -16,6 +16,7 @@ import {
   HtmlIcon,
   CssIcon,
   SassIcon,
+  JQueryIcon,
   TailwindCssIcon,
   BootstrapIcon,
   JsIcon,
@@ -84,6 +85,12 @@ const ProjectsPage: React.FC<Props> = ({ toggleTheme }) => {
             <Link href="https://sass-lang.com/">
               <a target="_blank" rel="noopener noreferrer">
                 <SassIcon />
+              </a>
+            </Link>
+
+            <Link href="https://jquery.com/">
+              <a target="_blank" rel="noopener noreferrer">
+                <JQueryIcon />
               </a>
             </Link>
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const WaveBackgroundImgMobile: React.FC = (props) => {
   return (
     <svg width="1200" height="730" viewBox="0 0 411 730" fill="none" {...props}>

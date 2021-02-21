@@ -30,26 +30,39 @@ export default createGlobalStyle`
       height: 100%;
     }
 
-
-
     /* Firefox */
     scrollbar-width: none;
+
     /* Chrome */
     ::-webkit-scrollbar {
       display: none;
     }
 
-    /* ::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+
+      background: ${(props) => props.theme.primaryColor};
+    }
+
+    ::-webkit-scrollbar-thumb {
       border-radius: 20px;
-      background-color: #FF0074;
-    } */
+      -webkit-border-radius: 20px;
+
+
+      background: ${(props) => props.theme.selectionTextColor};
+
+      box-shadow: 0px 8px 24px .15px ${(props) => props.theme.shadowColor};
+      -webkit-box-shadow: 0px 8px 24px .15px ${(props) =>
+        props.theme.shadowColor};
+    }
   }
 
   *, button, input {
     border: 0;
     outline: 0;
 
-    font-family: 'Poppins', sans-serif, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif, Ubuntu, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   }
 
   button {

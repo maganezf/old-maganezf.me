@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const WaveBackgroundImgDesktop: React.FC = (props) => {
   return (
     <svg

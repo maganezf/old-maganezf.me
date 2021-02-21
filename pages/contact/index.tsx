@@ -81,7 +81,6 @@ const ContactPage: React.FC<Props> = ({ toggleTheme }) => {
 
         <WaveBackground />
       </Container>
-
       <FooterBar />
       <GlobalStyles />
     </>

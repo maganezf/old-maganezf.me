@@ -193,6 +193,36 @@ export const TextContainer = styled.div`
   }
 `;
 
+export const ImagesContainer = styled.div`
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 20px;
+
+  @media (max-width: 540px) {
+    flex-direction: column;
+  }
+
+  > img {
+    width: 400px;
+    height: 300px;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 540px) {
+      width: 180px;
+      height: 180px;
+    }
+  }
+`;
+
 export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   width: auto;
   height: 115vh;

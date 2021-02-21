@@ -95,9 +95,17 @@ export const ExperienceContainer = styled.div`
   > li {
     text-align: start;
 
+    list-style: inside;
+
     transition: 0.3s;
     &:active {
       opacity: 0.5;
+    }
+
+    margin-bottom: 0.4rem;
+
+    :last-child {
+      margin-bottom: 0px;
     }
   }
 
@@ -365,7 +373,7 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   }
 
   @media (max-width: 320px) and (max-height: 570px) {
-    top: 30vh;
+    top: 35vh;
   }
 
   @media (max-width: 320px) and (max-height: 480px) {

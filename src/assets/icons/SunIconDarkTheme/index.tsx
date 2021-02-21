@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const SunIconDarkTheme: React.FC = (props) => {
   return (
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" {...props}>

@@ -9,4 +9,5 @@ export default {
   headerFooterColor: '#F8F8FF',
   selectionBackgroundColor: '#101D42',
   selectionTextColor: 'rgba(248, 248, 255, 0.9)',
+  shadowColor: 'rgba(0,0,0,0.5)',
 };

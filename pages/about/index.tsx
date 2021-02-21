@@ -12,6 +12,7 @@ import {
   ImageProfile,
   DescriptionProfile,
   TextContainer,
+  ImagesContainer,
   WaveBackground,
 } from './styles';
 
@@ -69,17 +70,17 @@ const AboutPage: React.FC<Props> = ({ toggleTheme }) => {
             </p>
           </section>
 
-          {/* <img
-            src="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/bananeiras-paraiba.jpeg?quality=100&strip=info&w=842"
-            alt="Bananeiras PB"
-            style={{ width: 300, height: 300 }}
-          ></img>
+          <ImagesContainer>
+            <img
+              src="https://lh5.googleusercontent.com/p/AF1QipOnmic1_lP3OD_RBMijMXfREYHFiSkPRwxUV0JO=s452-k-no"
+              alt="Guarabira Image"
+            />
 
-          <img
-            src="https://pbs.twimg.com/media/CxPqyTUUcAA2epV.jpg"
-            alt="Guarabira PB"
-            style={{ width: 300, height: 300 }}
-          ></img> */}
+            <img
+              src="https://lh5.googleusercontent.com/p/AF1QipPxxs3Jz5I-QKy4lRz878HNLIkyl-0_afMMGGxt=s451-k-no"
+              alt="Bananeiras Image"
+            />
+          </ImagesContainer>
         </TextContainer>
 
         <WaveBackground />

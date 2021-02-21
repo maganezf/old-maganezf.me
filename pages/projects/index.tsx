@@ -45,6 +45,7 @@ const ProjectsPage: React.FC<Props> = ({ toggleTheme }) => {
           <li>
             Currently studying undergraduate at UFPB in Information Systems
           </li>
+
           <li>
             Currently focusing on Front-end technologies (ReactJS, NextJS,
             UI/UX, Motion Design, Javascript, Typescript, CSS, SASS, Styled

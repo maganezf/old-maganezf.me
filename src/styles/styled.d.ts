@@ -13,5 +13,6 @@ declare module 'styled-components' {
     headerFooterColor: string;
     selectionBackgroundColor: string;
     selectionTextColor: string;
+    shadowColor: string;
   }
 }

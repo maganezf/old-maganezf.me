@@ -33,7 +33,7 @@ const ContactPage: React.FC<Props> = ({ toggleTheme }) => {
         <ProfileContainer>
           <ImageProfile>
             <img
-              src="/static/profile_image.png"
+              src="https://github.com/maganezf.png"
               loading="lazy"
               alt="Profile Image"
             />

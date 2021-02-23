@@ -28,7 +28,7 @@ const IndexPage: React.FC<Props> = ({ toggleTheme }) => {
         <ProfileContainer>
           <ImageProfile>
             <img
-              src="/static/profile_image.png"
+              src="https://github.com/maganezf.png"
               loading="lazy"
               title="Profile Image"
               alt="Profile Image"

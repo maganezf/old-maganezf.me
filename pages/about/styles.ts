@@ -159,10 +159,18 @@ export const TextContainer = styled.div`
 
   margin-bottom: 50px;
 
-  font-size: 21px;
-
   > section {
     > p {
+      > h2 {
+        font-size: 24px;
+        font-weight: 700;
+
+        transition: 0.3s;
+        &:active {
+          opacity: 0.5;
+        }
+      }
+
       padding: 6px;
 
       margin: 0 25px;
@@ -174,11 +182,6 @@ export const TextContainer = styled.div`
 
       font-size: 22px;
 
-      transition: 0.3s;
-      &:active {
-        opacity: 0.5;
-      }
-
       > a {
         color: ${(props) => props.theme.primaryColor};
 
@@ -186,10 +189,6 @@ export const TextContainer = styled.div`
         font-weight: bold;
       }
     }
-  }
-
-  // desktop layout
-  @media (min-width: 1000px) {
   }
 `;
 
@@ -219,6 +218,51 @@ export const ImagesContainer = styled.div`
     @media (max-width: 540px) {
       width: 180px;
       height: 180px;
+    }
+  }
+`;
+
+export const TextContainer2 = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  z-index: 2;
+
+  color: ${(props) => props.theme.iconsTextColor};
+
+  margin-bottom: 50px;
+
+  font-size: 21px;
+
+  > section {
+    > p {
+      > h2 {
+        font-size: 24px;
+        font-weight: 700;
+
+        transition: 0.3s;
+        &:active {
+          opacity: 0.5;
+        }
+      }
+
+      padding: 6px;
+
+      margin: 0 25px;
+
+      color: ${(props) => props.theme.iconsTextColor};
+      background-color: ${(props) => props.theme.borderProfileColor};
+
+      border-radius: 5px;
+
+      font-size: 22px;
+
+      > a {
+        color: ${(props) => props.theme.primaryColor};
+
+        text-decoration: none;
+        font-weight: bold;
+      }
     }
   }
 `;

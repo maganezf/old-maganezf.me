@@ -68,9 +68,9 @@ export default createGlobalStyle`
     /* scrollbar-width: none; */
 
     /* Chrome */
-    /* ::-webkit-scrollbar {
-      display: none;
-    } */
+    ::-webkit-scrollbar {
+      /* display: none; */
+    }
 
     overflow-x: hidden;
   }

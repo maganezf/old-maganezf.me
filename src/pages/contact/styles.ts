@@ -1,15 +1,17 @@
 import styled, { css } from 'styled-components';
 
-import { RiChatSmile2Fill } from 'react-icons/ri';
-import { MdLocationOn } from 'react-icons/md';
-import { SiGithub } from 'react-icons/si';
-import { BsPersonFill } from 'react-icons/bs';
+import { IoIosMail } from 'react-icons/io';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { SiTwitter, SiInstagram } from 'react-icons/si';
 
-import { WaveBackgroundImgDesktop } from '../src/styles/Icons';
+import { WaveBackgroundImgDesktop } from '../../styles/Icons';
 
 export const Container = styled.main`
   display: flex;
   flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
 
   animation: loadAnimation;
   animation-timing-function: ease;
@@ -18,12 +20,9 @@ export const Container = styled.main`
   width: 100vw;
   height: 100vh;
 
-  overflow: hidden;
+  overflow-x: hidden;
 
   padding: 20px 15px 0 15px;
-
-  align-items: center;
-  justify-content: center;
 
   border-radius: 30px 30px 0 0;
 
@@ -36,6 +35,22 @@ export const Container = styled.main`
   top: 60px;
   left: 0px;
 
+  > section {
+    flex-wrap: wrap;
+    color: ${(props) => props.theme.iconsTextColor};
+
+    font-size: 21px;
+
+    margin: 1.5rem 0 2.5rem 0;
+
+    transition: 0.3s;
+    &:active {
+      opacity: 0.5;
+    }
+
+    z-index: 2;
+  }
+
   @media (min-width: 400px) {
     overflow: hidden;
   }
@@ -47,10 +62,16 @@ export const Container = styled.main`
 
   @media (max-width: 375px) and (max-height: 670px) {
     height: 750px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 360px) {
+    overflow-y: scroll;
   }
 
   @media (max-width: 320px) and (max-height: 570px) {
-    height: 750px;
+    height: 760px;
+    overflow: hidden;
   }
 
   @media (max-width: 320px) and (max-height: 480px) {
@@ -65,32 +86,42 @@ export const ProfileContainer = styled.div`
 
   justify-content: center;
 
-  margin: 0 15px 10vh 15px;
+  margin: 15rem 15px 0 15px;
 
   z-index: 2;
 
-  @media (max-width: 280px) {
-    margin-bottom: 2.5rem;
+  @media (min-width: 530px) and (max-width: 700px) {
+    margin-top: 10rem;
   }
 
-  @media (max-width: 360px) {
-    margin-bottom: 0;
+  @media (min-width: 400px) and (max-width: 500px) {
+    margin-top: 6rem;
+  }
+
+  @media (max-width: 375px) {
+    margin-top: 10rem;
   }
 
   @media (max-width: 320px) {
-    margin-bottom: 20px;
+    margin-top: 10rem;
+  }
+
+  @media (max-width: 280px) {
+    margin-top: 8rem;
   }
 
   // tablet layout
-  @media (min-width: 750px) and (max-width: 999px) {
+  @media (min-width: 750px) and (max-width: 1024px) {
     align-items: center;
-    margin-bottom: 20vh;
+    margin-top: 0rem;
   }
 
   // desktop layout
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     align-items: center;
-    margin-bottom: 1rem;
+
+    margin: 1rem 15px 1rem 15px;
+    /* margin: 10rem 15px 1rem 15px; */
   }
 `;
 
@@ -136,8 +167,7 @@ export const DescriptionProfile = styled.div`
     font-weight: 700;
 
     border-radius: 6px;
-    margin-right: 10px;
-    margin-bottom: 50px;
+    margin: 0 10px 50px 0;
 
     flex-shrink: 0;
 
@@ -146,12 +176,8 @@ export const DescriptionProfile = styled.div`
       opacity: 0.5;
     }
 
-    @media (width: 375px) {
-      margin-bottom: 0;
-    }
-
     @media (max-width: 280px) {
-      margin: 0 0 0 5px;
+      margin: 0 0 0px 5px;
     }
 
     // desktop layout
@@ -162,58 +188,64 @@ export const DescriptionProfile = styled.div`
   }
 `;
 
-export const TextContainer = styled.div`
-  display: grid;
+export const IconsContainer = styled.div`
+  display: flex;
 
-  grid-template-columns: 0.1fr 3fr;
+  z-index: 2;
 
-  grid-template-areas: 'IconGrid' 'IconTextGrid';
+  align-content: center;
+  justify-content: space-evenly;
+
+  margin-bottom: 10vh;
+
+  > a {
+    margin-right: 15vw;
+
+    transition: 0.3s;
+    &:active,
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  // desktop layout
+  @media (min-width: 1000px) {
+  }
+`;
+
+export const SendEmailContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 
   z-index: 2;
 
   color: ${(props) => props.theme.iconsTextColor};
 
-  overflow: hidden;
+  margin-bottom: 4.5rem;
 
-  > a {
-    height: 0;
-    transition: 0.3s;
+  font-size: 21px;
 
-    &:hover,
-    &:active {
-      opacity: 0.5;
-    }
-  }
-
-  .hello::before {
-    content: 'Hello! ';
-
-    @media (max-width: 799px) {
-      display: block;
-    }
-  }
-
-  > p {
-    text-align: left;
-
-    margin: 0 0 25px 25px;
-
+  > section {
     font-size: 22px;
+    text-align: center;
 
     transition: 0.3s;
     &:active {
       opacity: 0.5;
     }
+  }
 
-    @media (min-width: 280px) and (max-width: 320px) {
-      font-size: 21px;
-    }
+  // desktop layout
+  @media (min-width: 1000px) {
+    margin-bottom: 4rem;
+  }
 
-    // tablet and desktop layout
-    @media (min-width: 800px) {
-      margin-bottom: 50px;
-      text-align: center;
-    }
+  @media (min-width: 1024px) and (max-width: 1100px) {
+    margin-bottom: 0;
   }
 `;
 
@@ -232,6 +264,10 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   transition: 0.3s;
   &:active {
     opacity: 0.85;
+  }
+
+  @media (max-width: 360px) {
+    top: 10vh;
   }
 
   @media (max-width: 320px) and (max-height: 570px) {
@@ -257,6 +293,10 @@ const iconsCSS = css`
     opacity: 0.5;
   }
 
+  &:hover {
+    transform: translate3d(0, -2px, 0);
+  }
+
   width: 30px;
   height: 30px;
 
@@ -267,18 +307,18 @@ const iconsCSS = css`
   }
 `;
 
-export const HappyIcon = styled(RiChatSmile2Fill)`
-  ${iconsCSS};
+export const EmailIcon = styled(IoIosMail)`
+  ${iconsCSS}
 `;
 
-export const LocationIcon = styled(MdLocationOn)`
-  ${iconsCSS};
+export const LinkedInIcon = styled(FaLinkedinIn)`
+  ${iconsCSS}
 `;
 
-export const GitHubIcon = styled(SiGithub)`
-  ${iconsCSS};
+export const TwitterIcon = styled(SiTwitter)`
+  ${iconsCSS}
 `;
 
-export const AboutMeIcon = styled(BsPersonFill)`
-  ${iconsCSS};
+export const InstagramIcon = styled(SiInstagram)`
+  ${iconsCSS}
 `;

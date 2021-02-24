@@ -1,11 +1,11 @@
 import type { AppProps } from 'next/app';
-import HomePage from '../src/components/HomePage';
-import GlobalStyles from '../src/styles/GlobalStyles';
-import usePersistedState from '../src/utils/usePersistedState';
+import HomePage from '../components/HomePage';
+import GlobalStyles from '../styles/GlobalStyles';
+import usePersistedState from '../utils/usePersistedState';
 import { ThemeProvider } from 'styled-components';
 
-import darkTheme from '../src/styles/themes/darkTheme';
-import lightTheme from '../src/styles/themes/lightTheme';
+import darkTheme from '../styles/themes/darkTheme';
+import lightTheme from '../styles/themes/lightTheme';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = usePersistedState('theme', darkTheme);

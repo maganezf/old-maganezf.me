@@ -1,10 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-import { IoIosMail } from 'react-icons/io';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { SiTwitter, SiInstagram } from 'react-icons/si';
-
-import { WaveBackgroundImgDesktop } from '../../src/styles/Icons';
+import { WaveBackgroundImgDesktop } from '../../styles/Icons';
 
 export const Container = styled.main`
   display: flex;
@@ -34,22 +30,6 @@ export const Container = styled.main`
   position: absolute;
   top: 60px;
   left: 0px;
-
-  > section {
-    flex-wrap: wrap;
-    color: ${(props) => props.theme.iconsTextColor};
-
-    font-size: 21px;
-
-    margin: 1.5rem 0 2.5rem 0;
-
-    transition: 0.3s;
-    &:active {
-      opacity: 0.5;
-    }
-
-    z-index: 2;
-  }
 
   @media (min-width: 400px) {
     overflow: hidden;
@@ -86,42 +66,24 @@ export const ProfileContainer = styled.div`
 
   justify-content: center;
 
-  margin: 15rem 15px 0 15px;
+  margin: 0 15px 10vh 15px;
 
   z-index: 2;
 
-  @media (min-width: 530px) and (max-width: 700px) {
-    margin-top: 10rem;
-  }
-
-  @media (min-width: 400px) and (max-width: 500px) {
-    margin-top: 6rem;
-  }
-
-  @media (max-width: 375px) {
-    margin-top: 10rem;
-  }
-
-  @media (max-width: 320px) {
-    margin-top: 10rem;
-  }
-
-  @media (max-width: 280px) {
-    margin-top: 8rem;
+  @media (min-width: 320px) and (max-width: 360px) {
+    margin-bottom: 20px;
   }
 
   // tablet layout
-  @media (min-width: 750px) and (max-width: 1024px) {
+  @media (min-width: 750px) and (max-width: 999px) {
     align-items: center;
-    margin-top: 0rem;
+    margin-bottom: 20vh;
   }
 
   // desktop layout
-  @media (min-width: 1025px) {
+  @media (min-width: 1000px) {
     align-items: center;
-
-    margin: 1rem 15px 1rem 15px;
-    /* margin: 10rem 15px 1rem 15px; */
+    margin-bottom: 1rem;
   }
 `;
 
@@ -157,7 +119,6 @@ export const ImageProfile = styled.div`
 export const DescriptionProfile = styled.div`
   > h1 {
     text-align: left;
-
     padding: 4px;
 
     color: ${(props) => props.theme.iconsTextColor};
@@ -177,7 +138,7 @@ export const DescriptionProfile = styled.div`
     }
 
     @media (max-width: 280px) {
-      margin: 0 0 0px 5px;
+      margin-left: 5px;
     }
 
     // desktop layout
@@ -188,36 +149,7 @@ export const DescriptionProfile = styled.div`
   }
 `;
 
-export const IconsContainer = styled.div`
-  display: flex;
-
-  z-index: 2;
-
-  align-content: center;
-  justify-content: space-evenly;
-
-  margin-bottom: 10vh;
-
-  > a {
-    margin-right: 15vw;
-
-    transition: 0.3s;
-    &:active,
-    &:hover {
-      opacity: 0.5;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  // desktop layout
-  @media (min-width: 1000px) {
-  }
-`;
-
-export const SendEmailContainer = styled.div`
+export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
 
@@ -225,27 +157,113 @@ export const SendEmailContainer = styled.div`
 
   color: ${(props) => props.theme.iconsTextColor};
 
-  margin-bottom: 4.5rem;
+  margin-bottom: 50px;
+
+  > section {
+    > p {
+      > h2 {
+        font-size: 24px;
+        font-weight: 700;
+
+        transition: 0.3s;
+        &:active {
+          opacity: 0.5;
+        }
+      }
+
+      padding: 6px;
+
+      margin: 0 25px;
+
+      color: ${(props) => props.theme.iconsTextColor};
+      background-color: ${(props) => props.theme.borderProfileColor};
+
+      border-radius: 5px;
+
+      font-size: 22px;
+
+      > a {
+        color: ${(props) => props.theme.primaryColor};
+
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+`;
+
+export const ImagesContainer = styled.div`
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 20px;
+
+  @media (max-width: 540px) {
+    flex-direction: column;
+  }
+
+  > img {
+    width: 400px;
+    height: 300px;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 540px) {
+      width: 180px;
+      height: 180px;
+    }
+  }
+`;
+
+export const TextContainer2 = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  z-index: 2;
+
+  color: ${(props) => props.theme.iconsTextColor};
+
+  margin-bottom: 50px;
 
   font-size: 21px;
 
   > section {
-    font-size: 22px;
-    text-align: center;
+    > p {
+      > h2 {
+        font-size: 24px;
+        font-weight: 700;
 
-    transition: 0.3s;
-    &:active {
-      opacity: 0.5;
+        transition: 0.3s;
+        &:active {
+          opacity: 0.5;
+        }
+      }
+
+      padding: 6px;
+
+      margin: 0 25px;
+
+      color: ${(props) => props.theme.iconsTextColor};
+      background-color: ${(props) => props.theme.borderProfileColor};
+
+      border-radius: 5px;
+
+      font-size: 22px;
+
+      > a {
+        color: ${(props) => props.theme.primaryColor};
+
+        text-decoration: none;
+        font-weight: bold;
+      }
     }
-  }
-
-  // desktop layout
-  @media (min-width: 1000px) {
-    margin-bottom: 4rem;
-  }
-
-  @media (min-width: 1024px) and (max-width: 1100px) {
-    margin-bottom: 0;
   }
 `;
 
@@ -266,10 +284,6 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
     opacity: 0.85;
   }
 
-  @media (max-width: 360px) {
-    top: 10vh;
-  }
-
   @media (max-width: 320px) and (max-height: 570px) {
     top: 30vh;
   }
@@ -277,48 +291,4 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   @media (max-width: 320px) and (max-height: 480px) {
     top: 57vh;
   }
-
-  @media (max-width: 280px) {
-    top: 10vh;
-  }
-`;
-
-const iconsCSS = css`
-  fill: ${(props) => props.theme.iconsTextColor};
-
-  transition: 0.3s;
-
-  &:hover,
-  &:active {
-    opacity: 0.5;
-  }
-
-  &:hover {
-    transform: translate3d(0, -2px, 0);
-  }
-
-  width: 30px;
-  height: 30px;
-
-  // desktop layout
-  @media (min-width: 1000px) {
-    width: 40px;
-    height: 40px;
-  }
-`;
-
-export const EmailIcon = styled(IoIosMail)`
-  ${iconsCSS}
-`;
-
-export const LinkedInIcon = styled(FaLinkedinIn)`
-  ${iconsCSS}
-`;
-
-export const TwitterIcon = styled(SiTwitter)`
-  ${iconsCSS}
-`;
-
-export const InstagramIcon = styled(SiInstagram)`
-  ${iconsCSS}
 `;

@@ -1,13 +1,15 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-import { WaveBackgroundImgDesktop } from '../../src/styles/Icons';
+import { RiChatSmile2Fill } from 'react-icons/ri';
+import { MdLocationOn } from 'react-icons/md';
+import { SiGithub } from 'react-icons/si';
+import { BsPersonFill } from 'react-icons/bs';
+
+import { WaveBackgroundImgDesktop } from '../styles/Icons';
 
 export const Container = styled.main`
   display: flex;
   flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
 
   animation: loadAnimation;
   animation-timing-function: ease;
@@ -16,9 +18,12 @@ export const Container = styled.main`
   width: 100vw;
   height: 100vh;
 
-  overflow-x: hidden;
+  overflow: hidden;
 
   padding: 20px 15px 0 15px;
+
+  align-items: center;
+  justify-content: center;
 
   border-radius: 30px 30px 0 0;
 
@@ -42,16 +47,10 @@ export const Container = styled.main`
 
   @media (max-width: 375px) and (max-height: 670px) {
     height: 750px;
-    overflow: hidden;
-  }
-
-  @media (max-width: 360px) {
-    overflow-y: scroll;
   }
 
   @media (max-width: 320px) and (max-height: 570px) {
-    height: 760px;
-    overflow: hidden;
+    height: 750px;
   }
 
   @media (max-width: 320px) and (max-height: 480px) {
@@ -70,7 +69,15 @@ export const ProfileContainer = styled.div`
 
   z-index: 2;
 
-  @media (min-width: 320px) and (max-width: 360px) {
+  @media (max-width: 280px) {
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 360px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 320px) {
     margin-bottom: 20px;
   }
 
@@ -119,6 +126,7 @@ export const ImageProfile = styled.div`
 export const DescriptionProfile = styled.div`
   > h1 {
     text-align: left;
+
     padding: 4px;
 
     color: ${(props) => props.theme.iconsTextColor};
@@ -128,7 +136,8 @@ export const DescriptionProfile = styled.div`
     font-weight: 700;
 
     border-radius: 6px;
-    margin: 0 10px 50px 0;
+    margin-right: 10px;
+    margin-bottom: 50px;
 
     flex-shrink: 0;
 
@@ -137,8 +146,12 @@ export const DescriptionProfile = styled.div`
       opacity: 0.5;
     }
 
+    @media (width: 375px) {
+      margin-bottom: 0;
+    }
+
     @media (max-width: 280px) {
-      margin-left: 5px;
+      margin: 0 0 0 5px;
     }
 
     // desktop layout
@@ -150,119 +163,56 @@ export const DescriptionProfile = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
+  grid-template-columns: 0.1fr 3fr;
+
+  grid-template-areas: 'IconGrid' 'IconTextGrid';
 
   z-index: 2;
 
   color: ${(props) => props.theme.iconsTextColor};
 
-  margin-bottom: 50px;
+  overflow: hidden;
 
-  > section {
-    > p {
-      > h2 {
-        font-size: 24px;
-        font-weight: 700;
+  > a {
+    height: 0;
+    transition: 0.3s;
 
-        transition: 0.3s;
-        &:active {
-          opacity: 0.5;
-        }
-      }
-
-      padding: 6px;
-
-      margin: 0 25px;
-
-      color: ${(props) => props.theme.iconsTextColor};
-      background-color: ${(props) => props.theme.borderProfileColor};
-
-      border-radius: 5px;
-
-      font-size: 22px;
-
-      > a {
-        color: ${(props) => props.theme.primaryColor};
-
-        text-decoration: none;
-        font-weight: bold;
-      }
+    &:hover,
+    &:active {
+      opacity: 0.5;
     }
   }
-`;
 
-export const ImagesContainer = styled.div`
-  display: flex;
+  .hello::before {
+    content: 'Hello! ';
 
-  justify-content: space-between;
-  align-items: center;
-
-  margin-top: 20px;
-
-  @media (max-width: 540px) {
-    flex-direction: column;
+    @media (max-width: 799px) {
+      display: block;
+    }
   }
 
-  > img {
-    width: 400px;
-    height: 300px;
+  > p {
+    text-align: left;
 
-    border-radius: 5px;
+    margin: 0 0 25px 25px;
+
+    font-size: 22px;
 
     transition: 0.3s;
-    &:hover {
-      opacity: 0.8;
+    &:active {
+      opacity: 0.5;
     }
 
-    @media (max-width: 540px) {
-      width: 180px;
-      height: 180px;
+    @media (min-width: 280px) and (max-width: 320px) {
+      font-size: 21px;
     }
-  }
-`;
 
-export const TextContainer2 = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  z-index: 2;
-
-  color: ${(props) => props.theme.iconsTextColor};
-
-  margin-bottom: 50px;
-
-  font-size: 21px;
-
-  > section {
-    > p {
-      > h2 {
-        font-size: 24px;
-        font-weight: 700;
-
-        transition: 0.3s;
-        &:active {
-          opacity: 0.5;
-        }
-      }
-
-      padding: 6px;
-
-      margin: 0 25px;
-
-      color: ${(props) => props.theme.iconsTextColor};
-      background-color: ${(props) => props.theme.borderProfileColor};
-
-      border-radius: 5px;
-
-      font-size: 22px;
-
-      > a {
-        color: ${(props) => props.theme.primaryColor};
-
-        text-decoration: none;
-        font-weight: bold;
-      }
+    // tablet and desktop layout
+    @media (min-width: 800px) {
+      margin-bottom: 50px;
+      text-align: center;
     }
   }
 `;
@@ -291,4 +241,44 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   @media (max-width: 320px) and (max-height: 480px) {
     top: 57vh;
   }
+
+  @media (max-width: 280px) {
+    top: 10vh;
+  }
+`;
+
+const iconsCSS = css`
+  fill: ${(props) => props.theme.iconsTextColor};
+
+  transition: 0.3s;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+
+  width: 30px;
+  height: 30px;
+
+  // desktop layout
+  @media (min-width: 1000px) {
+    width: 40px;
+    height: 40px;
+  }
+`;
+
+export const HappyIcon = styled(RiChatSmile2Fill)`
+  ${iconsCSS};
+`;
+
+export const LocationIcon = styled(MdLocationOn)`
+  ${iconsCSS};
+`;
+
+export const GitHubIcon = styled(SiGithub)`
+  ${iconsCSS};
+`;
+
+export const AboutMeIcon = styled(BsPersonFill)`
+  ${iconsCSS};
 `;

@@ -19,7 +19,7 @@ import {
   SiTailwindcss,
 } from 'react-icons/si';
 
-import { WaveBackgroundImgDesktop } from '../../src/styles/Icons';
+import { WaveBackgroundImgDesktop } from '../../styles/Icons';
 
 export const Container = styled.main`
   width: 100vw;

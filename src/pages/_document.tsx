@@ -62,13 +62,15 @@ export default class MyDocument extends Document {
             title="developer"
           />
 
+          {/* Poppins Font | Weights: 300, 400, 700 */}
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+            rel="stylesheet"
+          />
+
           {/* configure canonical link with main link my website  */}
           {/* <link rel="canonical" href="https://maganezf.netlify.app" /> */}
-          <style>
-            {/* Font Poppins 300, 400, 700 */}
-            @import
-            url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-          </style>
         </Head>
 
         <body>

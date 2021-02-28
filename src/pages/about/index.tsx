@@ -62,7 +62,7 @@ const AboutPage: React.FC<Props> = ({ toggleTheme }) => {
                 </a>
               </Link>
               , and have been living in{' '}
-              <Link href="https://www.google.com/maps/place/Bananeiras+-+State+of+Para%C3%ADba/@-6.6960919,-35.6751471">
+              <Link href="https://www.google.com/maps/place/Bananeiras+PB/@-6.7533036,-35.6344225,17">
                 <a target="_blank" rel="noopener noreferrer">
                   Bananeiras
                 </a>
@@ -104,7 +104,7 @@ const AboutPage: React.FC<Props> = ({ toggleTheme }) => {
             />
 
             <img
-              src="https://lh5.googleusercontent.com/p/AF1QipPxxs3Jz5I-QKy4lRz878HNLIkyl-0_afMMGGxt=s451-k-no"
+              src="https://lh5.googleusercontent.com/p/AF1QipMV-eVAYyuHlHJVIWBDeb5Oly5pix6-CHUhZG55=w426-h240-k-no"
               alt="Bananeiras Image"
             />
           </ImagesContainer> */}

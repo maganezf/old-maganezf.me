@@ -13,7 +13,6 @@ import {
   DescriptionProfile,
   TextContainer,
   ImagesContainer,
-  TextContainer2,
   WaveBackground,
 } from './styles';
 
@@ -56,7 +55,7 @@ const AboutPage: React.FC<Props> = ({ toggleTheme }) => {
           <section>
             <p>
               <h2>🏠 Where I'm from</h2>I was born in{' '}
-              <Link href="https://www.google.com/maps/place/Guarabira,+State+of+Para%C3%ADba/@-6.8640922,-35.5155381">
+              <Link href="https://www.google.com/maps/place/Guarabira+PB/@-6.8640922,-35.5155381">
                 <a target="_blank" rel="noopener noreferrer">
                   Guarabira
                 </a>
@@ -68,6 +67,10 @@ const AboutPage: React.FC<Props> = ({ toggleTheme }) => {
                 </a>
               </Link>
               , to this day.
+              <ImagesContainer>
+                <img src="/guarabira.jpg" alt="Guarabira Image" />
+                <img src="/bananeiras.jpg" alt="Bananeiras Image" />
+              </ImagesContainer>
             </p>
           </section>
 
@@ -97,17 +100,6 @@ const AboutPage: React.FC<Props> = ({ toggleTheme }) => {
               society.
             </p>
           </section>
-          {/* <ImagesContainer>
-            <img
-              src="https://lh5.googleusercontent.com/p/AF1QipOnmic1_lP3OD_RBMijMXfREYHFiSkPRwxUV0JO=s452-k-no"
-              alt="Guarabira Image"
-            />
-
-            <img
-              src="https://lh5.googleusercontent.com/p/AF1QipMV-eVAYyuHlHJVIWBDeb5Oly5pix6-CHUhZG55=w426-h240-k-no"
-              alt="Bananeiras Image"
-            />
-          </ImagesContainer> */}
         </TextContainer>
 
         <WaveBackground />

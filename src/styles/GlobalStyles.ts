@@ -18,8 +18,6 @@ export default createGlobalStyle`
     }
   }
 
-
-
   html, body, #root {
     max-width: 100vw;
     max-height: 100vh;
@@ -65,18 +63,9 @@ export default createGlobalStyle`
     background: none;
   }
 
-  @media (max-width: 1080px) {
-    html {
-      //15px
-      font-size: 93.75%;
-    }
-  }
-
-  @media (max-width: 720px) {
-    html {
-      //14px
-      font-size: 87.5%;
-    }
+  html {
+    // 10px based
+    font-size: 62.5%;
   }
 
   body {

@@ -4,7 +4,7 @@ import Head from 'next/head';
 import HeaderBar from '../../components/HeaderBar';
 import FooterBar from '../../components/FooterBar';
 import GlobalStyles from '../../styles/GlobalStyles';
-import { Props } from '../../components/HeaderBar';
+import { ThemeProps } from '../../components/HeaderBar';
 
 import {
   Container,
@@ -16,7 +16,7 @@ import {
   WaveBackground,
 } from './styles';
 
-const AboutPage: React.FC<Props> = ({ toggleTheme }) => {
+const AboutPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
   return (
     <>
       <Head>

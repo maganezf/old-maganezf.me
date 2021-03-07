@@ -3,7 +3,7 @@ import Link from 'next/link';
 import HeaderBar from '../components/HeaderBar';
 import FooterBar from '../components/FooterBar';
 import GlobalStyles from '../styles/GlobalStyles';
-import { Props } from '../components/HeaderBar';
+import { ThemeProps } from '../components/HeaderBar';
 
 import {
   Container,
@@ -18,7 +18,7 @@ import {
   AboutMeIcon,
 } from './styles';
 
-const IndexPage: React.FC<Props> = ({ toggleTheme }) => {
+const IndexPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
   return (
     <>
       <HeaderBar toggleTheme={toggleTheme} />

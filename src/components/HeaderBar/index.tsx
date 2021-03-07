@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useContext } from 'react';
-import { ThemeContext, css } from 'styled-components';
+import { ThemeContext } from 'styled-components';
 import GlobalStyles from '../../styles/GlobalStyles';
 
 import {
@@ -16,11 +16,11 @@ import {
   TitlePages,
 } from './styles';
 
-export interface Props {
+export interface ThemeProps {
   toggleTheme(): void;
 }
 
-const HeaderBar: React.FC<Props> = ({ toggleTheme }) => {
+const HeaderBar: React.FC<ThemeProps> = ({ toggleTheme }) => {
   const { name } = useContext(ThemeContext);
 
   return (

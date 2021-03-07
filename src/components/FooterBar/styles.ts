@@ -37,7 +37,8 @@ export const Container = styled.footer`
     transition: 0.3s;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       opacity: 0.5;
       color: ${(props) => props.theme.tertiaryColor};
     }

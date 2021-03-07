@@ -1,15 +1,16 @@
 import { ReactNode } from 'react';
 import Head from 'next/head';
 
-interface Props {
+type Props = {
   children?: ReactNode;
-}
+  title?: string;
+};
 
-const HomePage: React.FC<Props> = ({ children }) => {
+const HomePage: React.FC = ({ children, title = 'Home | Maganez' }: Props) => {
   return (
     <>
       <Head>
-        <title>Home | Maganez</title>
+        <title>{title}</title>
       </Head>
 
       {children}

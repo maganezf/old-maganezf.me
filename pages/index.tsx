@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-import HeaderBar from '../components/HeaderBar';
-import FooterBar from '../components/FooterBar';
-import GlobalStyles from '../styles/GlobalStyles';
-import { ThemeProps } from '../components/HeaderBar';
+import HeaderBar from '../src/components/HeaderBar';
+import FooterBar from '../src/components/FooterBar';
+import GlobalStyles from '../src/styles/GlobalStyles';
+import { ThemeProps } from '../src/components/HeaderBar';
 
 import {
   Container,

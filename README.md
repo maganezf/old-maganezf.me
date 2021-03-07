@@ -11,7 +11,7 @@
 
   <img alt='Top Language' src='https://img.shields.io/github/languages/top/maganezf/maganezf.me'/>
 
-  <a href='https://maganezf.me' >
+  <a href='https://maganezf-me.vercel.app/' >
     <img alt='maganezf.me' src="https://img.shields.io/badge/maganezf.me-101D42"/>
   </a>
 
@@ -29,7 +29,7 @@
 
 <div align="center">
 
-> This is my portfolio/personal website 🤗
+> This is my personal website 🤗
 
 <sub>The maganezf.me project. Built with ❤︎ by
 <a href="https://github.com/maganezf">Maganez Filho</a> and
@@ -65,7 +65,7 @@ Ps: These layouts were just initial prototypes, which after new ideas I improved
 
 # 👀 Live Website
 
-👉 [Click to open Website here](https://maganezf.me/)
+👉 [Click to open Website here](https://maganezf-me.vercel.app/)
 
 # 💻 Technologies
 

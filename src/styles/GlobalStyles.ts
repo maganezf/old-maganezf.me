@@ -18,7 +18,29 @@ export default createGlobalStyle`
     }
   }
 
-  html, body, #root {
+  *, button, input, select, textarea {
+    border: 0;
+    outline: 0;
+
+    font-family: 'Poppins', sans-serif, Ubuntu, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  button {
+    cursor: pointer;
+    background: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  html,
+  :root {
+    // 10px based
+    font-size: 62.5%;
+  }
+
+  html, body {
     max-width: 100vw;
     max-height: 100vh;
 
@@ -41,7 +63,6 @@ export default createGlobalStyle`
       border-radius: 20px;
       -webkit-border-radius: 20px;
 
-
       background: ${(props) => props.theme.selectionTextColor};
 
       box-shadow: 0px 8px 24px .15px ${(props) => props.theme.shadowColor};
@@ -50,34 +71,11 @@ export default createGlobalStyle`
     }
   }
 
-  *, button, input {
-    border: 0;
-    outline: 0;
-
-    font-family: 'Poppins', sans-serif, Ubuntu, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  }
-
-  button {
-    cursor: pointer;
-
-    background: none;
-  }
-
-  html {
-    // 10px based
-    font-size: 62.5%;
-  }
-
   body {
-    /* Firefox */
-    /* scrollbar-width: none; */
-
-    /* Chrome */
-    ::-webkit-scrollbar {
-      /* display: none; */
-    }
-
     overflow-x: hidden;
+
+    // set to 16px - default body font-size
+    font-size: 1.6rem;
   }
 
   @keyframes loadAnimation {
@@ -92,4 +90,6 @@ export default createGlobalStyle`
       transform: scale(1);
     }
   }
+
+
 `;

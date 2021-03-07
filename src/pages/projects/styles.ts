@@ -39,37 +39,38 @@ export const Container = styled.main`
 
   grid-template-areas: 'ExperienceContainer' 'TechsIcons';
 
-  padding: 20px 15px 0 15px;
+  padding: 2rem 1.5rem 0 1.5rem;
 
-  border-radius: 30px 30px 0 0;
+  border-radius: 3rem 3rem 0 0;
 
   background: ${(props) => props.theme.backgroundColor};
   background-size: cover;
   background-position: center;
 
   position: absolute;
-  top: 60px;
-  left: 0px;
+  top: 6rem;
+  left: 0;
+  right: 0;
 
   @media (min-width: 400px) {
     overflow: hidden;
   }
 
   @media (width: 375px) and (max-height: 815px) {
-    height: 800px;
+    height: 80rem;
     overflow: hidden;
   }
 
   @media (max-width: 375px) and (max-height: 670px) {
-    height: 750px;
+    height: 75rem;
   }
 
   @media (max-width: 320px) and (max-height: 570px) {
-    height: 750px;
+    height: 75rem;
   }
 
   @media (max-width: 320px) and (max-height: 480px) {
-    height: 740px;
+    height: 74rem;
   }
 `;
 
@@ -114,19 +115,15 @@ export const ExperienceContainer = styled.div`
 
   color: ${(props) => props.theme.iconsTextColor};
 
-  font-size: 18.5px;
+  font-size: 1.85rem;
 
   // desktop layout
   @media (min-width: 1000px) {
-    font-size: 22px;
-
-    /* margin-bottom: 12.5rem; */
+    font-size: 2.2rem; // 22px
   }
 
   @media (min-width: 760px) and (max-width: 999px) {
-    font-size: 29.5px;
-
-    /* margin-bottom: 12.5rem; */
+    font-size: 2.95rem; // 29.5px
   }
 
   @media (min-width: 400px) and (max-width: 759px) {
@@ -134,7 +131,7 @@ export const ExperienceContainer = styled.div`
   }
 
   @media (max-width: 280px) {
-    font-size: 17.5px;
+    font-size: 1.75rem; // 17.5px
   }
 `;
 
@@ -144,7 +141,6 @@ export const TitleTechsIcons = styled.div`
   display: flex;
   flex-direction: column;
 
-  width: auto;
   height: 10vh;
 
   align-items: flex-start;
@@ -156,8 +152,9 @@ export const TitleTechsIcons = styled.div`
 
   > h3 {
     color: ${(props) => props.theme.iconsTextColor};
+    max-width: 100%;
 
-    font-size: 18.5px;
+    font-size: 1.85rem; // 18.5px
 
     align-items: flex-start;
 
@@ -168,13 +165,11 @@ export const TitleTechsIcons = styled.div`
 
     // desktop layout
     @media (min-width: 1000px) {
-      font-size: 22px;
+      font-size: 2.2rem; // 22px
     }
 
     @media (min-width: 760px) and (max-width: 999px) {
-      font-size: 29.5px;
-
-      /* margin-bottom: 12.5rem; */
+      font-size: 2.95rem; // 29.5px
     }
 
     @media (min-width: 400px) and (max-width: 759px) {
@@ -182,7 +177,7 @@ export const TitleTechsIcons = styled.div`
     }
 
     @media (max-width: 280px) {
-      font-size: 17.5px;
+      font-size: 1.75rem; // 17.5px
     }
 
     @media (max-width: 1000px) {
@@ -193,7 +188,6 @@ export const TitleTechsIcons = styled.div`
   @media (max-width: 1000px) {
     align-self: center;
     justify-content: center;
-
     justify-self: center;
   }
 `;
@@ -269,7 +263,7 @@ export const FirstProjectsContainer = styled.div`
 
     color: ${(props) => props.theme.iconsTextColor};
 
-    font-size: 18.5px;
+    font-size: 1.85rem; // 18.5px
 
     transition: 0.3s;
     &:active {
@@ -278,13 +272,11 @@ export const FirstProjectsContainer = styled.div`
 
     // desktop layout
     @media (min-width: 1000px) {
-      font-size: 22px;
+      font-size: 2.2rem; // 22rem
     }
 
     @media (min-width: 760px) and (max-width: 999px) {
-      font-size: 29.5px;
-
-      /* margin-bottom: 12.5rem; */
+      font-size: 2.95rem; // 29.5px
     }
 
     @media (min-width: 400px) and (max-width: 759px) {
@@ -292,7 +284,7 @@ export const FirstProjectsContainer = styled.div`
     }
 
     @media (max-width: 280px) {
-      font-size: 17.5px;
+      font-size: 1.75rem; // 17.5px
     }
   }
 
@@ -310,6 +302,12 @@ export const SecondProjectsContainer = styled.div`
   align-self: center;
 
   margin-bottom: 2rem;
+
+  z-index: 2;
+
+  color: ${(props) => props.theme.iconsTextColor};
+
+  font-size: 1.85rem; // 18.5px
 
   > h3 {
     align-items: flex-end;
@@ -336,23 +334,17 @@ export const SecondProjectsContainer = styled.div`
     }
   }
 
-  z-index: 2;
-
-  color: ${(props) => props.theme.iconsTextColor};
-
-  font-size: 18.5px;
-
   // desktop layout
   @media (min-width: 1000px) {
-    font-size: 22px;
+    font-size: 2.2rem; // 22px
   }
 
   @media (min-width: 760px) and (max-width: 999px) {
-    font-size: 29.5px;
+    font-size: 29.5px; // 29.5px
   }
 
   @media (max-width: 280px) {
-    font-size: 17.5px;
+    font-size: 1.75rem; // 17.5px
   }
 `;
 
@@ -367,6 +359,7 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
 
   transition: 0.3s;
   &:active {
@@ -401,13 +394,13 @@ const iconsCSS = css`
     transform: translate3d(0, -2px, 0);
   }
 
-  width: 23px;
-  height: 23px;
+  width: 2.3rem;
+  height: 2.3rem;
 
   // desktop layout
   @media (min-width: 1000px) {
-    width: 25px;
-    height: 25px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 `;
 

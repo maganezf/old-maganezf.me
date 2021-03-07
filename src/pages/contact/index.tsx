@@ -12,6 +12,7 @@ import {
   ProfileContainer,
   ImageProfile,
   DescriptionProfile,
+  FollowingMeOn,
   WaveBackground,
   IconsContainer,
   EmailIcon,
@@ -44,7 +45,9 @@ const ContactPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
           </DescriptionProfile>
         </ProfileContainer>
 
-        <section>{`<Keep connected with my work by following me on />`}</section>
+        <FollowingMeOn>
+          <p>{`<Keep connected with my work by following me on />`}</p>
+        </FollowingMeOn>
 
         <IconsContainer>
           <Link href="mailto:maganezfilho@gmail.com">
@@ -73,10 +76,10 @@ const ContactPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
         </IconsContainer>
 
         <SendEmailContainer>
-          <section>
+          <p>
             To have a closer contact with me, follow me and/or send me messages
-            via Emails, GitHub, LinkedIn, Twitter and Instagram
-          </section>
+            via Emails, GitHub, LinkedIn, Twitter or Instagram
+          </p>
         </SendEmailContainer>
 
         <WaveBackground />

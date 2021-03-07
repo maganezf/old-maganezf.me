@@ -22,9 +22,9 @@ export const Container = styled.main`
 
   overflow-x: hidden;
 
-  padding: 20px 15px 0 15px;
+  padding: 2rem 1.5rem 0 1.5rem;
 
-  border-radius: 30px 30px 0 0;
+  border-radius: 3rem 3rem 0 0;
 
   background: ${(props) => props.theme.backgroundColor};
 
@@ -32,36 +32,21 @@ export const Container = styled.main`
   background-position: center;
 
   position: absolute;
-  top: 60px;
-  left: 0px;
-
-  > section {
-    flex-wrap: wrap;
-    color: ${(props) => props.theme.iconsTextColor};
-
-    font-size: 21px;
-
-    margin: 1.5rem 0 2.5rem 0;
-
-    transition: 0.3s;
-    &:active {
-      opacity: 0.5;
-    }
-
-    z-index: 2;
-  }
+  top: 6rem;
+  left: 0;
+  right: 0;
 
   @media (min-width: 400px) {
     overflow: hidden;
   }
 
   @media (width: 375px) and (max-height: 815px) {
-    height: 800px;
+    height: 80rem;
     overflow: hidden;
   }
 
   @media (max-width: 375px) and (max-height: 670px) {
-    height: 750px;
+    height: 75rem;
     overflow: hidden;
   }
 
@@ -70,12 +55,12 @@ export const Container = styled.main`
   }
 
   @media (max-width: 320px) and (max-height: 570px) {
-    height: 760px;
+    height: 76rem;
     overflow: hidden;
   }
 
   @media (max-width: 320px) and (max-height: 480px) {
-    height: 740px;
+    height: 74rem;
   }
 `;
 
@@ -86,24 +71,12 @@ export const ProfileContainer = styled.div`
 
   justify-content: center;
 
-  margin: 15rem 15px 0 15px;
+  margin: 0 1.5rem;
 
   z-index: 2;
 
   @media (min-width: 530px) and (max-width: 700px) {
-    margin-top: 10rem;
-  }
-
-  @media (min-width: 400px) and (max-width: 500px) {
-    margin-top: 6rem;
-  }
-
-  @media (max-width: 375px) {
-    margin-top: 10rem;
-  }
-
-  @media (max-width: 320px) {
-    margin-top: 10rem;
+    margin-top: 1.5rem;
   }
 
   @media (max-width: 280px) {
@@ -113,27 +86,26 @@ export const ProfileContainer = styled.div`
   // tablet layout
   @media (min-width: 750px) and (max-width: 1024px) {
     align-items: center;
-    margin-top: 0rem;
+    margin-top: 0;
   }
 
   // desktop layout
   @media (min-width: 1025px) {
     align-items: center;
 
-    margin: 1rem 15px 1rem 15px;
-    /* margin: 10rem 15px 1rem 15px; */
+    margin: 1rem 1.5rem 2.5rem 1.5rem;
   }
 `;
 
 export const ImageProfile = styled.div`
   > img {
-    width: 150px;
-    height: 150px;
+    width: 15rem;
+    height: 15rem;
 
     border-radius: 50%;
-    border: 2.5px solid ${(props) => props.theme.tertiaryColor};
+    border: 0.25rem solid ${(props) => props.theme.tertiaryColor};
 
-    margin: 0 10px;
+    margin: 0 1rem;
 
     transition: 0.3s;
 
@@ -142,14 +114,10 @@ export const ImageProfile = styled.div`
     }
 
     @media (max-width: 280px) {
-      width: 125px;
-      height: 125px;
+      width: 12.5rem;
+      height: 12.5rem;
 
       margin: 0;
-    }
-
-    // desktop layout
-    @media (min-width: 1000px) {
     }
   }
 `;
@@ -158,16 +126,18 @@ export const DescriptionProfile = styled.div`
   > h1 {
     text-align: left;
 
-    padding: 4px;
+    padding: 0.4rem;
 
     color: ${(props) => props.theme.iconsTextColor};
     background-color: ${(props) => props.theme.borderProfileColor};
 
-    font-size: 24px;
+    font-size: 2.4rem;
+
     font-weight: 700;
 
-    border-radius: 6px;
-    margin: 0 10px 50px 0;
+    border-radius: 0.6rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
 
     flex-shrink: 0;
 
@@ -177,13 +147,33 @@ export const DescriptionProfile = styled.div`
     }
 
     @media (max-width: 280px) {
-      margin: 0 0 0px 5px;
+      margin: 0 0 0 0.5rem;
     }
 
     // desktop layout
     @media (min-width: 1000px) {
       position: relative;
-      top: 25px;
+      top: 2.5rem;
+    }
+  }
+`;
+
+export const FollowingMeOn = styled.section`
+  z-index: 2;
+
+  margin-bottom: 2.5rem;
+
+  > p {
+    flex-wrap: wrap;
+    color: ${(props) => props.theme.iconsTextColor};
+
+    font-size: 2.1rem;
+
+    margin: 1.5rem 0 2.5rem 0;
+
+    transition: 0.3s;
+    &:active {
+      opacity: 0.5;
     }
   }
 `;
@@ -211,13 +201,9 @@ export const IconsContainer = styled.div`
       margin-right: 0;
     }
   }
-
-  // desktop layout
-  @media (min-width: 1000px) {
-  }
 `;
 
-export const SendEmailContainer = styled.div`
+export const SendEmailContainer = styled.section`
   display: flex;
   flex-direction: column;
 
@@ -227,11 +213,12 @@ export const SendEmailContainer = styled.div`
 
   margin-bottom: 4.5rem;
 
-  font-size: 21px;
+  font-size: 2.1rem;
 
-  > section {
-    font-size: 22px;
-    text-align: center;
+  > p {
+    font-size: 2.2rem;
+    text-align: left;
+    line-break: loose;
 
     transition: 0.3s;
     &:active {
@@ -260,6 +247,7 @@ export const WaveBackground = styled(WaveBackgroundImgDesktop)`
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
 
   transition: 0.3s;
   &:active {
@@ -297,13 +285,13 @@ const iconsCSS = css`
     transform: translate3d(0, -2px, 0);
   }
 
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
 
   // desktop layout
   @media (min-width: 1000px) {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
   }
 `;
 

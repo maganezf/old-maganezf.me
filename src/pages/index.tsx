@@ -15,7 +15,7 @@ import {
   LocationIcon,
   GitHubIcon,
   AboutMeIcon,
-} from './styles';
+} from '../styles/pages/IndexPage';
 
 const IndexPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
   return (

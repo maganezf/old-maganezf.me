@@ -15,21 +15,20 @@ export default class MyDocument extends Document {
           <meta property="og:locale" content="en, pt-br" />
           <meta property="og:site_name" content="Maganez" />
 
-          {/* Primary Meta Tags  */}
+          {/* Primary Meta Tags*/}
           <meta name="title" content="Maganez - Website" />
           <meta
             name="description"
-            content="Hello World! This is my personal website/portfolio."
+            content="Hello World! This is my personal website."
           />
 
-          {/* Open Graph / Facebook  */}
+          {/* Open Graph / Facebook METADATA */}
           <meta property="og:type" content="Personal Website" />
-          {/* configure this metadata link with main link my website  */}
-          {/* <meta property="og:url" content="https://maganezf.netlify.app"/> */}
+          <meta property="og:url" content="https://maganezf-me.vercel.app/" />
           <meta property="og:title" content="Maganez - Website" />
           <meta
             property="og:description"
-            content="Hello World! This is my personal website/portfolio."
+            content="Hello World! This is my personal website."
           />
 
           <meta property="og:image" content="/favicon.svg" />
@@ -37,13 +36,16 @@ export default class MyDocument extends Document {
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="628" />
 
-          {/* Twitter */}
+          {/* Twitter METADATA */}
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://maganezf.netlify.app" />
+          <meta
+            property="twitter:url"
+            content="https://maganezf-me.vercel.app/"
+          />
           <meta property="twitter:title" content="Maganez - Website" />
           <meta
             property="twitter:description"
-            content="Hello World! This is my personal website/portfolio."
+            content="Hello World! This is my personal website."
           />
 
           <meta property="twitter:image" content="/favicon.svg" />
@@ -57,15 +59,13 @@ export default class MyDocument extends Document {
             title="favicon"
           />
 
-          {/* Poppins Font | Weights: 300, 400, 700 */}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
             rel="stylesheet"
           />
 
-          {/* configure canonical link with main link my website  */}
-          {/* <link rel="canonical" href="https://maganezf.netlify.app" /> */}
+          <link rel="canonical" href="https://maganezf-me.vercel.app/" />
         </Head>
 
         <body>

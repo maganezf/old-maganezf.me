@@ -1,13 +1,11 @@
-import styled from 'styled-components';
-
-import { WaveBackgroundImgDesktop } from '../../styles/Icons';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.main`
   display: flex;
   flex-direction: column;
 
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   animation: loadAnimation;
   animation-timing-function: ease;
@@ -22,6 +20,7 @@ export const Container = styled.main`
 
   background: ${(props) => props.theme.backgroundColor};
 
+  background-image: url('/wave-background-mobile.svg');
   background-size: cover;
   background-position: center;
 
@@ -30,27 +29,44 @@ export const Container = styled.main`
   left: 0;
   right: 0;
 
-  @media (min-width: 400px) {
-    overflow: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  @media (min-width: 1000px) {
+    background-image: url('/wave-background.svg');
+    overflow-y: scroll;
+
+    ::-webkit-scrollbar {
+      width: 0.4rem;
+      height: 0.4rem;
+
+      background: ${(props) => props.theme.primaryColor};
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 2rem;
+      -webkit-border-radius: 2rem;
+
+      background: ${(props) => props.theme.selectionTextColor};
+
+      box-shadow: 0 0.8rem 2.4rem 0.15rem ${(props) => props.theme.shadowColor};
+      -webkit-box-shadow: 0 0.8rem 2.4rem 0.15rem
+        ${(props) => props.theme.shadowColor};
+    }
   }
 
   @media (width: 375px) and (max-height: 815px) {
     height: 80rem;
-    overflow: hidden;
+    justify-content: center;
   }
 
   @media (max-width: 375px) and (max-height: 670px) {
     height: 75rem;
-    overflow: hidden;
-  }
-
-  @media (max-width: 360px) {
-    overflow-y: scroll;
+    justify-content: center;
   }
 
   @media (max-width: 320px) and (max-height: 570px) {
     height: 76rem;
-    overflow: hidden;
   }
 
   @media (max-width: 320px) and (max-height: 480px) {
@@ -147,47 +163,88 @@ export const DescriptionProfile = styled.div`
   }
 `;
 
+const sectionStyles = css`
+  > p {
+    padding: 0.6rem;
+
+    color: ${(props) => props.theme.iconsTextColor};
+    background-color: ${(props) => props.theme.borderProfileColor};
+
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+
+    font-size: 2.2rem;
+
+    > a {
+      color: ${(props) => props.theme.primaryColor};
+
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+`;
+
+const buttonStyles = css`
+  > button {
+    display: flex;
+
+    padding: 0 0.7rem;
+
+    color: ${(props) => props.theme.iconsTextColor};
+    background-color: ${(props) => props.theme.borderProfileColor};
+
+    border-radius: 0.5rem 0.5rem 0.5rem 0;
+
+    transition: 0.25s ease-in-out;
+
+    &:hover,
+    &:active {
+      transform: scale(1.04);
+      opacity: 0.8;
+    }
+
+    > h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+  }
+`;
+
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
 
   z-index: 2;
 
   color: ${(props) => props.theme.iconsTextColor};
 
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 
-  > section {
-    > p {
-      > h2 {
-        font-size: 2.4rem;
-        font-weight: 700;
+  ${sectionStyles}
 
-        transition: 0.3s;
-        &:active {
-          opacity: 0.5;
-        }
-      }
-
-      padding: 0.6rem;
-
-      margin: 0 2.5rem;
-
-      color: ${(props) => props.theme.iconsTextColor};
-      background-color: ${(props) => props.theme.borderProfileColor};
-
-      border-radius: 0.5rem;
-
-      font-size: 2.2rem;
-
-      > a {
-        color: ${(props) => props.theme.primaryColor};
-
-        text-decoration: none;
-        font-weight: bold;
-      }
-    }
+  @media (min-width: 1000px) {
+    margin-bottom: 6rem;
   }
+`;
+
+export const FromContent = styled.section`
+  ${buttonStyles}
+  ${sectionStyles}
+
+  margin-bottom: .5rem;
+`;
+
+export const HobbiesContainer = styled.section`
+  ${buttonStyles}
+  ${sectionStyles}
+  margin-bottom: .5rem;
+`;
+
+export const ProgrammingJourneyContainer = styled.section`
+  ${buttonStyles}
+  ${sectionStyles}
 `;
 
 export const ImagesContainer = styled.div`
@@ -198,7 +255,7 @@ export const ImagesContainer = styled.div`
 
   margin-top: 2rem;
 
-  @media (max-width: 540px) {
+  @media (min-width: 600px) and (max-width: 1100px) {
     flex-direction: column;
   }
 
@@ -208,11 +265,11 @@ export const ImagesContainer = styled.div`
 
     border-radius: 0.5rem;
 
-    transition: 0.3s;
+    transition: 0.25s ease-in-out;
     &:hover {
       opacity: 0.8;
 
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
 
     &::first-child {
@@ -246,32 +303,5 @@ export const ImagesContainer = styled.div`
       width: 18rem;
       height: 18rem;
     }
-  }
-`;
-
-export const WaveBackground = styled(WaveBackgroundImgDesktop)`
-  width: auto;
-  height: 115vh;
-
-  z-index: 0;
-
-  overflow: hidden;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  transition: 0.3s;
-  &:active {
-    opacity: 0.85;
-  }
-
-  @media (max-width: 320px) and (max-height: 570px) {
-    top: 30vh;
-  }
-
-  @media (max-width: 320px) and (max-height: 480px) {
-    top: 57vh;
   }
 `;

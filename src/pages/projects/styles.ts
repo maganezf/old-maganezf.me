@@ -19,8 +19,6 @@ import {
   SiTailwindcss,
 } from 'react-icons/si';
 
-import { WaveBackgroundImgDesktop } from '../../styles/Icons';
-
 export const Container = styled.main`
   width: 100vw;
   height: 100vh;
@@ -44,6 +42,8 @@ export const Container = styled.main`
   border-radius: 3rem 3rem 0 0;
 
   background: ${(props) => props.theme.backgroundColor};
+
+  background-image: url('/wave-background-mobile.svg');
   background-size: cover;
   background-position: center;
 
@@ -51,6 +51,10 @@ export const Container = styled.main`
   top: 6rem;
   left: 0;
   right: 0;
+
+  @media (min-width: 1000px) {
+    background-image: url('/wave-background.svg');
+  }
 
   @media (min-width: 400px) {
     overflow: hidden;
@@ -345,37 +349,6 @@ export const SecondProjectsContainer = styled.div`
 
   @media (max-width: 280px) {
     font-size: 1.75rem; // 17.5px
-  }
-`;
-
-export const WaveBackground = styled(WaveBackgroundImgDesktop)`
-  width: auto;
-  height: 115vh;
-
-  z-index: 0;
-
-  overflow: hidden;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  transition: 0.3s;
-  &:active {
-    opacity: 0.85;
-  }
-
-  @media (max-width: 320px) and (max-height: 570px) {
-    top: 35vh;
-  }
-
-  @media (max-width: 320px) and (max-height: 480px) {
-    top: 57vh;
-  }
-
-  @media (max-width: 280px) {
-    top: 10vh;
   }
 `;
 

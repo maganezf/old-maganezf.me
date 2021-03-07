@@ -27,7 +27,6 @@ import {
   SqliteIcon,
   FirstProjectsContainer,
   SecondProjectsContainer,
-  WaveBackground,
 } from './styles';
 
 const ProjectsPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
@@ -156,17 +155,15 @@ const ProjectsPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
             For more projects,
             {''}{' '}
             <a
-              href="https://github.com/maganezf"
+              href="https://github.com/maganezf/repositories/"
               target="_blank"
               rel="noopener noreferrer"
             >
               visit my github
             </a>{' '}
-            - projects made in studies
+            - all projects made in studies
           </li>
         </SecondProjectsContainer>
-
-        <WaveBackground />
       </Container>
 
       <FooterBar />

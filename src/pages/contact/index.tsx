@@ -13,7 +13,6 @@ import {
   ImageProfile,
   DescriptionProfile,
   FollowingMeOn,
-  WaveBackground,
   IconsContainer,
   EmailIcon,
   LinkedInIcon,
@@ -81,8 +80,6 @@ const ContactPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
             via Emails, GitHub, LinkedIn, Twitter or Instagram
           </p>
         </SendEmailContainer>
-
-        <WaveBackground />
       </Container>
       <FooterBar />
       <GlobalStyles />

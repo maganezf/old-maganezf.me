@@ -11,7 +11,6 @@ import {
   ImageProfile,
   DescriptionProfile,
   TextContainer,
-  WaveBackground,
   HappyIcon,
   LocationIcon,
   GitHubIcon,
@@ -59,10 +58,8 @@ const IndexPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
               <AboutMeIcon />
             </a>
           </Link>
-          <p>For more information about me, click the icon next to</p>
+          <p>For more information about me, click on the icon</p>
         </TextContainer>
-
-        <WaveBackground />
       </Container>
 
       <FooterBar />

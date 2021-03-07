@@ -8,8 +8,9 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta
             name="viewport"
-            content="initial-scale=1.0, width=device-width"
+            content="initial-scale=1.0, width=device-width, viewport-fit=cover"
           />
+
           <meta name="theme-color" content="#101D42" />
           <meta property="og:locale" content="en, pt-br" />
           <meta property="og:site_name" content="Maganez" />
@@ -31,7 +32,7 @@ export default class MyDocument extends Document {
             content="Hello World! This is my personal website/portfolio."
           />
 
-          <meta property="og:image" content="https://svgshare.com/i/U7z.svg" />
+          <meta property="og:image" content="/favicon.svg" />
           <meta property="og:image:type" content="image/svg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="628" />
@@ -45,21 +46,15 @@ export default class MyDocument extends Document {
             content="Hello World! This is my personal website/portfolio."
           />
 
-          <meta
-            property="twitter:image"
-            content="https://svgshare.com/i/U7z.svg"
-          />
+          <meta property="twitter:image" content="/favicon.svg" />
+
+          <link rel="shortcut icon" href="/favicon.svg" title="favicon" />
 
           <link
-            rel="shortcut icon"
-            href="https://svgshare.com/i/U7z.svg"
-            title="developer"
-          />
-          <link
             rel="apple-touch-icon"
-            href="https://svgshare.com/i/U7z.svg"
+            href="/favicon.svg"
             sizes="180x180"
-            title="developer"
+            title="favicon"
           />
 
           {/* Poppins Font | Weights: 300, 400, 700 */}

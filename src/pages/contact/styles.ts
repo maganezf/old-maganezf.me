@@ -4,8 +4,6 @@ import { IoIosMail } from 'react-icons/io';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { SiTwitter, SiInstagram } from 'react-icons/si';
 
-import { WaveBackgroundImgDesktop } from '../../styles/Icons';
-
 export const Container = styled.main`
   display: flex;
   flex-direction: column;
@@ -28,6 +26,7 @@ export const Container = styled.main`
 
   background: ${(props) => props.theme.backgroundColor};
 
+  background-image: url('/wave-background-mobile.svg');
   background-size: cover;
   background-position: center;
 
@@ -35,6 +34,10 @@ export const Container = styled.main`
   top: 6rem;
   left: 0;
   right: 0;
+
+  @media (min-width: 1000px) {
+    background-image: url('/wave-background.svg');
+  }
 
   @media (min-width: 400px) {
     overflow: hidden;
@@ -233,41 +236,6 @@ export const SendEmailContainer = styled.section`
 
   @media (min-width: 1024px) and (max-width: 1100px) {
     margin-bottom: 0;
-  }
-`;
-
-export const WaveBackground = styled(WaveBackgroundImgDesktop)`
-  width: auto;
-  height: 115vh;
-
-  z-index: 0;
-
-  overflow: hidden;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  transition: 0.3s;
-  &:active {
-    opacity: 0.85;
-  }
-
-  @media (max-width: 360px) {
-    top: 10vh;
-  }
-
-  @media (max-width: 320px) and (max-height: 570px) {
-    top: 30vh;
-  }
-
-  @media (max-width: 320px) and (max-height: 480px) {
-    top: 57vh;
-  }
-
-  @media (max-width: 280px) {
-    top: 10vh;
   }
 `;
 

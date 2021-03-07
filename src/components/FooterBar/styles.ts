@@ -83,11 +83,11 @@ export const Container = styled.footer`
 
   // desktop layout
   @media (min-width: 1000px) {
-    top: 88vh;
+    top: 89.5vh;
+
+    height: 8vh;
 
     overflow: hidden;
-
-    max-width: 100vw;
 
     position: relative;
     left: 0;

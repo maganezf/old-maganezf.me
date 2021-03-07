@@ -51,29 +51,22 @@ export default createGlobalStyle`
       width: 100%;
       height: 100%;
     }
+  }
 
-    ::-webkit-scrollbar {
-      width: 4px;
-      height: 4px;
+  html {
+    overflow-x: hidden;
+    overflow-y: scroll;
 
-      background: ${(props) => props.theme.primaryColor};
-    }
+     ::-webkit-scrollbar {
+      // Remove scrollbar space
+      width: 0;
 
-    ::-webkit-scrollbar-thumb {
-      border-radius: 20px;
-      -webkit-border-radius: 20px;
-
-      background: ${(props) => props.theme.selectionTextColor};
-
-      box-shadow: 0px 8px 24px .15px ${(props) => props.theme.shadowColor};
-      -webkit-box-shadow: 0px 8px 24px .15px ${(props) =>
-        props.theme.shadowColor};
+      // Optional: just make scrollbar invisible
+      background: transparent;
     }
   }
 
   body {
-    overflow-x: hidden;
-
     // set to 16px - default body font-size
     font-size: 1.6rem;
   }

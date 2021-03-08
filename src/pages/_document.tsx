@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
             content="Hello World! This is my personal website."
           />
 
-          <meta property="og:image" content="/favicon.svg" />
+          <meta property="og:image" content="/metadata-image.svg" />
           <meta property="og:image:type" content="image/svg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="628" />

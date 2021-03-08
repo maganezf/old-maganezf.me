@@ -32,8 +32,6 @@ export default class MyDocument extends Document {
           />
 
           <meta property="og:image" content="/metadata-image.png" />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="628" />
 
           {/* Twitter METADATA */}
           <meta property="twitter:card" content="summary_large_image" />

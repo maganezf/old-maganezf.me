@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 
 import HeaderBar from '../components/HeaderBar';
@@ -17,9 +18,19 @@ import {
   AboutMeIcon,
 } from '../styles/pages/IndexPage';
 
-const IndexPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
+type Props = {
+  title?: string;
+};
+
+const IndexPage: React.FC<ThemeProps> = (
+  { toggleTheme },
+  { title = 'Home | Maganez' }: Props
+) => {
   return (
     <>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <HeaderBar toggleTheme={toggleTheme} />
 
       <Container>

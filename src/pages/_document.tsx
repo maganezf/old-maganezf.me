@@ -32,7 +32,6 @@ export default class MyDocument extends Document {
           />
 
           <meta property="og:image" content="/metadata-image.png" />
-          <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="628" />
 
@@ -48,7 +47,7 @@ export default class MyDocument extends Document {
             content="Hello World! This is my personal website."
           />
 
-          <meta property="twitter:image" content="/favicon.svg" />
+          <meta property="twitter:image" content="/metadata-image.png">
 
           <link rel="shortcut icon" href="/favicon.svg" title="favicon" />
 

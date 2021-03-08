@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
           />
 
           <meta property="og:image" content="/metadata-image.png" />
-          <meta property="og:image:type" content="image/svg" />
+          <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="628" />
 

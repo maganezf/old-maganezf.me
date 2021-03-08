@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
             content="Hello World! This is my personal website."
           />
 
-          <meta property="twitter:image" content="/metadata-image.png">
+          <meta property="twitter:image" content="/metadata-image.png" />
 
           <link rel="shortcut icon" href="/favicon.svg" title="favicon" />
 

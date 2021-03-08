@@ -54,10 +54,10 @@ contributors
 <h2 align="left"> 🤩 Layout created by me: </h2>
 <p align="center">
   <div align="center">
-    <img src="./.github/ScreenshotDesktopLayout - HomePage - DarkTheme.png" width="400px" />
-    <img src="./.github/ScreenshotDesktopLayout - HomePage - LightTheme.png" width="400px" />
-    <img src="./.github/ScreenshotMobileLayout - HomePage - DarkTheme.png" width="250px" />
-    <img src="./.github/ScreenshotMobileLayout - HomePage - LightTheme.png" width="250px" />
+    <img src="./.github/ScreenshotDesktopLayout - HomePage - DarkTheme.png" width="400px" style="border-radius: 5px;" />
+    <img src="./.github/ScreenshotDesktopLayout - HomePage - LightTheme.png" width="400px" style="border-radius: 5px;" />
+    <img src="./.github/ScreenshotMobileLayout - HomePage - DarkTheme.png" width="250px" style="border-radius: 5px;" />
+    <img src="./.github/ScreenshotMobileLayout - HomePage - LightTheme.png" width="250px" style="border-radius: 5px;" />
   </div>
   <br/>
 Ps: These layouts were just initial prototypes, which after new ideas I improved them

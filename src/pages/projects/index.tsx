@@ -21,6 +21,7 @@ import {
   BootstrapIcon,
   JsIcon,
   TsIcon,
+  NodeIcon,
   GitIcon,
   GitHubIcon,
   MongoDBIcon,
@@ -114,6 +115,12 @@ const ProjectsPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
             <Link href="https://www.typescriptlang.org/">
               <a target="_blank" rel="noopener noreferrer">
                 <TsIcon />
+              </a>
+            </Link>
+
+            <Link href="https://nodejs.org/">
+              <a target="_blank" rel="noopener noreferrer">
+                <NodeIcon />
               </a>
             </Link>
 

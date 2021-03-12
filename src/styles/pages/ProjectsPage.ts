@@ -417,6 +417,10 @@ export const TsIcon = styled(SiTypescript)`
   ${iconsCSS};
 `;
 
+export const NodeIcon = styled(SiNodeDotJs)`
+  ${iconsCSS};
+`;
+
 export const GitIcon = styled(SiGit)`
   ${iconsCSS};
 `;

@@ -71,18 +71,31 @@ export default createGlobalStyle`
     font-size: 1.6rem;
   }
 
-  @keyframes loadAnimation {
+  // desktop animations
+  @media (min-width: 1100px){
+    @keyframes loadAnimation {
+      0% {
+        opacity: 0.99;
+        transform: scale(1.5);
+      }
 
-    0% {
-      opacity: 0.99;
-      transform: scale(1.5);
-    }
-
-    100% {
-      opacity: 1;
-      transform: scale(1);
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
   }
 
+  // mobile animations
+  @media (max-width: 1100px){
+    @keyframes loadAnimation {
+      0% {
+        opacity: 0.98;
+      }
 
+      100% {
+        opacity: 1;
+      }
+    }
+  }
 `;

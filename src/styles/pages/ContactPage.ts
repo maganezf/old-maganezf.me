@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 import { IoIosMail } from 'react-icons/io';
 import { FaLinkedinIn } from 'react-icons/fa';
-import { SiTwitter, SiInstagram } from 'react-icons/si';
+import { SiTwitter, SiInstagram, SiGithub } from 'react-icons/si';
 
 export const Container = styled.main`
   display: flex;
@@ -192,7 +192,7 @@ export const IconsContainer = styled.div`
   margin-bottom: 10vh;
 
   > a {
-    margin-right: 15vw;
+    margin-right: 10vw;
 
     transition: 0.3s;
     &:active,
@@ -269,6 +269,10 @@ export const EmailIcon = styled(IoIosMail)`
 
 export const LinkedInIcon = styled(FaLinkedinIn)`
   ${iconsCSS}
+`;
+
+export const GitHubIcon = styled(SiGithub)`
+  ${iconsCSS};
 `;
 
 export const TwitterIcon = styled(SiTwitter)`

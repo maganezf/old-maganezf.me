@@ -16,6 +16,7 @@ import {
   IconsContainer,
   EmailIcon,
   LinkedInIcon,
+  GitHubIcon,
   TwitterIcon,
   InstagramIcon,
 } from '../../styles/pages/ContactPage';
@@ -58,6 +59,12 @@ const ContactPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
           <Link href="https://www.linkedin.com/in/maganez-filho-b5813b188/">
             <a target="_blank" rel="noopener noreferrer">
               <LinkedInIcon />
+            </a>
+          </Link>
+
+          <Link href="https://github.com/maganezf">
+            <a target="_blank" rel="noopener noreferrer">
+              <GitHubIcon />
             </a>
           </Link>
 

@@ -85,7 +85,7 @@ export const Container = styled.footer`
   @media (min-width: 1000px) {
     top: 89.5vh;
 
-    height: 8vh;
+    height: 9vh;
 
     overflow: hidden;
 

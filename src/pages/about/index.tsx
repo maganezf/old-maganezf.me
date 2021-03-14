@@ -71,7 +71,11 @@ const AboutPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
 
         <TextContainer>
           <FromContent>
-            <button type="button" onClick={handleShowHideFromContent}>
+            <button
+              type="button"
+              onClick={handleShowHideFromContent}
+              aria-label="ImFromButton"
+            >
               <h2>🏠 Where I'm from</h2>
             </button>
 
@@ -79,14 +83,28 @@ const AboutPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
               <>
                 <p>
                   I'm from Brazil, I was born in{' '}
-                  <Link href="https://www.google.com/maps/place/Guarabira+PB/@-6.8640922,-35.5155381">
-                    <a target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href="https://www.google.com/maps/place/Guarabira+PB/@-6.8640922,-35.5155381"
+                    aria-label="Go to GMaps Guarabira Geolocation"
+                  >
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Guarabira Geolocation"
+                    >
                       Guarabira
                     </a>
                   </Link>
                   , and have been living in{' '}
-                  <Link href="https://www.google.com/maps/place/Bananeiras+PB/@-6.7533036,-35.6344225,17">
-                    <a target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href="https://www.google.com/maps/place/Bananeiras+PB/@-6.7533036,-35.6344225,17"
+                    aria-label="Go to GMaps Bananeiras Geolocation"
+                  >
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Bananeiras Geolocation"
+                    >
                       Bananeiras
                     </a>
                   </Link>
@@ -101,7 +119,11 @@ const AboutPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
           </FromContent>
 
           <HobbiesContainer>
-            <button type="button" onClick={handleShowHideHobbiesContent}>
+            <button
+              type="button"
+              onClick={handleShowHideHobbiesContent}
+              aria-label="HobbiesButton"
+            >
               <h2>💆‍♂️ Hobbies</h2>
             </button>
 
@@ -121,7 +143,11 @@ const AboutPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
             )}
           </HobbiesContainer>
           <ProgrammingJourneyContainer>
-            <button type="button" onClick={handleShowHidePJContent}>
+            <button
+              type="button"
+              onClick={handleShowHidePJContent}
+              aria-label="ProgrammingJourneyButton"
+            >
               <h2>💻 Programming Journey</h2>
             </button>
 

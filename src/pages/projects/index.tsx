@@ -21,7 +21,7 @@ import {
   BootstrapIcon,
   JsIcon,
   TsIcon,
-  NodeIcon,
+  NodeJsIcon,
   GitIcon,
   GitHubIcon,
   MongoDBIcon,
@@ -58,92 +58,158 @@ const ProjectsPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
           <h3>I have experience with such technologies:</h3>
 
           <TechsIcons>
-            <Link href="https://reactjs.org/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href="https://reactjs.org/" aria-label="Go to ReactJS Page">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ReactJsPage"
+              >
                 <ReactJsIcon />
               </a>
             </Link>
 
-            <Link href="https://nextjs.org/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href="https://nextjs.org/" aria-label="Go to NextJS Page">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="NextJsPage"
+              >
                 <NextJsIcon />
               </a>
             </Link>
 
-            <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              aria-label="Go to MDN-HTML Page"
+            >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MdnHtmlPage"
+              >
                 <HtmlIcon />
               </a>
             </Link>
 
-            <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              aria-label="Go to MDN-CSS Page"
+            >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MdnCssPage"
+              >
                 <CssIcon />
               </a>
             </Link>
 
-            <Link href="https://sass-lang.com/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href="https://sass-lang.com/" aria-label="Go to Sass Page">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="SassPage"
+              >
                 <SassIcon />
               </a>
             </Link>
 
-            <Link href="https://jquery.com/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href="https://jquery.com/" aria-label="Go to JQuery Page">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="JQueryPage"
+              >
                 <JQueryIcon />
               </a>
             </Link>
 
-            <Link href="https://tailwindcss.com/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://tailwindcss.com/"
+              aria-label="Go to TailwindCSS Page"
+            >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TailwindCssPage"
+              >
                 <TailwindCssIcon />
               </a>
             </Link>
 
-            <Link href="https://getbootstrap.com/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://getbootstrap.com/"
+              aria-label="Go to Bootstrap Page"
+            >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="BootstrapPage"
+              >
                 <BootstrapIcon />
               </a>
             </Link>
 
-            <Link href="https://www.javascript.com/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.javascript.com/"
+              aria-label="Go to Javascript Page"
+            >
+              <a target="_blank" rel="noopener noreferrer" aria-label="JsPage">
                 <JsIcon />
               </a>
             </Link>
 
-            <Link href="https://www.typescriptlang.org/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.typescriptlang.org/"
+              aria-label="Go to Typescript Page"
+            >
+              <a target="_blank" rel="noopener noreferrer" aria-label="TsPage">
                 <TsIcon />
               </a>
             </Link>
 
-            <Link href="https://nodejs.org/">
-              <a target="_blank" rel="noopener noreferrer">
-                <NodeIcon />
+            <Link href="https://nodejs.org/" aria-label="Go to NodeJS Page">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="NodeJsPage"
+              >
+                <NodeJsIcon />
               </a>
             </Link>
 
-            <Link href="https://git-scm.com/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href="https://git-scm.com/" aria-label="Go to Git Page">
+              <a target="_blank" rel="noopener noreferrer" aria-label="GitPage">
                 <GitIcon />
               </a>
             </Link>
 
-            <Link href="https://github.com/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/" aria-label="Go to GitHub Page">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHubPage"
+              >
                 <GitHubIcon />
               </a>
             </Link>
 
-            <Link href="https://mongodb.com/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href="https://mongodb.com/" aria-label="Go to MongoDB Page">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MongoDBPage"
+              >
                 <MongoDBIcon />
               </a>
             </Link>
 
-            <Link href="https://www.sqlite.org/">
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.sqlite.org/" aria-label="Go to SQLite Page">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="SQLitePage"
+              >
                 <SqliteIcon />
               </a>
             </Link>
@@ -165,6 +231,7 @@ const ProjectsPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
               href="https://github.com/maganezf/repositories/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHubRepositories"
             >
               visit my github
             </a>{' '}

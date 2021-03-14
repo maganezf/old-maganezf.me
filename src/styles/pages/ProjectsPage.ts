@@ -417,7 +417,7 @@ export const TsIcon = styled(SiTypescript)`
   ${iconsCSS};
 `;
 
-export const NodeIcon = styled(SiNodeDotJs)`
+export const NodeJsIcon = styled(SiNodeDotJs)`
   ${iconsCSS};
 `;
 
@@ -434,9 +434,5 @@ export const MongoDBIcon = styled(SiMongodb)`
 `;
 
 export const SqliteIcon = styled(DiSqllite)`
-  ${iconsCSS};
-`;
-
-export const NodeJsIcon = styled(SiNodeDotJs)`
   ${iconsCSS};
 `;

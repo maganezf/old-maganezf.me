@@ -57,15 +57,22 @@ const IndexPage: React.FC<ThemeProps> = (
           <LocationIcon />
           <p>Bananeiras-PB, Brazil</p>
 
-          <Link href="https://github.com/maganezf">
-            <a target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://github.com/maganezf"
+            aria-label="Go to GitHub Profile Page"
+          >
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHubProfile"
+            >
               <GitHubIcon />
             </a>
           </Link>
           <p>maganezf</p>
 
-          <Link href="/about">
-            <a>
+          <Link href="/about" aria-label="Go to About Page">
+            <a aria-label="AboutMePage">
               <AboutMeIcon />
             </a>
           </Link>

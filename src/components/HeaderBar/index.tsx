@@ -28,18 +28,22 @@ const HeaderBar: React.FC<ThemeProps> = ({ toggleTheme }) => {
       <Container>
         <CodeIcon />
 
-        <ChangeThemeButton onClick={toggleTheme}>
+        <ChangeThemeButton
+          onClick={toggleTheme}
+          type="button"
+          aria-label="Switch Theme"
+        >
           {name === 'dark' ? <SunIconDarkTheme /> : <MoonIconLightTheme />}
         </ChangeThemeButton>
 
         <TitlePages>
-          <Link href="/">
+          <Link href="/" aria-label="Go to Home Page">
             <h2>maganezf</h2>
           </Link>
 
           <LineSeparator />
 
-          <Link href="/about">
+          <Link href="/about" aria-label="Go to About Page">
             <h2>About</h2>
           </Link>
         </TitlePages>

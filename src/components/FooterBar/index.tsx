@@ -6,13 +6,13 @@ import { Container, LineSeparator } from './styles';
 const FooterBar: React.FC = () => {
   return (
     <Container>
-      <Link href="/projects">
+      <Link href="/projects" aria-label="Go to Projects Page">
         <button>Projects</button>
       </Link>
 
       <LineSeparator />
 
-      <Link href="/contact">
+      <Link href="/contact" aria-label="Go to Contact Page">
         <button>Contact</button>
       </Link>
     </Container>

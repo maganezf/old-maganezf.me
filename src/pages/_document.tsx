@@ -6,9 +6,10 @@ export default class MyDocument extends Document {
       <Html lang="en, pt-br">
         <Head>
           <meta charSet="utf-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="viewport"
-            content="initial-scale=1.0, width=device-width, viewport-fit=cover"
+            content="width=device-width, initial-scale=1.0"
           />
 
           <meta name="theme-color" content="#101D42" />

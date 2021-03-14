@@ -50,32 +50,63 @@ const ContactPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
         </FollowingMeOn>
 
         <IconsContainer>
-          <Link href="mailto:maganezfilho@gmail.com">
-            <a target="_blank" rel="noopener noreferrer">
+          <Link
+            href="mailto:maganezfilho@gmail.com"
+            aria-label="Go to Send Mail"
+          >
+            <a target="_blank" rel="noopener noreferrer" aria-label="EmailIcon">
               <EmailIcon />
             </a>
           </Link>
 
-          <Link href="https://www.linkedin.com/in/maganez-filho-b5813b188/">
-            <a target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://www.linkedin.com/in/maganez-filho-b5813b188/"
+            aria-label="Go to LinkedIn Profile Page"
+          >
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedInIcon"
+            >
               <LinkedInIcon />
             </a>
           </Link>
 
-          <Link href="https://github.com/maganezf">
-            <a target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://github.com/maganezf"
+            aria-label="Go to GitHub Profile Page"
+          >
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHubIcon"
+            >
               <GitHubIcon />
             </a>
           </Link>
 
-          <Link href="https://twitter.com/maganezz">
-            <a target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://twitter.com/maganezz"
+            aria-label="Go to Twitter Profile Page"
+          >
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TwitterIcon"
+            >
               <TwitterIcon />
             </a>
           </Link>
 
-          <Link href="https://www.instagram.com/maganezf/">
-            <a target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://www.instagram.com/maganezf/"
+            aria-label="Go to Instagram Profile Page"
+          >
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="InstagramIcon"
+            >
               <InstagramIcon />
             </a>
           </Link>

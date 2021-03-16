@@ -43,7 +43,8 @@ export const Container = styled.main`
 
   background: ${(props) => props.theme.backgroundColor};
 
-  background-image: url('/wave-background-mobile.svg');
+  background-image: url('/waves-backgrounds/wave-background-mobile.svg');
+
   background-size: cover;
   background-position: center;
 
@@ -53,7 +54,7 @@ export const Container = styled.main`
   right: 0;
 
   @media (min-width: 1000px) {
-    background-image: url('/wave-background.svg');
+    background-image: url('/waves-backgrounds/wave-background-desktop.svg');
   }
 
   @media (min-width: 400px) {

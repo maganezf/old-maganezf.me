@@ -110,8 +110,8 @@ const AboutPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
                   </Link>
                   , to this day.
                   <ImagesContainer>
-                    <img src="/guarabira.jpg" alt="Guarabira Image" />
-                    <img src="/bananeiras.jpg" alt="Bananeiras Image" />
+                    <img src="/images/guarabira.jpg" alt="Guarabira Image" />
+                    <img src="/images/bananeiras.jpg" alt="Bananeiras Image" />
                   </ImagesContainer>
                 </p>
               </>

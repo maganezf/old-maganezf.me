@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
           />
 
           <meta name="theme-color" content="#101D42" />

@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import type { AppProps } from 'next/app';
 
 import HomePage from '../components/HomePage';

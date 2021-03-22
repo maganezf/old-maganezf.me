@@ -13,10 +13,6 @@ import lightTheme from '../styles/themes/lightTheme';
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = usePersistedState('theme', darkTheme);
 
-  useEffect(() => {
-    Notification.requestPermission();
-  }, []);
-
   const toggleTheme = () => {
     setTheme(theme.name === 'dark' ? lightTheme : darkTheme);
     PlayChangedTheme();

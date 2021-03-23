@@ -60,7 +60,7 @@ const ContactPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
           </Link>
 
           <Link
-            href="https://www.linkedin.com/in/maganez-filho-b5813b188/"
+            href="https://www.linkedin.com/in/maganezf/"
             aria-label="Go to LinkedIn Profile Page"
           >
             <a

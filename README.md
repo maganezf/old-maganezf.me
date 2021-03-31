@@ -1,6 +1,6 @@
 <div align='center'>
 
-# <img align='center' src="./.github/logo3.svg" alt="Logo maganezf.me" width="350"/>
+# <img align='center' src="./.github/logo.svg" alt="Logo maganezf.me" width="350"/>
 
 </div>
 

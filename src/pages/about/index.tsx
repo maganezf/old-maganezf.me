@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -17,7 +18,6 @@ import {
   ProgrammingJourneyContainer,
   ImagesContainer,
 } from '../../styles/pages/AboutPage';
-import { useState } from 'react';
 
 const AboutPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
   const [showContentFrom, setShowContentFrom] = useState(false);

@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
           <meta name="title" content="Maganez - Website" />
           <meta
             name="description"
-            content="Hello World! This is my personal website."
+            content="Hello World! Welcome to my personal website."
           />
 
           {/* Open Graph / Facebook METADATA */}
@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
           <meta property="og:title" content="Maganez - Website" />
           <meta
             property="og:description"
-            content="Hello World! This is my personal website."
+            content="Hello World! Welcome to my personal website."
           />
 
           <meta property="og:image" content="/metadata-image.png" />
@@ -43,7 +43,7 @@ export default class MyDocument extends Document {
           <meta property="twitter:title" content="Maganez - Website" />
           <meta
             property="twitter:description"
-            content="Hello World! This is my personal website."
+            content="Hello World! Welcome to my personal website."
           />
 
           <meta property="twitter:image" content="/metadata-image.png" />

@@ -45,7 +45,7 @@ const IndexPage: React.FC<ThemeProps> = (
           </ImageProfile>
 
           <DescriptionProfile>
-            <h1>System Developer, with focus on FrontEnd</h1>
+            <h1>Software Developer, with focus on FrontEnd</h1>
           </DescriptionProfile>
         </ProfileContainer>
         <TextContainer>

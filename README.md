@@ -40,16 +40,15 @@ contributors
 
 </div>
 
-# 📌 Table of Contents
+# :pushpin: Table of Contents
 
-- [Live Website](#👀-live-website)
-- [Technologies](#💻-technologies)
-- [Ancillary sites at development](#💁-Ancillary-sites-at-development)
-- [Object / Features](#🎯-object-/-features)
-- [How to Run](#👷-how-to-run)
-- [Found a bug? Missing a specific feature?](#🐛-issues)
-- [Contributing](#🎉-contributing)
-- [License](#📕-license)
+- [Live Website](#eyes-live-website)
+- [Technologies](#computer-technologies)
+- [Ancillary sites at development](#information_desk_person-Ancillary-sites-at-development)
+- [Object / Features](#dart-object-/-features)
+- [Found a bug? Missing a specific feature?](#bug-issues)
+- [Contributing](#tada-contributing)
+- [License](#closed_book-license)
 
 <h2 align="left"> 🤩 Layout created by me: </h2>
 <p align="center">
@@ -63,11 +62,11 @@ contributors
 Ps: These layouts were just initial prototypes, which after new ideas I improved them
 </p>
 
-# 👀 Live Website
+# :eyes: Live Website
 
 👉 [Click to open Website here](https://maganezf-me.vercel.app/)
 
-# 💻 Technologies
+# :computer: Technologies
 
 This project was made using the follow technologies:
 
@@ -82,7 +81,7 @@ This project was made using the follow technologies:
 - [Yarn](https://yarnpkg.com/)
 - [Vercel (hosting)](https://vercel.com/)
 
-## 💁 Ancillary sites at development
+## :information_desk_person: Ancillary sites at development
 
 - [Figma - Design UI/UX](https://www.figma.com/)
 - [Flaticon](https://www.flaticon.com/)
@@ -91,16 +90,16 @@ This project was made using the follow technologies:
 - [Icon Finder](https://www.iconfinder.com/)
 - [Icons8](https://icons8.com/)
 
-# 🎯 Object / Features
+# :dart: Object / Features
 
 - Website developed for professional purposes, job market.
 - And a means to contact me
 
-# 🐛 Issues
+# :bug: Issues
 
 Feel free to **file a new issue** with a respective title and description on the the [maganezf.me](https://github.com/maganezf/maganezf.me/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
 
-# 🎉 Contributing
+# :tada: Contributing
 
 First of all, thank you for being interested in helping out, your time is always appreciated in every way. 💯
 
@@ -111,7 +110,7 @@ Here's some tips:
 
 Check out the [contributing](./CONTRIBUTING) page to see the best places to file issues, start discussions and begin contributing.
 
-# 📕 License
+# :closed_book: License
 
 Released in 2021 📕 License
 

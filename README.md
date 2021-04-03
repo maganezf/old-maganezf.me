@@ -45,7 +45,7 @@ contributors
 - [Live Website](#eyes-live-website)
 - [Technologies](#computer-technologies)
 - [Ancillary sites at development](#information_desk_person-Ancillary-sites-at-development)
-- [Object / Features](#dart-object-/-features)
+- [Object and Features](#dart-object-and-features)
 - [Found a bug? Missing a specific feature?](#bug-issues)
 - [Contributing](#tada-contributing)
 - [License](#closed_book-license)
@@ -90,7 +90,7 @@ This project was made using the follow technologies:
 - [Icon Finder](https://www.iconfinder.com/)
 - [Icons8](https://icons8.com/)
 
-# :dart: Object / Features
+# :dart: Object and Features
 
 - Website developed for professional purposes, job market.
 - And a means to contact me

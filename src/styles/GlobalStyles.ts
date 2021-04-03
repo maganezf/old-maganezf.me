@@ -23,6 +23,8 @@ export default createGlobalStyle`
     outline: 0;
 
     font-family: 'Poppins', sans-serif, Ubuntu, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+    transition: color .2s ease-in-out;
   }
 
   button {

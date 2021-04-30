@@ -41,7 +41,7 @@ const ContactPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
           </ImageProfile>
 
           <DescriptionProfile>
-            <h1>Software Developer, with focus on FrontEnd</h1>
+            <h1>Frontend Software Developer (Web and Mobile)</h1>
           </DescriptionProfile>
         </ProfileContainer>
 

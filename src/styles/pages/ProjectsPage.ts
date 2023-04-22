@@ -4,19 +4,19 @@ import { BsFillBootstrapFill } from 'react-icons/bs';
 import { DiSqllite } from 'react-icons/di';
 
 import {
-  SiHtml5,
   SiCss3,
   SiGit,
   SiGithub,
+  SiHtml5,
   SiJavascript,
-  SiTypescript,
+  SiJquery,
   SiMongodb,
-  SiNextDotJs,
-  SiNodeDotJs,
+  SiNextdotjs,
+  SiNodedotjs,
   SiReact,
   SiSass,
-  SiJquery,
   SiTailwindcss,
+  SiTypescript,
 } from 'react-icons/si';
 
 export const Container = styled.main`
@@ -382,7 +382,7 @@ export const ReactJsIcon = styled(SiReact)`
   ${iconsCSS};
 `;
 
-export const NextJsIcon = styled(SiNextDotJs)`
+export const NextJsIcon = styled(SiNextdotjs)`
   ${iconsCSS};
 `;
 
@@ -418,7 +418,7 @@ export const TsIcon = styled(SiTypescript)`
   ${iconsCSS};
 `;
 
-export const NodeJsIcon = styled(SiNodeDotJs)`
+export const NodeJsIcon = styled(SiNodedotjs)`
   ${iconsCSS};
 `;
 

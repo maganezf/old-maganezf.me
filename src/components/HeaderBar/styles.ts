@@ -78,9 +78,8 @@ export const TitlePages = styled.div`
   align-items: center;
   justify-content: center;
 
-  color: ${(props) => props.theme.headerFooterColor};
-
-  > h2 {
+  > a {
+    color: ${(props) => props.theme.headerFooterColor};
     font-size: 20px;
 
     &:first-child {

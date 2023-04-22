@@ -1,24 +1,23 @@
-import Link from 'next/link';
 import Head from 'next/head';
+import Link from 'next/link';
 
-import HeaderBar from '../../components/HeaderBar';
 import FooterBar from '../../components/FooterBar';
+import HeaderBar, { ThemeProps } from '../../components/HeaderBar';
 import GlobalStyles from '../../styles/GlobalStyles';
-import { ThemeProps } from '../../components/HeaderBar';
 
 import {
   Container,
-  SendEmailContainer,
-  ProfileContainer,
-  ImageProfile,
   DescriptionProfile,
-  FollowingMeOn,
-  IconsContainer,
   EmailIcon,
-  LinkedInIcon,
+  FollowingMeOn,
   GitHubIcon,
-  TwitterIcon,
+  IconsContainer,
+  ImageProfile,
   InstagramIcon,
+  LinkedInIcon,
+  ProfileContainer,
+  SendEmailContainer,
+  TwitterIcon,
 } from '../../styles/pages/ContactPage';
 
 const ContactPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
@@ -51,64 +50,48 @@ const ContactPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
 
         <IconsContainer>
           <Link
+            target="_blank"
+            rel="noopener noreferrer"
             href="mailto:maganezfilho@gmail.com"
             aria-label="Go to Send Mail"
           >
-            <a target="_blank" rel="noopener noreferrer" aria-label="EmailIcon">
-              <EmailIcon />
-            </a>
+            <EmailIcon />
           </Link>
 
           <Link
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/in/maganezf/"
             aria-label="Go to LinkedIn Profile Page"
           >
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedInIcon"
-            >
-              <LinkedInIcon />
-            </a>
+            <LinkedInIcon />
           </Link>
 
           <Link
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/maganezf"
             aria-label="Go to GitHub Profile Page"
           >
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHubIcon"
-            >
-              <GitHubIcon />
-            </a>
+            <GitHubIcon />
           </Link>
 
           <Link
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://twitter.com/maganezz"
             aria-label="Go to Twitter Profile Page"
           >
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="TwitterIcon"
-            >
-              <TwitterIcon />
-            </a>
+            <TwitterIcon />
           </Link>
 
           <Link
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.instagram.com/maganezf/"
             aria-label="Go to Instagram Profile Page"
           >
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="InstagramIcon"
-            >
-              <InstagramIcon />
-            </a>
+            <InstagramIcon />
           </Link>
         </IconsContainer>
 

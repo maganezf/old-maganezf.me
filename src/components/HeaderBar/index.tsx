@@ -5,13 +5,13 @@ import GlobalStyles from '../../styles/GlobalStyles';
 
 import {
   CodeIcon,
-  SunIconDarkTheme,
   MoonIconLightTheme,
+  SunIconDarkTheme,
 } from '../../styles/Icons';
 
 import {
-  Container,
   ChangeThemeButton,
+  Container,
   LineSeparator,
   TitlePages,
 } from './styles';
@@ -38,13 +38,13 @@ const HeaderBar: React.FC<ThemeProps> = ({ toggleTheme }) => {
 
         <TitlePages>
           <Link href="/" aria-label="Go to Home Page">
-            <h2>maganezf</h2>
+            maganezf
           </Link>
 
           <LineSeparator />
 
           <Link href="/about" aria-label="Go to About Page">
-            <h2>About</h2>
+            About
           </Link>
         </TitlePages>
       </Container>

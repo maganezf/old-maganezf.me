@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
@@ -6,11 +6,7 @@ export default class MyDocument extends Document {
       <Html lang="en, pt-br">
         <Head>
           <meta charSet="utf-8" />
-          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
           <meta name="theme-color" content="#101D42" />
           <meta property="og:locale" content="en, pt-br" />

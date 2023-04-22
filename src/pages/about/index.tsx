@@ -1,22 +1,21 @@
-import { useState } from 'react';
-import Link from 'next/link';
 import Head from 'next/head';
+import Link from 'next/link';
+import { useState } from 'react';
 
-import HeaderBar from '../../components/HeaderBar';
 import FooterBar from '../../components/FooterBar';
+import HeaderBar, { ThemeProps } from '../../components/HeaderBar';
 import GlobalStyles from '../../styles/GlobalStyles';
-import { ThemeProps } from '../../components/HeaderBar';
 
 import {
   Container,
-  ProfileContainer,
-  ImageProfile,
   DescriptionProfile,
-  TextContainer,
   FromContent,
   HobbiesContainer,
-  ProgrammingJourneyContainer,
+  ImageProfile,
   ImagesContainer,
+  ProfileContainer,
+  ProgrammingJourneyContainer,
+  TextContainer,
 } from '../../styles/pages/AboutPage';
 
 const AboutPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
@@ -86,27 +85,19 @@ const AboutPage: React.FC<ThemeProps> = ({ toggleTheme }) => {
                   <Link
                     href="https://www.google.com/maps/place/Guarabira+PB/@-6.8640922,-35.5155381"
                     aria-label="Go to GMaps Guarabira Geolocation"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Guarabira Geolocation"
-                    >
-                      Guarabira
-                    </a>
+                    Guarabira
                   </Link>
                   , and have been living in{' '}
                   <Link
                     href="https://www.google.com/maps/place/Bananeiras+PB/@-6.7533036,-35.6344225,17"
                     aria-label="Go to GMaps Bananeiras Geolocation"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Bananeiras Geolocation"
-                    >
-                      Bananeiras
-                    </a>
+                    Bananeiras
                   </Link>
                   , to this day.
                   <ImagesContainer>

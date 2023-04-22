@@ -1,5 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
+import React from 'react';
 
 import { Container, LineSeparator } from './styles';
 
@@ -7,13 +7,13 @@ const FooterBar: React.FC = () => {
   return (
     <Container>
       <Link href="/projects" aria-label="Go to Projects Page">
-        <button>Projects</button>
+        Projects
       </Link>
 
       <LineSeparator />
 
       <Link href="/contact" aria-label="Go to Contact Page">
-        <button>Contact</button>
+        Contact
       </Link>
     </Container>
   );

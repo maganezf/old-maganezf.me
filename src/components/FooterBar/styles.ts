@@ -30,7 +30,7 @@ export const Container = styled.footer`
 
   z-index: 2;
 
-  > button {
+  > a {
     font-size: 23px;
     color: ${(props) => props.theme.headerFooterColor};
 

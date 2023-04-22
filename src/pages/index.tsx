@@ -1,21 +1,20 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-import HeaderBar from '../components/HeaderBar';
 import FooterBar from '../components/FooterBar';
+import HeaderBar, { ThemeProps } from '../components/HeaderBar';
 import GlobalStyles from '../styles/GlobalStyles';
-import { ThemeProps } from '../components/HeaderBar';
 
 import {
-  Container,
-  ProfileContainer,
-  ImageProfile,
-  DescriptionProfile,
-  TextContainer,
-  HappyIcon,
-  LocationIcon,
-  GitHubIcon,
   AboutMeIcon,
+  Container,
+  DescriptionProfile,
+  GitHubIcon,
+  HappyIcon,
+  ImageProfile,
+  LocationIcon,
+  ProfileContainer,
+  TextContainer,
 } from '../styles/pages/IndexPage';
 
 type Props = {
@@ -58,23 +57,17 @@ const IndexPage: React.FC<ThemeProps> = (
           <p>Bananeiras-PB, Brazil</p>
 
           <Link
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/maganezf"
             aria-label="Go to GitHub Profile Page"
           >
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHubProfile"
-            >
-              <GitHubIcon />
-            </a>
+            <GitHubIcon />
           </Link>
           <p>maganezf</p>
 
           <Link href="/about" aria-label="Go to About Page">
-            <a aria-label="AboutMePage">
-              <AboutMeIcon />
-            </a>
+            <AboutMeIcon />
           </Link>
           <p>For more information about me, click on the icon</p>
         </TextContainer>
